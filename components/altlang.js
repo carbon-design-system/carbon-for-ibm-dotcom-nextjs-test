@@ -1,6 +1,6 @@
 import altlangs from './data/altlang.json';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 /**
  * Renders the list of altlang items
@@ -28,15 +28,21 @@ const _renderAltLangs = () => {
  * @param {string} host hostname
  * @returns {*} altlang markup
  */
-const AltLangs = ({ host }) => (
-  <>
-    <link rel="alternate" hrefLang="x-default" href="/" />
-    {_renderAltLangs(host)}
-  </>
-);
+const AltLangs = () => {
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.has('lc') && urlParams.has('cc')) {
+      lang = `${urlParams.get('lc')}-${urlParams.get('cc')}`;
+      document.getElementsByTagName("html")[0].setAttribute("lang", lang);
+    }
+  }, []);
 
-AltLangs.propTypes = {
-  host: PropTypes.string.isRequired,
-};
+  return (
+    <>
+      <link rel="alternate" hrefLang="x-default" href="/" />
+      {_renderAltLangs()}
+    </>
+  );
+}
 
 export default AltLangs;

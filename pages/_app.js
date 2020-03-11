@@ -3,9 +3,9 @@ import '@carbon/ibmdotcom-styles/scss/ibm-dotcom-styles.scss';
 
 import Altlang from '../components/altlang';
 import App from 'next/app';
-import { DotcomShell } from '@carbon/ibmdotcom-react';
+import {DotcomShell} from '@carbon/ibmdotcom-react';
 import Head from 'next/head';
-import React from 'react';
+import React, {useEffect} from 'react';
 
 /**
  * Language codes for the DotcomShell for server side render
@@ -28,16 +28,16 @@ export default class IbmdotcomLibrary extends App {
    * @param {object} props.ctx app context
    * @returns {Promise<{pageProps}>} Returns the pageProps
    */
-  static async getInitialProps({ ctx }) {
+  static async getInitialProps({ctx}) {
     const useLang =
       ctx.query && ctx.query.lc
         ? {
-            lc: ctx.query.lc,
-            cc: ctx.query.cc,
-          }
+          lc: ctx.query.lc,
+          cc: ctx.query.cc,
+        }
         : _defaultLang;
 
-    return { useLang, query: ctx.query };
+    return {useLang, query: ctx.query};
   }
 
   /**
@@ -46,11 +46,11 @@ export default class IbmdotcomLibrary extends App {
    * @returns {*} Page wrapper JSX
    */
   render() {
-    const { Component, useLang, host, pageProps } = this.props;
+    const {Component, useLang, host, pageProps} = this.props;
     return (
       <>
         <Head>
-          <Altlang host={host} />
+          <Altlang/>
         </Head>
         <DotcomShell navigation="default" langCode={useLang}>
           <Component {...pageProps} />
