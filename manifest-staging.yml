@@ -1,0 +1,10 @@
+---
+applications:
+  - name: ibmdotcom-nextjs-staging
+    path: ./out
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    routes:
+      - route: ibmdotcom-nextjs-staging.mybluemix.net
+      - route: ibmdotcom-nextjs-staging-temp.mybluemix.net
+
