@@ -606,6 +606,12 @@ const Learn = () => (
           },
         },
       ]}
+      cta={{
+        heading: 'Top level card link',
+        cta: {
+          href: 'https://www.example.com',
+        },
+      }}
     />
   </>
 );
