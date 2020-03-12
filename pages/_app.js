@@ -65,6 +65,12 @@ export default class IbmdotcomLibrary extends App {
       <>
         <Head>
           <Altlang/>
+          <link rel="icon" href="//www.ibm.com/favicon.ico"/>
+
+          <meta name="dcterms.date" content="2015-10-01"/>
+          <meta name="dcterms.rights" content="© Copyright IBM Corp. 2020"/>
+          <meta name="geo.country" content="US"/>
+          <meta name="robots" content="index,follow" />
         </Head>
         <DotcomShell navigation="default" langCode={useLang}>
           <Component {...pageProps} />
