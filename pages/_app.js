@@ -5,7 +5,7 @@ import Altlang from '../components/altlang';
 import App from 'next/app';
 import {DotcomShell} from '@carbon/ibmdotcom-react';
 import Head from 'next/head';
-import React, {useEffect} from 'react';
+import React from 'react';
 
 /**
  * Language codes for the DotcomShell for server side render
@@ -16,6 +16,18 @@ const _defaultLang = {
   cc: 'us',
   lc: 'en',
 };
+
+/**
+ * Sets the lang attribute for static deployments
+ * @param {object} lang Lang object with cc and lc
+ * @private
+ */
+function _setStaticLang(lang) {
+  if(typeof document !== 'undefined') {
+    const useLang = `${lang.lc}-${lang.cc}`;
+    document.getElementsByTagName("html")[0].setAttribute("lang", useLang);
+  }
+}
 
 /**
  * Class IbmdotcomLibrary
@@ -37,6 +49,8 @@ export default class IbmdotcomLibrary extends App {
         }
         : _defaultLang;
 
+    _setStaticLang(useLang);
+
     return {useLang, query: ctx.query};
   }
 
@@ -46,7 +60,7 @@ export default class IbmdotcomLibrary extends App {
    * @returns {*} Page wrapper JSX
    */
   render() {
-    const {Component, useLang, host, pageProps} = this.props;
+    const {Component, useLang, pageProps} = this.props;
     return (
       <>
         <Head>
