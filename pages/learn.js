@@ -499,7 +499,7 @@ const Learn = () => (
 
     <CardSectionImages
       heading="Read more about it"
-      theme="white"
+      theme="g10"
       cards={[
         {
           image: {
@@ -563,7 +563,7 @@ const Learn = () => (
 
     <CardSectionSimple
       heading="Aliquam condimentum interdum"
-      theme="white"
+      theme="g10"
       cards={[
         {
           heading: 'Nunc convallis lobortis',
