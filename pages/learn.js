@@ -563,7 +563,7 @@ const Learn = () => (
 
     <CardSectionSimple
       heading="Aliquam condimentum interdum"
-      theme="white"
+      theme="g10"
       cards={[
         {
           heading: 'Nunc convallis lobortis',
