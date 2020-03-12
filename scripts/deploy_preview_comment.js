@@ -20,7 +20,7 @@ const botUser = 'ibmdotcom-bot';
  * Github Repo Slug
  * @type {string}
  */
-const repoSlug = 'carbon-design-system/ibm-dotcom-library';
+const repoSlug = 'carbon-design-system/ibm-dotcom-library-nextjs-test';
 
 /**
  * Github host
