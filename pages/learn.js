@@ -499,7 +499,7 @@ const Learn = () => (
 
     <CardSectionImages
       heading="Read more about it"
-      theme="white"
+      theme="g10"
       cards={[
         {
           image: {
