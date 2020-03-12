@@ -47,9 +47,9 @@ const Learn = () => (
     <TableOfContents menuLabel="Jump to" theme="white" stickyOffset={48}>
       <Layout nested={true} type="2-1" border={true}>
         <div>
-          <a name="1" data-title="Lorem ipsum dolor sit amet"></a>
+          <a name="content-block-mixed" data-title="Content Block - Mixed Groups"></a>
           <ContentBlockMixed
-            heading="Lorem ipsum dolor sit amet"
+            heading="Content Block - Mixed Groups"
             copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
           Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
           nulla quis, *consequat* libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero."
@@ -64,7 +64,7 @@ const Learn = () => (
             items={[
               {
                 type: 'ContentGroupCards',
-                heading: 'Lorem ipsum dolor sit amet.',
+                heading: 'Content Group - with Cards',
                 items: [
                   {
                     heading:
@@ -106,7 +106,7 @@ const Learn = () => (
               {
                 type: 'ContentGroupPictograms',
                 heading:
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                  'Content Group - with Pictograms',
                 items: [
                   {
                     heading: 'Aliquam condimentum interdum',
@@ -186,7 +186,7 @@ const Learn = () => (
                       'https://dummyimage.com/672x378/ee5396/161616&text=16:9',
                   },
                 },
-                heading: 'Lorem ipsum dolor sit amet',
+                heading: 'Content Group - Simple',
                 items: [
                   {
                     heading: 'Lorem ipsum dolor sit amet.',
@@ -205,7 +205,7 @@ const Learn = () => (
         </div>
         <div>
           <LinkList
-            heading="Tutorials"
+            heading="Link List"
             items={[
               {
                 type: 'local',
@@ -227,7 +227,7 @@ const Learn = () => (
       </Layout>
       <Layout nested={true} type="2-1" border={true}>
         <div>
-          <a name="2" data-title="Consectetur adipiscing elit"></a>
+          <a name="content-block-segmented" data-title="Content Block - Segmented"></a>
           <ContentBlockSegmented
             copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
           Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
@@ -240,7 +240,7 @@ const Learn = () => (
               type: 'local',
               copy: 'Lorem ipsum dolor',
             }}
-            heading="Lorem ipsum dolor sit amet."
+            heading="Content Block - Segmented"
             image={{
               heading: 'Mauris iaculis eget dolor nec hendrerit.',
               image: {
@@ -311,7 +311,7 @@ const Learn = () => (
       </Layout>
       <Layout nested={true} type="2-1" border={true}>
         <div>
-          <a name="aenean" data-title="Aenean et ultricies est"></a>
+          <a name="content-block-simple" data-title="Content Block - Simple"></a>
           <ContentBlockSimple
             copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
           Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
@@ -321,7 +321,7 @@ const Learn = () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero."
-            heading="Curabitur malesuada varius mi eu posuere"
+            heading="Content Block - Simple"
             image={{
               heading:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -364,15 +364,15 @@ const Learn = () => (
       <Layout nested={true} type="2-1" border={true}>
         <div>
           <a
-            name="curabitur"
-            data-title="Curabitur malesuada varius mi eu posuere"
+            name="content-block-media"
+            data-title="Content Block - with Media"
           />
           <ContentBlockMedia
             copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean
             et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at
             elit sollicitudin, sodales nulla quis, *consequat* libero. Phasellus at
             elit sollicitudin, sodales nulla quis, consequat libero."
-            heading="Curabitur malesuada varius mi eu posuere"
+            heading="Content Block - with Media"
             items={[
               {
                 mediaType: 'image',
@@ -475,7 +475,7 @@ const Learn = () => (
             ]}
             cta={{
               type: 'feature',
-              heading: 'Lorem ipsum dolor sit amet',
+              heading: 'Feature Card',
               card: {
                 cta: {
                   href: 'https://www.example.com',
@@ -498,7 +498,7 @@ const Learn = () => (
     </TableOfContents>
 
     <CardSectionImages
-      heading="Read more about it"
+      heading="Card Section - with Images"
       theme="g10"
       cards={[
         {
@@ -562,7 +562,7 @@ const Learn = () => (
     />
 
     <CardSectionSimple
-      heading="Aliquam condimentum interdum"
+      heading="Card Section - Simple"
       theme="g10"
       cards={[
         {
