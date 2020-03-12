@@ -15,14 +15,14 @@ const Home = () => (
         heading: 'Learn',
         copy: ' ',
         cta: {
-          href: '/learn.html',
+          href: './learn.html',
         },
       },
       {
         heading: 'More coming soon!',
         copy: ' ',
         cta: {
-          href: '/learn.html',
+          href: './learn.html',
         },
       },
     ]}
