@@ -6,6 +6,7 @@ import App from 'next/app';
 import {DotcomShell} from '@carbon/ibmdotcom-react';
 import Head from 'next/head';
 import React from 'react';
+import packageJson from '../package.json';
 
 /**
  * Language codes for the DotcomShell for server side render
@@ -61,6 +62,8 @@ export default class IbmdotcomLibrary extends App {
    */
   render() {
     const {Component, useLang, pageProps} = this.props;
+    const reactVersion = packageJson.dependencies["@carbon/ibmdotcom-react"];
+    const stylesVersion = packageJson.dependencies["@carbon/ibmdotcom-styles"];
     return (
       <>
         <Head>
@@ -71,6 +74,8 @@ export default class IbmdotcomLibrary extends App {
           <meta name="dcterms.rights" content="© Copyright IBM Corp. 2020"/>
           <meta name="geo.country" content="US"/>
           <meta name="robots" content="index,follow" />
+          <meta name="ibmdotcom.version.react" content={reactVersion} />
+          <meta name="ibmdotcom.version.styles" content={stylesVersion} />
         </Head>
         <DotcomShell navigation="default" langCode={useLang}>
           <Component {...pageProps} />
