@@ -1,4 +1,5 @@
 import { CardSectionSimple } from '@carbon/ibmdotcom-react';
+import '../styles/landing.scss';
 import React from 'react';
 
 /**

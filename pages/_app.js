@@ -1,5 +1,4 @@
-import 'carbon-components/css/carbon-components.min.css';
-import '@carbon/ibmdotcom-styles/scss/ibm-dotcom-styles.scss';
+import '../styles/global.scss';
 
 import Altlang from '../components/altlang';
 import App from 'next/app';

@@ -13,6 +13,7 @@ import {
   CardSectionSimple,
 } from '@carbon/ibmdotcom-react';
 import { ArrowRight20 } from '@carbon/icons-react';
+import '../styles/learn.scss';
 import React from 'react';
 
 /**
@@ -40,7 +41,7 @@ const Learn = () => (
             breakpoint: 'md',
           },
         ],
-        defaultSrc: 'https://dummyimage.com/1056x480/ee5396/161616',
+        default: 'https://dummyimage.com/1056x480/ee5396/161616',
         alt: 'Image alt text',
       }}
     />
