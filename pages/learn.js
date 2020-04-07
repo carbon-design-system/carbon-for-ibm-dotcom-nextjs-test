@@ -41,7 +41,7 @@ const Learn = () => (
             breakpoint: 'md',
           },
         ],
-        default: 'https://dummyimage.com/1056x480/ee5396/161616',
+        defaultSrc: 'https://dummyimage.com/1056x480/ee5396/161616',
         alt: 'Image alt text',
       }}
     />
