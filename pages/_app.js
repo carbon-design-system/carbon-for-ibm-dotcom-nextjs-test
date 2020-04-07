@@ -18,15 +18,19 @@ const _defaultLang = {
 };
 
 /**
- * Sets the lang attribute for static deployments
- * @param {object} lang Lang object with cc and lc
+ * Gets the lang combination based on passed in query param object
+ * @param {object} router Router object
+ * @returns {*}
  * @private
  */
-function _setStaticLang(lang) {
-  if(typeof document !== 'undefined') {
-    const useLang = `${lang.lc}-${lang.cc}`;
-    document.getElementsByTagName("html")[0].setAttribute("lang", useLang);
-  }
+function _getLang(router) {
+
+  return router && router.query && router.query.lc
+    ? {
+      lc: router.query.lc,
+      cc: router.query.cc,
+    }
+    : _defaultLang;
 }
 
 /**
@@ -34,47 +38,33 @@ function _setStaticLang(lang) {
  */
 export default class IbmdotcomLibrary extends App {
   /**
-   * Loads in the initial query string parameters
-   *
-   * @param {object} props page props
-   * @param {object} props.ctx app context
-   * @returns {Promise<{pageProps}>} Returns the pageProps
-   */
-  static async getInitialProps({ctx}) {
-    const useLang =
-      ctx.query && ctx.query.lc
-        ? {
-          lc: ctx.query.lc,
-          cc: ctx.query.cc,
-        }
-        : _defaultLang;
-
-    _setStaticLang(useLang);
-
-    return {useLang, query: ctx.query};
-  }
-
-  /**
    * Renders the DotcomShell
    *
    * @returns {*} Page wrapper JSX
    */
   render() {
-    const {Component, useLang, pageProps} = this.props;
+    const {Component, pageProps, router} = this.props;
+    const useLang = _getLang(router);
     const reactVersion = packageJson.dependencies["@carbon/ibmdotcom-react"];
     const stylesVersion = packageJson.dependencies["@carbon/ibmdotcom-styles"];
     return (
       <>
         <Head>
-          <Altlang/>
           <link rel="icon" href="//www.ibm.com/favicon.ico"/>
 
+          <meta name="ibmdotcom.version.react" content={reactVersion} />
+          <meta name="ibmdotcom.version.styles" content={stylesVersion} />
+          <meta name="ibmdotcom.build.time" content={new Date().toISOString()} />
           <meta name="dcterms.date" content="2015-10-01"/>
           <meta name="dcterms.rights" content="© Copyright IBM Corp. 2020"/>
           <meta name="geo.country" content="US"/>
           <meta name="robots" content="index,follow" />
-          <meta name="ibmdotcom.version.react" content={reactVersion} />
-          <meta name="ibmdotcom.version.styles" content={stylesVersion} />
+          <Altlang/>
+          <script dangerouslySetInnerHTML={{ __html: `
+            var params = new URLSearchParams(window.location.search);
+            var lang = params.has('lc') ? params.get('lc') + '-' + params.get('cc') : 'en-US';
+            document.getElementsByTagName("html")[0].setAttribute("lang", lang);
+           `}} />
         </Head>
         <DotcomShell navigation="default" langCode={useLang}>
           <Component {...pageProps} />
