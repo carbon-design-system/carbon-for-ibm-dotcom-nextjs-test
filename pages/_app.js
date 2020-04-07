@@ -59,12 +59,13 @@ export default class IbmdotcomLibrary extends App {
           <meta name="dcterms.rights" content="© Copyright IBM Corp. 2020"/>
           <meta name="geo.country" content="US"/>
           <meta name="robots" content="index,follow" />
-          <Altlang/>
+
           <script dangerouslySetInnerHTML={{ __html: `
             var params = new URLSearchParams(window.location.search);
             var lang = params.has('lc') ? params.get('lc') + '-' + params.get('cc') : 'en-US';
             document.getElementsByTagName("html")[0].setAttribute("lang", lang);
            `}} />
+          <Altlang />
         </Head>
         <DotcomShell navigation="default" langCode={useLang}>
           <Component {...pageProps} />

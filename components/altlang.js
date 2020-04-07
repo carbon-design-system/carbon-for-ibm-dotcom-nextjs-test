@@ -2,6 +2,14 @@ import altlangs from './data/altlang.json';
 import React from 'react';
 
 /**
+ * Sets the root path of the alternative urls
+ *
+ * @type {string|string}
+ * @private
+ */
+const _rootPath = process.env.ROOT_PATH || '/';
+
+/**
  * Renders the list of altlang items
  *
  * @returns {Array} altlang elements
@@ -14,7 +22,7 @@ const _renderAltLangs = () => {
       <link
         rel="alternate"
         hrefLang={`${alt.lc}-${alt.cc}`}
-        href={`/?cc=${alt.cc}&lc=${alt.lc}`}
+        href={`${_rootPath}?cc=${alt.cc}&lc=${alt.lc}`}
       />
     );
   });
@@ -29,7 +37,7 @@ const _renderAltLangs = () => {
 const AltLangs = () => {
   return (
     <>
-      <link rel="alternate" hrefLang="x-default" href="/" />
+      <link rel="alternate" hrefLang="x-default" href={_rootPath} />
       {_renderAltLangs()}
     </>
   );
