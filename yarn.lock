@@ -1007,14 +1007,14 @@
     "@carbon/import-once" "^10.3.0"
     "@carbon/layout" "^10.8.1"
 
-"@carbon/ibmdotcom-react@^1.6.0-alpha.3240":
-  version "1.6.0-alpha.3240"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.6.0-alpha.3240.tgz#64a72d14b101dcac445fe1f60d93405510cb471f"
-  integrity sha512-TZdqTgLZ5mTj4Wb6dxlHbQBuJCh7V2eCRjLulxgjDRuec3PzTeESFnMA69JtdviFWHu72TgiCdjVT+ViAav9ig==
+"@carbon/ibmdotcom-react@^1.6.0-alpha.3352":
+  version "1.6.0-alpha.3352"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.6.0-alpha.3352.tgz#cb724d35fed1be2917c3f97d98d747b7b647c11f"
+  integrity sha512-riRrV04u+qh7c0aoKejhqa5xStkXSkx/6dLLZsv9V+NmBVm9Zxd4U1vRgeBHz1Jf+DKYmxmuqwFUR2MfTMV9xg==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@carbon/ibmdotcom-services" "1.5.1"
-    "@carbon/ibmdotcom-styles" "1.5.1"
+    "@carbon/ibmdotcom-styles" "1.6.0-alpha.3352+283b2f0"
     "@carbon/ibmdotcom-utilities" "1.5.1"
     autosuggest-highlight "^3.1.1"
     carbon-components "10.9.0"
@@ -1034,23 +1034,10 @@
     jsonp "^0.2.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-styles@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.5.1.tgz#fd1e338a563ef31899d568e9cc96f0d537813b5a"
-  integrity sha512-1Nv2EDmx+/vdr+gGYxDR+XO9ffKIhrjTrWch42mYXnOfRBapKArRRp8OhXwrIhIeiHggjY/cDk8uCgjtp59LOA==
-  dependencies:
-    "@carbon/grid" "^10.8.3"
-    "@carbon/import-once" "10.3.0"
-    "@carbon/layout" "10.7.3"
-    "@carbon/motion" "^10.5.2"
-    "@carbon/themes" "10.9.0"
-    "@carbon/type" "10.8.3"
-    carbon-components "10.9.0"
-
-"@carbon/ibmdotcom-styles@^1.6.0-alpha.3201":
-  version "1.6.0-alpha.3201"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.6.0-alpha.3201.tgz#d79f8bfc6434f76b68fe2665d32be7ec2cc1db83"
-  integrity sha512-56yQjfhO/7giqKYV6aI21mxyxlfcCJqQOi35w/ej4LmtX1CSKjojZRP0oXBub8Rmv+K+ABnCJhdZLFgpTWXN+g==
+"@carbon/ibmdotcom-styles@1.6.0-alpha.3352+283b2f0", "@carbon/ibmdotcom-styles@^1.6.0-alpha.3352":
+  version "1.6.0-alpha.3352"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.6.0-alpha.3352.tgz#1929ffe9d5a6a18afb7bb6031a8f092aba5f49e0"
+  integrity sha512-6NS5UKMqjRrB0dQnMSjZWgc1zpfej3W3Rrd9tqX9FiYgmmyxjsqpaWxk9vDrDXuSZOO0+1doORNQ/jpDTfP0FA==
   dependencies:
     "@carbon/grid" "^10.8.3"
     "@carbon/import-once" "10.3.0"

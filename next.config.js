@@ -22,7 +22,6 @@ const styleLoaders = [
       data: `
       $feature-flags: (
         ui-shell: true,
-        grid-columns-16: true,
       );
     `,
       sourceMap: true,
@@ -36,6 +35,7 @@ module.exports = withProgressBar(
       assetPrefix: '.',
       env: {
         CORS_PROXY: 'https://dds-proxy.mybluemix.net/',
+        ROOT_PATH: process.env.ROOT_PATH || '/',
       },
       sassLoaderOptions: {
         includePaths: [path.resolve(__dirname, 'node_modules')],
