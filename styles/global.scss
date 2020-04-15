@@ -1,9 +1,9 @@
-@import '@carbon/type/scss/font-face/mono';
-@import '@carbon/type/scss/font-face/sans';
+@import "@carbon/type/scss/font-face/mono";
+@import "@carbon/type/scss/font-face/sans";
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
 
-@import '@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell';
+@import "@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell";
 
 // Temporary missing imports for dotcom shell
-@import '@carbon/ibmdotcom-styles/scss/components/locale-modal/locale-modal';
+@import "@carbon/ibmdotcom-styles/scss/components/locale-modal/locale-modal";
