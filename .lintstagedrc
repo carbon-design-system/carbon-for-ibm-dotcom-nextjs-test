@@ -6,7 +6,7 @@
   ],
   "**/*.scss": [
     "prettier --write",
-    "stylelint '**/*.scss' --config stylelint-config-ibmdotcom",
+    "stylelint '**/*.scss' --config ./stylelint-config-ibmdotcom",
     "git add"
   ],
   "*.md": [
