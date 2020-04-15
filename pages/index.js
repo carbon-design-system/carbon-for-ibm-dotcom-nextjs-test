@@ -1,13 +1,14 @@
-import { CardSectionSimple } from '@carbon/ibmdotcom-react';
-import '../styles/landing.scss';
-import React from 'react';
+import "../styles/landing.scss";
+import { CardSectionSimple } from "@carbon/ibmdotcom-react";
+import React from "react";
 
 /**
  * Setting the .html extension between local development and static deployment
+ *
  * @type {string}
  * @private
  */
-const _htmlExtension = process.env.NODE_ENV !== 'production' ? '' : '.html';
+const _htmlExtension = process.env.NODE_ENV !== "production" ? "" : ".html";
 
 /**
  * Homepage
@@ -20,15 +21,15 @@ const Home = () => (
     theme="white"
     cards={[
       {
-        heading: 'Learn',
-        copy: ' ',
+        heading: "Learn",
+        copy: " ",
         cta: {
           href: `./learn${_htmlExtension}`,
         },
       },
       {
-        heading: 'More coming soon!',
-        copy: ' ',
+        heading: "More coming soon!",
+        copy: " ",
         cta: {
           href: `./learn${_htmlExtension}`,
         },
