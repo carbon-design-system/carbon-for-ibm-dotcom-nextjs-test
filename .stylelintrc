@@ -1,5 +1,5 @@
 {
   "extends": [
-    "./stylelint-config-ibmdotcom"
+    "./packages/stylelint-config-ibmdotcom"
   ]
 }
