@@ -5,8 +5,8 @@
   "description": "ESLint configuration for the IBM.com Library",
   "license": "Apache-2.0",
   "main": "index.js",
-  "repository": "https://github.com/carbon-design-system/ibm-dotcom-library",
-  "bugs": "https://github.com/carbon-design-system/ibm-dotcom-library/issues",
+  "repository": "https://github.com/carbon-design-system/ibm-dotcom-library-nextjs-test",
+  "bugs": "https://github.com/carbon-design-system/ibm-dotcom-library-nextjs-test/issues",
   "keywords": [
     "ibm",
     "carbon",
