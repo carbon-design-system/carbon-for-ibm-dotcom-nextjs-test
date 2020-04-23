@@ -7,3 +7,7 @@
 @import "@carbon/ibmdotcom-styles/scss/patterns/sub-patterns/link-list/index";
 @import "@carbon/ibmdotcom-styles/scss/patterns/sub-patterns/layout/layout";
 @import "@carbon/ibmdotcom-styles/scss/patterns/sections/leadspace/leadspace";
+
+.bx--content-section:not(:last-child) {
+  padding-bottom: 48px;
+}
