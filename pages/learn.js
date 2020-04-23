@@ -46,188 +46,183 @@ const Learn = () => (
       }}
     />
     <TableOfContents menuLabel="Jump to" theme="white" stickyOffset={48}>
-      <Layout nested={true} type="2-1" border={true}>
-        <div>
-          <a
-            name="content-block-mixed"
-            data-title="Content Block - Mixed Groups"
-          ></a>
-          <ContentBlockMixed
-            heading="Content Block - Mixed Groups"
-            copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
+      <a name="content-block-mixed" data-title="Content Block - Mixed Groups" />
+      <ContentBlockMixed
+        heading="Content Block - Mixed Groups"
+        copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
           Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
           nulla quis, *consequat* libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero."
-            cta={{
-              cta: {
-                href: "https://www.example.com",
-              },
-              style: "card",
-              type: "local",
-              copy: "Lorem ipsum dolor sit ametttt",
-            }}
-            items={[
+        cta={{
+          cta: {
+            href: "https://www.example.com",
+          },
+          style: "card",
+          type: "local",
+          copy: "Lorem ipsum dolor sit ametttt",
+        }}
+        items={[
+          {
+            type: "ContentGroupCards",
+            heading: "Content Group - with Cards",
+            items: [
               {
-                type: "ContentGroupCards",
-                heading: "Content Group - with Cards",
-                items: [
-                  {
-                    heading:
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    cta: {
-                      href: "https://www.example.com",
-                    },
-                  },
-                  {
-                    heading:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    cta: {
-                      href: "https://www.example.com",
-                    },
-                  },
-                  {
-                    heading:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    copy: "Lorem ipsum dolor sit amet",
-                    cta: {
-                      href: "https://www.example.com",
-                    },
-                  },
-                  {
-                    heading:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-                    cta: {
-                      href: "https://www.example.com",
-                    },
-                  },
-                ],
+                heading:
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                cta: {
+                  href: "https://www.example.com",
+                },
               },
               {
-                type: "ContentGroupPictograms",
-                heading: "Content Group - with Pictograms",
-                items: [
-                  {
-                    heading: "Aliquam condimentum interdum",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.",
-                    cta: {
-                      href: "https://www.example.com",
-                      type: "local",
-                      copy: "Lorem ipsum dolor",
-                    },
-                    pictogram: {
-                      src: Desktop,
-                      "aria-label": "Desktop",
-                    },
-                  },
-                  {
-                    heading: "Aliquam condimentum interdum",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.",
-                    cta: {
-                      href: "https://www.example.com",
-                      type: "local",
-                      copy: "Lorem ipsum dolor",
-                    },
-                    pictogram: {
-                      src: Pattern,
-                      "aria-label": "Pattern",
-                    },
-                  },
-                  {
-                    heading: "Aliquam condimentum interdum",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.",
-                    cta: {
-                      href: "https://www.example.com",
-                      type: "local",
-                      copy: "Lorem ipsum dolor",
-                    },
-                    pictogram: {
-                      src: Touch,
-                      "aria-label": "Touch",
-                    },
-                  },
-                ],
+                heading:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                cta: {
+                  href: "https://www.example.com",
+                },
               },
               {
-                type: "ContentGroupSimple",
-                mediaType: "image",
-                mediaData: {
-                  heading: "Lorem ipsum dolor sit amet.",
-                  image: {
-                    sources: [
-                      {
-                        src:
-                          "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
-                        breakpoint: 320,
-                      },
-                      {
-                        src:
-                          "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
-                        breakpoint: 400,
-                      },
-                      {
-                        src:
-                          "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
-                        breakpoint: 672,
-                      },
-                    ],
-                    alt: "Image alt text",
-                    defaultSrc:
+                heading:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                copy: "Lorem ipsum dolor sit amet",
+                cta: {
+                  href: "https://www.example.com",
+                },
+              },
+              {
+                heading:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+                cta: {
+                  href: "https://www.example.com",
+                },
+              },
+            ],
+          },
+          {
+            type: "ContentGroupPictograms",
+            heading: "Content Group - with Pictograms",
+            items: [
+              {
+                heading: "Aliquam condimentum interdum",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.",
+                cta: {
+                  href: "https://www.example.com",
+                  type: "local",
+                  copy: "Lorem ipsum dolor",
+                },
+                pictogram: {
+                  src: Desktop,
+                  "aria-label": "Desktop",
+                },
+              },
+              {
+                heading: "Aliquam condimentum interdum",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.",
+                cta: {
+                  href: "https://www.example.com",
+                  type: "local",
+                  copy: "Lorem ipsum dolor",
+                },
+                pictogram: {
+                  src: Pattern,
+                  "aria-label": "Pattern",
+                },
+              },
+              {
+                heading: "Aliquam condimentum interdum",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.",
+                cta: {
+                  href: "https://www.example.com",
+                  type: "local",
+                  copy: "Lorem ipsum dolor",
+                },
+                pictogram: {
+                  src: Touch,
+                  "aria-label": "Touch",
+                },
+              },
+            ],
+          },
+          {
+            type: "ContentGroupSimple",
+            mediaType: "image",
+            mediaData: {
+              heading: "Lorem ipsum dolor sit amet.",
+              image: {
+                sources: [
+                  {
+                    src:
+                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                    breakpoint: 320,
+                  },
+                  {
+                    src:
+                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                    breakpoint: 400,
+                  },
+                  {
+                    src:
                       "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
-                  },
-                },
-                heading: "Content Group - Simple",
-                items: [
-                  {
-                    heading: "Lorem ipsum dolor sit amet.",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.",
-                  },
-                  {
-                    heading: "Lorem ipsum dolor sit amet.",
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.",
+                    breakpoint: 672,
                   },
                 ],
+                alt: "Image alt text",
+                defaultSrc:
+                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
               },
-            ]}
-          />
-        </div>
-        <div>
-          <LinkList
-            heading="Link List"
-            items={[
+            },
+            heading: "Content Group - Simple",
+            items: [
               {
-                type: "local",
-                copy: "Containerization A Complete Guide",
-                cta: {
-                  href: "https://ibm.com",
-                },
+                heading: "Lorem ipsum dolor sit amet.",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.",
               },
               {
-                type: "local",
-                copy: "Why should you use microservices and containers",
-                cta: {
-                  href: "https://example.com",
-                },
+                heading: "Lorem ipsum dolor sit amet.",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.",
               },
-            ]}
-          />
-        </div>
-      </Layout>
+            ],
+          },
+        ]}
+        aside={{
+          items: (
+            <LinkList
+              heading="Tutorials"
+              items={[
+                {
+                  type: "local",
+                  copy: "Containerization A Complete Guide",
+                  cta: {
+                    href: "https://ibm.com",
+                  },
+                },
+                {
+                  type: "external",
+                  copy: "Why should you use microservices and containers",
+                  cta: {
+                    href: "https://ibm.com",
+                  },
+                },
+              ]}
+            />
+          ),
+          border: false,
+        }}
+      />
       <Layout nested={true} type="2-1" border={true}>
         <div>
           <a
             name="content-block-segmented"
             data-title="Content Block - Segmented"
-          ></a>
+          />
           <ContentBlockSegmented
             copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
           Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
@@ -311,10 +306,7 @@ const Learn = () => (
       </Layout>
       <Layout nested={true} type="2-1" border={true}>
         <div>
-          <a
-            name="content-block-simple"
-            data-title="Content Block - Simple"
-          ></a>
+          <a name="content-block-simple" data-title="Content Block - Simple" />
           <ContentBlockSimple
             copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
           Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
