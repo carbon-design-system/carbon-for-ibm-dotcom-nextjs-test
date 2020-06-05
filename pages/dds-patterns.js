@@ -2,13 +2,15 @@
 import "../styles/dds.scss";
 
 import {
+  CalloutWithMedia,
   ContentBlockCards,
   ContentBlockSegmented,
-  ContentBlockSimple,
   ContentGroupHorizontal,
+  CTASection,
+  Layout,
+  LeadSpaceBlock,
+  LogoGrid,
   FeatureCard,
-  HorizontalRule,
-  LinkList,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
@@ -23,55 +25,64 @@ import React from "react";
 const dds = () => (
   <>
     <TableOfContents>
-      <a name="section-1" data-title="Section - 1" />
-      <ContentBlockSegmented
-        heading="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        copy="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit cursus risus at ultrices mi tempus imperdiet. Ipsum suspendisse ultrices gravida dictum fusce ut. "
-        mediaType="video"
-        mediaData={{
-          videoId: "0_uka1msg4",
-          showCaption: true,
-        }}
-        items={[
-          {
-            heading: "Lorem ipsum dolor sit amet.",
-            copy: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.
-      
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.`,
-          },
-        ]}
-      />
-      <LinkList
-        heading="Ullamcorper sit amet risus nullam eget."
-        style="vertical-end"
-        items={[
-          {
-            type: "local",
-            copy: "Rutrum quisque non tellus orci ac",
-            cta: {
-              href: "https://ibm.com",
-            },
-          },
-          {
-            type: "local",
-            copy: "Rutrum quisque non tellus orci ac",
-            cta: {
-              href: "https://ibm.com",
-            },
-          },
-          {
-            type: "local",
-            copy: "Rutrum quisque non tellus orci ac",
-            cta: {
-              href: "https://ibm.com",
-            },
-          },
-        ]}
-      />
+      <a name="section-1" data-title="Lorem ipsum dolor sit amet" />
+      <Layout type="2-1">
+        <div>
+          <LeadSpaceBlock
+            title="Lorem ipsum dolor sit amet"
+            copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            mediaType="video"
+            mediaData={{
+              videoId: "0_uka1msg4",
+              showDescription: true,
+            }}
+            items={{
+              heading: "Featured products",
+              items: [
+                {
+                  type: "local",
+                  copy: "IBM Cloud Continuous Delivery",
+                  cta: {
+                    href: "https://ibm.com",
+                  },
+                },
+                {
+                  type: "local",
+                  copy: "UrbanCode",
+                  cta: {
+                    href: "https://ibm.com",
+                  },
+                },
+                {
+                  type: "local",
+                  copy: "View all products",
+                  cta: {
+                    href: "https://ibm.com",
+                  },
+                },
+              ],
+            }}
+            cta={{
+              style: "button",
+              type: "local",
+              buttons: [
+                {
+                  type: "local",
+                  copy: "Excepteur sint occaecat",
+                  href: "https://example.com/",
+                },
+              ],
+            }}
+          />
+        </div>
+        <></>
+      </Layout>
 
-      <HorizontalRule />
-
-      <a name="section-2" data-title="Section - 2" />
+      <a
+        name="section-2"
+        data-title="Pharetra pharetra massa massa ultricies mi quis."
+      />
       <ContentBlockSegmented
         heading="Pharetra pharetra massa massa ultricies mi quis."
         items={[
@@ -125,9 +136,12 @@ const dds = () => (
         }}
       />
 
-      <a name="section-3" data-title="Section - 3" />
+      <a
+        name="section-3"
+        data-title="Elementum nibh tellus molestie nunc non"
+      />
       <ContentBlockSegmented
-        heading="Pharetra pharetra massa massa ultricies mi quis."
+        heading="Elementum nibh tellus molestie nunc non."
         items={[
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
@@ -194,75 +208,31 @@ const dds = () => (
               },
             },
           },
-          {
-            heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
-            image: {
-              heading: "Mauris iaculis eget dolor nec hendrerit.",
-              image: {
-                sources: [
-                  {
-                    src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
-                    breakpoint: 320,
-                  },
-                  {
-                    src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
-                    breakpoint: 400,
-                  },
-                  {
-                    src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
-                    breakpoint: 672,
-                  },
-                ],
-                alt: "Image alt text",
-                defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
-              },
-            },
-            cta: {
-              type: "local",
-              copy: "Lorem Ipsum dolor sit",
-              href: "https://example.com",
-            },
-          },
         ]}
         cta={{
-          cta: {
-            href: "https://www.example.com",
-            style: "card",
-            type: "local",
-            copy: "Lorem ipsum dolor",
+          style: "card",
+          type: "video",
+          media: {
+            src: "0_uka1msg4",
+            type: "video",
           },
         }}
         mediaType="image"
       />
 
-      <ContentBlockSimple
-        heading="Curabitur malesuada varius mi eu posuere"
-        copy="Lorem ipsum *dolor* sit amet, consectetur adipiscing elit. Aenean et ultricies est.
-            Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales
-            nulla quis, *consequat* libero. Here are
-            some common categories:
-      
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
-      
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
-            "
-        inverse={true}
+      <CalloutWithMedia
+        heading="Mauris ultrices eros in cursus"
+        copy="Porttitor eget dolor morbi non arcu. Et ligula ullamcorper malesuada proin libero nunc consequat. In est ante in nibh mauris cursus mattis. Turpis tincidunt id aliquet risus feugiat in. Vel facilisis volutpat est velit egestas dui."
         mediaType="video"
         mediaData={{
-          videoId: "0_uka1msg4",
-          showCaption: true,
+          src: "0_uka1msg4",
+          type: "video",
         }}
       />
 
-      <a name="section-4" data-title="Section - 4" />
+      <a name="section-4" data-title="Tincidunt ornare massa" />
       <ContentGroupHorizontal
-        heading="Aliquam condimentum"
+        heading="Tincidunt ornare massa"
         items={[
           {
             eyebrow: "Lorem ipsum",
@@ -307,8 +277,52 @@ const dds = () => (
         ]}
       />
 
-      <HorizontalRule />
-      <a name="section-5" data-title="Section - 5" />
+      <a name="section-5" data-title="Lobortis elementum nibh tellus" />
+      <LogoGrid
+        heading="Lobortis elementum nibh tellus"
+        logosGroup={[
+          {
+            title: "Company A",
+            imgSrc: "https://dummyimage.com/140x140",
+            altText: "Image alt text",
+            href: "http://example.com/",
+          },
+          {
+            title: "Company B",
+            imgSrc: "https://dummyimage.com/140x140",
+            altText: "Image alt text",
+            href: "http://example.com/",
+          },
+          {
+            title: "Company C",
+            imgSrc: "https://dummyimage.com/140x140",
+            altText: "Image alt text",
+            href: "http://example.com/",
+          },
+          {
+            title: "Company D",
+            imgSrc: "https://dummyimage.com/140x140",
+            altText: "Image alt text",
+            href: "http://example.com/",
+          },
+          {
+            title: "Company E",
+            imgSrc: "https://dummyimage.com/140x140",
+            altText: "Image alt text",
+            href: "http://example.com/",
+          },
+          {
+            title: "Company F",
+            imgSrc: "https://dummyimage.com/140x140",
+            altText: "Image alt text",
+            href: "http://example.com/",
+          },
+        ]}
+        ctaCopy="Amet justo donec"
+        ctaHref="https://www.example.com"
+      />
+
+      <a name="section-6" data-title="Aliquam condimentum interdum" />
       <ContentBlockCards
         heading="Aliquam condimentum interdum"
         cards={[
@@ -351,6 +365,45 @@ const dds = () => (
         ]}
       />
     </TableOfContents>
+    <CTASection
+      theme="g10"
+      cta={{
+        style: "button",
+        type: "local",
+        buttons: [
+          {
+            type: "local",
+            copy: ["Contact sales"],
+          },
+        ],
+      }}
+      items={[
+        {
+          heading: "Get connected",
+          copy: `
+            IBM DevOps partners have a wide range of expertise.
+            Find one to build the right solution for you.
+            `,
+          cta: {
+            copy: "Find a partner",
+            type: "local",
+            href: "https://example.com/",
+          },
+        },
+        {
+          heading: "Learn how",
+          copy:
+            "Dig into more self-directed learning about DevOps methodologies.",
+          cta: {
+            copy: "Browse tutorials",
+            type: "local",
+            href: "https://example.com/",
+          },
+        },
+      ]}
+      heading="Take the next step"
+      copy="Want to discuss your options with a DevOps expert? Contact our sales team to evaluate your needs."
+    />
   </>
 );
 
