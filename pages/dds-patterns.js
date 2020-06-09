@@ -2,6 +2,7 @@
 import "../styles/dds.scss";
 
 import {
+  CalloutQuote,
   CalloutWithMedia,
   ContentBlockCards,
   ContentBlockSegmented,
@@ -211,6 +212,7 @@ const dds = () => (
         ]}
         cta={{
           style: "card",
+          disableImage: true,
           type: "video",
           media: {
             src: "0_uka1msg4",
@@ -363,6 +365,21 @@ const dds = () => (
             },
           },
         ]}
+      />
+      <a name="section-7" data-title="Duis aute irure dolor in reprehenderit" />
+      <CalloutQuote
+        quote={{
+          copy: "Duis aute irure dolor in reprehenderit",
+          source: {
+            heading: "Lorem ipsum",
+            copy: "dolor sit amet",
+          },
+          cta: {
+            copy: "Link with Icon",
+            type: "local",
+            href: "https://example.com",
+          },
+        }}
       />
     </TableOfContents>
     <CTASection
