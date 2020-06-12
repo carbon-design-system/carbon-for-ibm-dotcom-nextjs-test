@@ -11,7 +11,7 @@ import {
   Layout,
   LeadSpaceBlock,
   LogoGrid,
-  FeatureCard,
+  FeatureCardBlockLarge,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
@@ -25,14 +25,14 @@ import React from "react";
  */
 const dds = () => (
   <>
-    <TableOfContents>
+    <TableOfContents menuLabel="Jump to" theme="white">
       <a name="section-1" data-title="Lorem ipsum dolor sit amet" />
       <Layout type="2-1">
         <div>
           <LeadSpaceBlock
             title="Lorem ipsum dolor sit amet"
             copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
             mediaType="video"
             mediaData={{
               videoId: "0_uka1msg4",
@@ -119,21 +119,19 @@ const dds = () => (
           },
         ]}
       />
-      <FeatureCard
-        card={{
-          heading: "A scelerisque purus semper eget duis at tellus.",
-          copy:
-            "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
-          cta: {
-            href: "https://example.com",
-            icon: {
-              src: ArrowRight20,
-            },
+      <FeatureCardBlockLarge
+        eyebrow="scelerisque purus"
+        heading="Elementum nibh tellus molestie nunc?"
+        copy="Habitant morbi tristique senectus et netus et malesuada fames. Habitant morbi tristique."
+        cta={{
+          href: "https://example.com",
+          icon: {
+            src: ArrowRight20,
           },
-          image: {
-            defaultSrc: "https://dummyimage.com/600x600/ee5396/161616&text=1:1",
-            alt: "Image alt text",
-          },
+        }}
+        image={{
+          defaultSrc: "https://dummyimage.com/600x600/ee5396/161616&text=1:1",
+          alt: "Image alt text",
         }}
       />
 
