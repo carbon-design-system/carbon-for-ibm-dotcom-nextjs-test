@@ -28,6 +28,13 @@ const Home = () => (
         },
       },
       {
+        heading: "DDS Patterns",
+        copy: " ",
+        cta: {
+          href: `./dds-patterns${_htmlExtension}`,
+        },
+      },
+      {
         heading: "More coming soon!",
         copy: " ",
         cta: {
