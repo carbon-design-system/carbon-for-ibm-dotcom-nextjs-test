@@ -195,6 +195,7 @@ const Learn = () => (
         aside={{
           items: (
             <LinkList
+              style="card"
               heading="Tutorials"
               items={[
                 {
@@ -349,7 +350,6 @@ const Learn = () => (
               },
               style: "card",
               type: "external",
-              heading: "Lorem ipsum dolor sit amet",
               copy: "Lorem ipsum dolor sit ametttt",
             }}
           />
