@@ -225,8 +225,8 @@ const dds = () => (
         copy="Porttitor eget dolor morbi non arcu. Et ligula ullamcorper malesuada proin libero nunc consequat. In est ante in nibh mauris cursus mattis. Turpis tincidunt id aliquet risus feugiat in. Vel facilisis volutpat est velit egestas dui."
         mediaType="video"
         mediaData={{
-          src: "0_yxm3pstm",
-          type: "video",
+          videoId: "1_v1z55w0b",
+          showCaption: true,
         }}
       />
 
