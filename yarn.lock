@@ -977,14 +977,14 @@
     "@carbon/import-once" "^10.3.0"
     "@carbon/layout" "^10.9.2"
 
-"@carbon/ibmdotcom-react@latest":
-  version "1.8.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.8.0-rc.3.tgz#76c052e5cb2bcf1a0ca3b50863f4aedf3ae31f56"
-  integrity sha512-YhRjLOGggGttlIvTIqT/tz2ubpdFy53unUFGDqoSBeGxzBdh8ssZ4+kJ1uoCw1Glo23RaAkEyGhNnSmFbfPrBg==
+"@carbon/ibmdotcom-react@^1.8.0-rc.4":
+  version "1.8.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.8.0-rc.4.tgz#e679235845b83abf4cf61b1ca4c722691c6c850e"
+  integrity sha512-ZlbFIdKQ2b5SKC6PuI11C4enD54WkiLEt2Sk4JrVkf8YV3EdQyxKstfogC8p+7d3iHBrGixGMg9yh5PCA+yIOg==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@carbon/ibmdotcom-services" "1.8.0-rc.2"
-    "@carbon/ibmdotcom-styles" "1.8.0-rc.2"
+    "@carbon/ibmdotcom-styles" "1.8.0-rc.3"
     "@carbon/ibmdotcom-utilities" "1.8.0-rc.2"
     autosuggest-highlight "^3.1.1"
     carbon-components "10.11.2"
@@ -1004,10 +1004,10 @@
     jsonp "^0.2.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-styles@1.8.0-rc.2", "@carbon/ibmdotcom-styles@latest":
-  version "1.8.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.8.0-rc.2.tgz#a1937e00cf71ce66b77e86ca95544a8c3e716169"
-  integrity sha512-vJRcjEKufQjzWC1jttZ++gBTWIJvGRhwkuq0cbrR8o6gZKmzSj7U7TYk9NrgwzftKQeG2NeBl+KsVcnryZ74iw==
+"@carbon/ibmdotcom-styles@1.8.0-rc.3", "@carbon/ibmdotcom-styles@^1.8.0-rc.3":
+  version "1.8.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.8.0-rc.3.tgz#f64b71ddf1fc157f0dba3f3776a596ba98c444a9"
+  integrity sha512-gmCk82pK1yQ42/44VCQl4L/piCdzY96S0Lyck24TvNKS61nLpKulvWRMIl+Z3ATdL3NuOuoukNJLNqObyOaH8g==
   dependencies:
     "@carbon/grid" "10.10.2"
     "@carbon/import-once" "10.3.0"

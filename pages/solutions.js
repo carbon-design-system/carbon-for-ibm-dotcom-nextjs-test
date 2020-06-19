@@ -26,11 +26,11 @@ import React from "react";
 const dds = () => (
   <>
     <TableOfContents menuLabel="Jump to" theme="white">
-      <a name="section-1" data-title="Lorem ipsum dolor sit amet" />
+      <a name="section-1" data-title="Lead Space Block" />
       <Layout type="2-1">
         <div>
           <LeadSpaceBlock
-            title="Lorem ipsum dolor sit amet"
+            title="Lead Space Block"
             copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
             mediaType="video"
@@ -80,12 +80,9 @@ const dds = () => (
         <></>
       </Layout>
 
-      <a
-        name="section-2"
-        data-title="Pharetra pharetra massa massa ultricies mi quis."
-      />
+      <a name="section-2" data-title="Content Block Segmented" />
       <ContentBlockSegmented
-        heading="Pharetra pharetra massa massa ultricies mi quis."
+        heading="Content Block Segmented"
         items={[
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
@@ -121,7 +118,7 @@ const dds = () => (
       />
       <FeatureCardBlockLarge
         eyebrow="scelerisque purus"
-        heading="Elementum nibh tellus molestie nunc?"
+        heading="Feature Card Block Large"
         copy="Habitant morbi tristique senectus et netus et malesuada fames. Habitant morbi tristique."
         cta={{
           href: "https://example.com",
@@ -135,12 +132,9 @@ const dds = () => (
         }}
       />
 
-      <a
-        name="section-3"
-        data-title="Elementum nibh tellus molestie nunc non"
-      />
+      <a name="section-3" data-title="Content Block Segmented (2)" />
       <ContentBlockSegmented
-        heading="Elementum nibh tellus molestie nunc non."
+        heading="Content Block Segmented (2)"
         items={[
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
@@ -221,7 +215,7 @@ const dds = () => (
       />
 
       <CalloutWithMedia
-        heading="Mauris ultrices eros in cursus"
+        heading="Callout With Media"
         copy="Porttitor eget dolor morbi non arcu. Et ligula ullamcorper malesuada proin libero nunc consequat. In est ante in nibh mauris cursus mattis. Turpis tincidunt id aliquet risus feugiat in. Vel facilisis volutpat est velit egestas dui."
         mediaType="video"
         mediaData={{
@@ -230,9 +224,9 @@ const dds = () => (
         }}
       />
 
-      <a name="section-4" data-title="Tincidunt ornare massa" />
+      <a name="section-4" data-title="Content Group Horizontal" />
       <ContentGroupHorizontal
-        heading="Tincidunt ornare massa"
+        heading="Content Group Horizontal"
         items={[
           {
             eyebrow: "Lorem ipsum",
@@ -277,9 +271,9 @@ const dds = () => (
         ]}
       />
 
-      <a name="section-5" data-title="Lobortis elementum nibh tellus" />
+      <a name="section-5" data-title="Logo Grid" />
       <LogoGrid
-        heading="Lobortis elementum nibh tellus"
+        heading="Logo Grid"
         logosGroup={[
           {
             title: "Company A",
@@ -322,9 +316,9 @@ const dds = () => (
         ctaHref="https://www.example.com"
       />
 
-      <a name="section-6" data-title="Aliquam condimentum interdum" />
+      <a name="section-6" data-title="Content Block Cards" />
       <ContentBlockCards
-        heading="Aliquam condimentum interdum"
+        heading="Content Block Cards"
         cards={[
           {
             image: {
@@ -364,10 +358,10 @@ const dds = () => (
           },
         ]}
       />
-      <a name="section-7" data-title="Duis aute irure dolor in reprehenderit" />
+      <a name="section-7" data-title="Callout Quote" />
       <CalloutQuote
         quote={{
-          copy: "Duis aute irure dolor in reprehenderit",
+          copy: "Callout Quote: Duis aute irure dolor in reprehenderit",
           source: {
             heading: "Lorem ipsum",
             copy: "dolor sit amet",
@@ -416,7 +410,7 @@ const dds = () => (
           },
         },
       ]}
-      heading="Take the next step"
+      heading="CTA Section"
       copy="Want to discuss your options with a DevOps expert? Contact our sales team to evaluate your needs."
     />
   </>

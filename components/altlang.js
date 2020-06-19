@@ -1,5 +1,5 @@
-import altlangs from './data/altlang.json';
-import React from 'react';
+import altlangs from "./data/altlang.json";
+import React from "react";
 
 /**
  * Sets the root path of the alternative urls
@@ -7,7 +7,7 @@ import React from 'react';
  * @type {string|string}
  * @private
  */
-const _rootPath = process.env.ROOT_PATH || '/';
+const _rootPath = process.env.ROOT_PATH || "/";
 
 /**
  * Renders the list of altlang items
@@ -17,9 +17,10 @@ const _rootPath = process.env.ROOT_PATH || '/';
  */
 const _renderAltLangs = () => {
   let langs = [];
-  altlangs.forEach(alt => {
+  altlangs.forEach((alt, i) => {
     langs.push(
       <link
+        key={i}
         rel="alternate"
         hrefLang={`${alt.lc}-${alt.cc}`}
         href={`${_rootPath}?cc=${alt.cc}&lc=${alt.lc}`}
