@@ -75,7 +75,14 @@ export default class IbmdotcomLibrary extends App {
           />
           <Altlang />
         </Head>
-        <DotcomShell navigation="default" langCode={useLang}>
+        <DotcomShell
+          mastheadProps={{
+            navigation: "default",
+          }}
+          footerProps={{
+            langCode: useLang,
+          }}
+        >
           <Component {...pageProps} />
         </DotcomShell>
         <script src="//1.www.s81c.com/common/stats/ibm-common.js"></script>
