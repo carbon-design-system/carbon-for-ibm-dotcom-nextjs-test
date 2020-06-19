@@ -37,6 +37,8 @@ module.exports = withProgressBar(
       env: {
         CORS_PROXY: process.env.CORS_PROXY || "",
         ROOT_PATH: process.env.ROOT_PATH || "/",
+        KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
+        KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
       },
       sassLoaderOptions: {
         includePaths: [path.resolve(__dirname, "node_modules")],

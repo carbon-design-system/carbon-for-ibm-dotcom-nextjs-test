@@ -28,10 +28,10 @@ const Home = () => (
         },
       },
       {
-        heading: "DDS Patterns",
+        heading: "Solutions",
         copy: " ",
         cta: {
-          href: `./dds-patterns${_htmlExtension}`,
+          href: `./solutions${_htmlExtension}`,
         },
       },
       {

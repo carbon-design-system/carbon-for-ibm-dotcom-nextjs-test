@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
-import "../styles/dds.scss";
+import "../styles/solutions.scss";
 
 import {
   CalloutQuote,
@@ -213,7 +213,7 @@ const dds = () => (
           disableImage: true,
           type: "video",
           media: {
-            src: "0_uka1msg4",
+            src: "1_sf5ovm7u",
             type: "video",
           },
         }}
@@ -225,8 +225,8 @@ const dds = () => (
         copy="Porttitor eget dolor morbi non arcu. Et ligula ullamcorper malesuada proin libero nunc consequat. In est ante in nibh mauris cursus mattis. Turpis tincidunt id aliquet risus feugiat in. Vel facilisis volutpat est velit egestas dui."
         mediaType="video"
         mediaData={{
-          src: "0_uka1msg4",
-          type: "video",
+          videoId: "1_v1z55w0b",
+          showCaption: true,
         }}
       />
 
