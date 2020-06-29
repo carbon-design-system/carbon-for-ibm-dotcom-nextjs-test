@@ -2,6 +2,7 @@ require("dotenv").config();
 const path = require("path");
 const withCSS = require("@zeit/next-css");
 const withSass = require("@zeit/next-sass");
+const WebpackBar = require("webpackbar");
 
 const styleLoaders = [
   {
@@ -15,19 +16,22 @@ const styleLoaders = [
       },
     },
   },
-  {
-    loader: "sass-loader",
-    options: {
-      includePaths: [path.resolve(__dirname, "node_modules")],
-      data: `
-      $feature-flags: (
-        ui-shell: true,
-      );
-    `,
-      sourceMap: true,
-    },
-  },
 ];
+
+const sassLoader = {
+  loader: "sass-loader",
+  options: {
+    includePaths: [path.resolve(__dirname, "node_modules")],
+    sourceMap: process.env.NODE_ENV !== "production",
+  },
+};
+
+const fastSassLoader = {
+  loader: "fast-sass-loader",
+  options: {
+    includePaths: [path.resolve(__dirname, "node_modules")],
+  },
+};
 
 module.exports = withSass(
   withCSS({
@@ -45,8 +49,19 @@ module.exports = withSass(
       config.module.rules.push({
         test: /\.scss$/,
         sideEffects: true,
-        use: [...styleLoaders],
+        use: [
+          ...styleLoaders,
+          process.env.NODE_ENV === "production" ? sassLoader : fastSassLoader,
+        ],
       });
+
+      config.plugins.push(
+        new WebpackBar({
+          fancy: true,
+          profile: true,
+          basic: false,
+        })
+      );
 
       return config;
     },
