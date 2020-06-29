@@ -2,7 +2,6 @@ require("dotenv").config();
 const path = require("path");
 const withCSS = require("@zeit/next-css");
 const withSass = require("@zeit/next-sass");
-const withProgressBar = require("next-progressbar");
 
 const styleLoaders = [
   {
@@ -30,28 +29,26 @@ const styleLoaders = [
   },
 ];
 
-module.exports = withProgressBar(
-  withSass(
-    withCSS({
-      assetPrefix: ".",
-      env: {
-        CORS_PROXY: process.env.CORS_PROXY || "",
-        ROOT_PATH: process.env.ROOT_PATH || "/",
-        KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
-        KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
-      },
-      sassLoaderOptions: {
-        includePaths: [path.resolve(__dirname, "node_modules")],
-      },
-      webpack: (config) => {
-        config.module.rules.push({
-          test: /\.scss$/,
-          sideEffects: true,
-          use: [...styleLoaders],
-        });
+module.exports = withSass(
+  withCSS({
+    assetPrefix: ".",
+    env: {
+      CORS_PROXY: process.env.CORS_PROXY || "",
+      ROOT_PATH: process.env.ROOT_PATH || "/",
+      KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
+      KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
+    },
+    sassLoaderOptions: {
+      includePaths: [path.resolve(__dirname, "node_modules")],
+    },
+    webpack: (config) => {
+      config.module.rules.push({
+        test: /\.scss$/,
+        sideEffects: true,
+        use: [...styleLoaders],
+      });
 
-        return config;
-      },
-    })
-  )
+      return config;
+    },
+  })
 );
