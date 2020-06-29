@@ -1,6 +1,7 @@
 {
   "**/*.js": [
     "prettier --write",
+    "eslint components",
     "eslint pages",
     "git add"
   ],
