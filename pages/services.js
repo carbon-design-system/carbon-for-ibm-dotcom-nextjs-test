@@ -9,6 +9,7 @@ import {
   TableOfContents,
   ContentBlockSegmented,
   ContentBlockMedia,
+  CalloutWithMedia,
   Layout,
 } from "@carbon/ibmdotcom-react";
 
@@ -162,6 +163,15 @@ const Services = () => (
 
         <> </>
       </Layout>
+      <CalloutWithMedia
+        copy="CalloutWithMedia copy"
+        heading="CalloutWithMedia heading"
+        mediaType="video"
+        mediaData={{
+          videoId: "0_uka1msg4",
+          showCaption: true,
+        }}
+      />
     </TableOfContents>
   </>
 );
