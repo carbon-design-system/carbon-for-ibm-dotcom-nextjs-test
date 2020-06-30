@@ -7,10 +7,12 @@ import { ArrowRight20 } from "@carbon/icons-react";
 import {
   LeadSpace,
   TableOfContents,
+  ContentBlockCards,
   ContentBlockSegmented,
   ContentBlockMedia,
   ContentGroupHorizontal,
   CalloutWithMedia,
+  CTASection,
   Layout,
   LinkList,
 } from "@carbon/ibmdotcom-react";
@@ -168,7 +170,7 @@ const Services = () => (
               {
                 heading: "heading link",
                 type: "local",
-                copy: "copy link",
+                copy: "Lorem ipsum",
                 cta: {
                   href: "https://www.ibm.com/services",
                 },
@@ -180,17 +182,20 @@ const Services = () => (
         <> </>
       </Layout>
       <CalloutWithMedia
-        copy="CalloutWithMedia copy"
-        heading="CalloutWithMedia heading"
+        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        heading="Callout With Media heading"
         mediaType="video"
         mediaData={{
           videoId: "0_uka1msg4",
           showCaption: true,
         }}
       />
-      <a name="content-group-card" data-title="Content Group Cards" />
+      <a
+        name="content-group-horizontal"
+        data-title="Content Group Horizontal"
+      />
       <ContentGroupHorizontal
-        heading="Fera"
+        heading="Content Group Horizontal"
         items={[
           {
             eyebrow: "Lorem ipsum",
@@ -207,10 +212,111 @@ const Services = () => (
                   },
                 },
                 {
-                  type: "external",
+                  type: "video",
                   copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Link text",
                   cta: {
                     href: "https://example.com",
+                  },
+                },
+                {
+                  type: "video",
+                  copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Link text",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "video",
+                  copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Link text",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "video",
+                  copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Link text",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "video",
+                  copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
                   },
                 },
               ],
@@ -218,7 +324,94 @@ const Services = () => (
           },
         ]}
       />
+
+      <a name="content-block-card" data-title="Content Block Cards" />
+      <ContentBlockCards
+        cards={[
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/792x1056/ee5396/161616%26text=3:4",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x1056/ee5396/161616%26text=1:1",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x528/ee5396/161616%26text=2:1",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x594/ee5396/161616%26text=16:9",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading:
+              "Lorem ipsum dolor sit amet, consectetur adip possib illo inventore veritatis",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+        ]}
+      />
     </TableOfContents>
+    <CTASection
+      theme="g10"
+      cta={{
+        style: "button",
+        type: "local",
+        buttons: [
+          {
+            type: "local",
+            copy: ["Contact sales"],
+          },
+          {
+            type: "local",
+            copy: ["Contact sales"],
+          },
+        ],
+      }}
+      items={[{}]}
+      heading="CTA Section"
+      copy="Want to discuss your options with a DevOps expert? Contact our sales team to evaluate your needs."
+    />
   </>
 );
 export default Services;
