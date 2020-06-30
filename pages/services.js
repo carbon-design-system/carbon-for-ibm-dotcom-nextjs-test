@@ -9,8 +9,10 @@ import {
   TableOfContents,
   ContentBlockSegmented,
   ContentBlockMedia,
+  ContentGroupHorizontal,
   CalloutWithMedia,
   Layout,
+  LinkList,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -159,6 +161,20 @@ const Services = () => (
               },
             ]}
           />
+          <LinkList
+            heading="LinkList heading"
+            style="vertical-end"
+            items={[
+              {
+                heading: "heading link",
+                type: "local",
+                copy: "copy link",
+                cta: {
+                  href: "https://www.ibm.com/services",
+                },
+              },
+            ]}
+          />
         </div>
 
         <> </>
@@ -171,6 +187,36 @@ const Services = () => (
           videoId: "0_uka1msg4",
           showCaption: true,
         }}
+      />
+      <a name="content-group-card" data-title="Content Group Cards" />
+      <ContentGroupHorizontal
+        heading="Fera"
+        items={[
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Link text",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "external",
+                  copy: "External link text",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+        ]}
       />
     </TableOfContents>
   </>
