@@ -35,6 +35,13 @@ const Home = () => (
         },
       },
       {
+        heading: "Services",
+        copy: " ",
+        cta: {
+          href: `./services${_htmlExtension}`,
+        },
+      },
+      {
         heading: "More coming soon!",
         copy: " ",
         cta: {
