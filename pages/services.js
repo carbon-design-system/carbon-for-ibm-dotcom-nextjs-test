@@ -8,6 +8,7 @@ import {
   LeadSpace,
   TableOfContents,
   ContentBlockSegmented,
+  ContentGroupHorizontal,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -90,6 +91,123 @@ const Services = () => (
 
             
             — Donec quis pretium odio, in dignissim sapien.`,
+          },
+        ]}
+      />
+      <a
+        name="content-group-horizontal"
+        data-title="Content Group Horizontal"
+      />
+      <ContentGroupHorizontal
+        heading="Content Group Horizontal"
+        items={[
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "video",
+                  copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum dolor sit amet",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "local",
+                  copy:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum dolor",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "download",
+                  copy: "Lorem ipsum dolor sit amet",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
           },
         ]}
       />
