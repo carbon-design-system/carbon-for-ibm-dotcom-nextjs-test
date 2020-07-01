@@ -8,6 +8,7 @@ import {
   LeadSpace,
   TableOfContents,
   ContentBlockSegmented,
+  CTASection,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -94,6 +95,28 @@ const Services = () => (
         ]}
       />
     </TableOfContents>
+
+    <CTASection
+      className="bx--no-gutter"
+      theme="g10"
+      cta={{
+        style: "button",
+        type: "local",
+        buttons: [
+          {
+            type: "local",
+            copy: ["Lorem ipsum"],
+          },
+          {
+            type: "local",
+            copy: ["Lorem ipsum"],
+          },
+        ],
+      }}
+      items={[{}]}
+      heading="CTA Section"
+      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    />
   </>
 );
 export default Services;
