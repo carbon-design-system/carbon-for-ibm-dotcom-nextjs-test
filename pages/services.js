@@ -11,6 +11,7 @@ import {
   Layout,
   ContentBlockMedia,
   LinkList,
+  CalloutWithMedia,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -176,6 +177,15 @@ const Services = () => (
 
         <> </>
       </Layout>
+      <CalloutWithMedia
+        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        heading="Callout With Media heading"
+        mediaType="video"
+        mediaData={{
+          videoId: "0_uka1msg4",
+          showCaption: true,
+        }}
+      />
     </TableOfContents>
   </>
 );
