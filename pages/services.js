@@ -97,7 +97,6 @@ const Services = () => (
     </TableOfContents>
 
     <CTASection
-      className="bx--no-gutter"
       theme="g10"
       cta={{
         style: "button",
