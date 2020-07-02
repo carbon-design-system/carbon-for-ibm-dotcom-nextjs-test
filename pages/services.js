@@ -99,7 +99,7 @@ const Services = () => (
       />
       <Layout nested={true} type="2-1" border={false}>
         <div>
-          <a name="content-block-Mmedia" data-title="Content Block Media" />
+          <a name="content-block-media" data-title="Content Block Media" />
           <ContentBlockMedia
             heading="Content Block Media Title"
             items={[
