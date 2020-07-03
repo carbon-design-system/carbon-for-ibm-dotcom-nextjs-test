@@ -9,6 +9,8 @@ import {
   TableOfContents,
   ContentBlockCards,
   ContentBlockSegmented,
+  ContentBlockCards,
+  CardLink,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -94,9 +96,18 @@ const Services = () => (
           },
         ]}
       />
+
       <a name="content-block-card" data-title="Content Block Cards" />
       <ContentBlockCards
         heading="Content Block Cards"
+
+      <a
+        name="content-block-cards-and-card-link"
+        data-title="Content Block Cards and Card Link"
+      />
+      <ContentBlockCards
+        heading="Content Block Cards and Card Link"
+
         cards={[
           {
             image: {
@@ -134,6 +145,7 @@ const Services = () => (
               href: "https://www.example.com",
             },
           },
+
           {
             image: {
               defaultSrc:
@@ -160,6 +172,20 @@ const Services = () => (
             },
           },
         ]}
+        ]}
+      />
+
+      <CardLink
+        card={{
+          copy: "Services",
+          cta: {
+            type: "local",
+            href: "https;//www.ibm.com/services",
+            icon: {
+              src: ArrowRight20,
+            },
+          },
+        }}
       />
     </TableOfContents>
   </>
