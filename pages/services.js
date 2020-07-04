@@ -9,6 +9,8 @@ import {
   TableOfContents,
   ContentBlockSegmented,
   ContentGroupHorizontal,
+  ContentBlockCards,
+  CardLink,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -94,6 +96,65 @@ const Services = () => (
           },
         ]}
       />
+      <a
+        name="content-block-cards-and-card-link"
+        data-title="Content Block Cards and Card Link"
+      />
+      <ContentBlockCards
+        heading="Content Block Cards and Card Link"
+        cards={[
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/792x1056/ee5396/161616%26text=3:4",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x1056/ee5396/161616%26text=1:1",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+        ]}
+      />
+
+      <CardLink
+        card={{
+          copy: "Services",
+          cta: {
+            type: "local",
+            href: "https;//www.ibm.com/services",
+            icon: {
+              src: ArrowRight20,
+            },
+          },
+        }}
+      />
+
       <a
         name="content-group-horizontal"
         data-title="Content Group Horizontal"
