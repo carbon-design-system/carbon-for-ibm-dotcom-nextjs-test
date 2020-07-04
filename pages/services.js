@@ -8,12 +8,10 @@ import {
   LeadSpace,
   TableOfContents,
   ContentBlockSegmented,
-
   Layout,
   ContentBlockMedia,
   LinkList,
   CalloutWithMedia,
-
   ContentBlockCards,
   CardLink,
 
@@ -190,6 +188,8 @@ const Services = () => (
         mediaData={{
           videoId: "0_uka1msg4",
           showCaption: true,
+        }}
+      />
 
       <a
         name="content-block-cards-and-card-link"
@@ -245,9 +245,8 @@ const Services = () => (
             href: "https;//www.ibm.com/services",
             icon: {
               src: ArrowRight20,
-            },
-          },
-
+            }
+          }
         }}
       />
     </TableOfContents>
