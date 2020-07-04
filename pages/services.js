@@ -182,7 +182,7 @@ const Services = () => (
 
       <a name="content-block-card" data-title="Content Block Cards" />
       <ContentBlockCards
-        heading="Content Block Cards and Card Link"
+        heading="Content Block Cards"
         cards={[
           {
             image: {
@@ -220,6 +220,7 @@ const Services = () => (
               href: "https://www.example.com",
             },
           },
+
           {
             image: {
               defaultSrc:
