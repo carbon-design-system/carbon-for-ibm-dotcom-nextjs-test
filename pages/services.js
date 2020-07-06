@@ -4,6 +4,7 @@ import "../styles/services.scss";
 
 import { ArrowRight20 } from "@carbon/icons-react";
 
+import { AccordionItem, Accordion } from "carbon-components-react";
 import {
   LeadSpace,
   TableOfContents,
@@ -159,6 +160,7 @@ const Services = () => (
       />
     </TableOfContents>
 
+
     <CTASection
       theme="g10"
       cta={{
@@ -179,6 +181,13 @@ const Services = () => (
       heading="CTA Section"
       copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo consequat"
     />
+
+    <Accordion>
+      <AccordionItem title="Footnotes">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </AccordionItem>
+    </Accordion>
+
   </>
 );
 export default Services;
