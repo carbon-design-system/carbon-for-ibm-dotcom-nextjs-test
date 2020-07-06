@@ -4,6 +4,7 @@ import "../styles/services.scss";
 
 import { ArrowRight20 } from "@carbon/icons-react";
 
+import { AccordionItem, Accordion } from "carbon-components-react";
 import {
   LeadSpace,
   TableOfContents,
@@ -154,6 +155,11 @@ const Services = () => (
         }}
       />
     </TableOfContents>
+    <Accordion>
+      <AccordionItem title="Footnotes">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </AccordionItem>
+    </Accordion>
   </>
 );
 export default Services;
