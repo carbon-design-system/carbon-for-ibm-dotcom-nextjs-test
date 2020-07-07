@@ -9,9 +9,11 @@ import {
   LeadSpace,
   TableOfContents,
   ContentBlockSegmented,
-
   CTASection,
-
+  Layout,
+  ContentBlockMedia,
+  LinkList,
+  CalloutWithMedia,
   ContentBlockCards,
   CardLink,
 
@@ -100,6 +102,97 @@ const Services = () => (
           },
         ]}
       />
+
+      <Layout nested={true} type="2-1" border={false}>
+        <div>
+          <a name="content-block-media" data-title="Content Block Media" />
+          <ContentBlockMedia
+            heading="Content Block Media Title"
+            items={[
+              {
+                mediaType: "video",
+                heading: "Content Title",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+
+                mediaData: {
+                  videoId: "0_uka1msg4",
+                  showCaption: true,
+                },
+
+                items: [
+                  {
+                    copy:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  },
+                ],
+              },
+              {
+                mediaType: "video",
+                heading: "Content Title",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+
+                mediaData: {
+                  videoId: "0_uka1msg4",
+                  showCaption: true,
+                },
+
+                items: [
+                  {
+                    copy:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  },
+                ],
+              },
+              {
+                mediaType: "video",
+                heading: "Content Title",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+
+                mediaData: {
+                  videoId: "0_uka1msg4",
+                  showCaption: true,
+                },
+
+                items: [
+                  {
+                    copy:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  },
+                ],
+              },
+            ]}
+          />
+          <LinkList
+            heading="LinkList heading"
+            style="vertical-end"
+            items={[
+              {
+                heading: "heading link",
+                type: "local",
+                copy: "Lorem ipsum",
+                cta: {
+                  href: "https://www.ibm.com/services",
+                },
+              },
+            ]}
+          />
+        </div>
+
+        <> </>
+      </Layout>
+      <CalloutWithMedia
+        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        heading="Callout With Media heading"
+        mediaType="video"
+        mediaData={{
+          videoId: "0_uka1msg4",
+          showCaption: true,
+        }}
+      />
+
       <a
         name="content-block-cards-and-card-link"
         data-title="Content Block Cards and Card Link"
@@ -154,8 +247,8 @@ const Services = () => (
             href: "https;//www.ibm.com/services",
             icon: {
               src: ArrowRight20,
-            },
-          },
+            }
+          }
         }}
       />
     </TableOfContents>
