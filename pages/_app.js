@@ -85,7 +85,10 @@ export default class IbmdotcomLibrary extends App {
         >
           <Component {...pageProps} />
         </DotcomShell>
-        <script src="//1.www.s81c.com/common/stats/ibm-common.js"></script>
+        <script
+          src="//1.www.s81c.com/common/stats/ibm-common.js"
+          defer
+        ></script>
       </>
     );
   }
