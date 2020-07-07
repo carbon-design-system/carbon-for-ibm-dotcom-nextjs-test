@@ -89,17 +89,6 @@ export default class IbmdotcomLibrary extends App {
         >
           <Component {...pageProps} />
         </DotcomShell>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.addEventListener("load", function() {
-             var loadScript = document.createElement('script');
-             loadScript.src = 'https://cdn.optimizely.com/js/PROJECT_ID.js';
-             document.head.appendChild(loadScript);
-            });
-           `,
-          }}
-        />
       </>
     );
   }
