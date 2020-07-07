@@ -9,8 +9,14 @@ import {
   LeadSpace,
   TableOfContents,
   ContentBlockSegmented,
+  ContentGroupHorizontal,
+  Layout,
+  ContentBlockMedia,
+  LinkList,
+  CalloutWithMedia,
   ContentBlockCards,
   CardLink,
+
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -96,6 +102,97 @@ const Services = () => (
           },
         ]}
       />
+
+      <Layout nested={true} type="2-1" border={false}>
+        <div>
+          <a name="content-block-media" data-title="Content Block Media" />
+          <ContentBlockMedia
+            heading="Content Block Media Title"
+            items={[
+              {
+                mediaType: "video",
+                heading: "Content Title",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+
+                mediaData: {
+                  videoId: "0_uka1msg4",
+                  showCaption: true,
+                },
+
+                items: [
+                  {
+                    copy:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  },
+                ],
+              },
+              {
+                mediaType: "video",
+                heading: "Content Title",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+
+                mediaData: {
+                  videoId: "0_uka1msg4",
+                  showCaption: true,
+                },
+
+                items: [
+                  {
+                    copy:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  },
+                ],
+              },
+              {
+                mediaType: "video",
+                heading: "Content Title",
+                copy:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+
+                mediaData: {
+                  videoId: "0_uka1msg4",
+                  showCaption: true,
+                },
+
+                items: [
+                  {
+                    copy:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  },
+                ],
+              },
+            ]}
+          />
+          <LinkList
+            heading="LinkList heading"
+            style="vertical-end"
+            items={[
+              {
+                heading: "heading link",
+                type: "local",
+                copy: "Lorem ipsum",
+                cta: {
+                  href: "https://www.ibm.com/services",
+                },
+              },
+            ]}
+          />
+        </div>
+
+        <> </>
+      </Layout>
+      <CalloutWithMedia
+        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        heading="Callout With Media heading"
+        mediaType="video"
+        mediaData={{
+          videoId: "0_uka1msg4",
+          showCaption: true,
+        }}
+      />
+
       <a
         name="content-block-cards-and-card-link"
         data-title="Content Block Cards and Card Link"
@@ -150,9 +247,127 @@ const Services = () => (
             href: "https;//www.ibm.com/services",
             icon: {
               src: ArrowRight20,
+            }
+          }
+        }}
+      />
+
+      <a
+        name="content-group-horizontal"
+        data-title="Content Group Horizontal"
+      />
+      <ContentGroupHorizontal
+        heading="Content Group Horizontal"
+        items={[
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "video",
+                  copy: "External link text",
+                  media: {
+                    src: "0_uka1msg4",
+                    type: "video",
+                  },
+                },
+              ],
             },
           },
-        }}
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum dolor sit amet",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "local",
+                  copy:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+          {
+            eyebrow: "Lorem ipsum",
+            heading: "Aliquam condimentum",
+            copy:
+              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            cta: {
+              items: [
+                {
+                  type: "local",
+                  copy: "Lorem ipsum dolor",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+                {
+                  type: "download",
+                  copy: "Lorem ipsum dolor sit amet",
+                  cta: {
+                    href: "https://example.com",
+                  },
+                },
+              ],
+            },
+          },
+        ]}
       />
     </TableOfContents>
     <Accordion>
