@@ -9,6 +9,7 @@ import {
   LeadSpace,
   TableOfContents,
   ContentBlockSegmented,
+  CTASection,
   ContentGroupHorizontal,
   Layout,
   ContentBlockMedia,
@@ -370,11 +371,35 @@ const Services = () => (
         ]}
       />
     </TableOfContents>
+
+
+    <CTASection
+      theme="g10"
+      cta={{
+        style: "button",
+        type: "local",
+        buttons: [
+          {
+            type: "local",
+            copy: ["Lorem ipsum"],
+          },
+          {
+            type: "local",
+            copy: ["Lorem ipsum"],
+          },
+        ],
+      }}
+      items={[{}]}
+      heading="CTA Section"
+      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    />
+
     <Accordion>
       <AccordionItem title="Footnotes">
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </AccordionItem>
     </Accordion>
+
   </>
 );
 export default Services;
