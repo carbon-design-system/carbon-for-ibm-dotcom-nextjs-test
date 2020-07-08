@@ -16,7 +16,7 @@ import {
   CalloutWithMedia,
   ContentBlockCards,
   CardLink,
-
+  CalloutData,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
@@ -101,6 +101,11 @@ const Services = () => (
             — Donec quis pretium odio, in dignissim sapien.`,
           },
         ]}
+      />
+      <CalloutData
+        data="51%"
+        copy="Lorem ipsum dolor sit amet"
+        source="Dolor sit amet"
       />
 
       <Layout nested={true} type="2-1" border={false}>
@@ -247,8 +252,8 @@ const Services = () => (
             href: "https;//www.ibm.com/services",
             icon: {
               src: ArrowRight20,
-            }
-          }
+            },
+          },
         }}
       />
 
