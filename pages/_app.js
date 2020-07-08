@@ -74,10 +74,6 @@ export default class IbmdotcomLibrary extends App {
             }}
           />
           <Altlang />
-          <script
-            src="//1.www.s81c.com/common/stats/ibm-common.js"
-            defer
-          ></script>
         </Head>
         <DotcomShell
           mastheadProps={{
@@ -89,6 +85,24 @@ export default class IbmdotcomLibrary extends App {
         >
           <Component {...pageProps} />
         </DotcomShell>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            function initIBMCommon() {
+              var element = document.createElement("script");
+              element.src = "//1.www.s81c.com/common/stats/ibm-common.js";
+              document.body.appendChild(element);
+            }
+            if (window.addEventListener) {
+              window.addEventListener("load", initIBMCommon, false);
+            } else if (window.attachEvent) {
+              window.attachEvent("onload", initIBMCommon);
+            } else {
+              window.onload = initIBMCommon;
+            }
+           `,
+          }}
+        />
       </>
     );
   }
