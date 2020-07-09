@@ -88,18 +88,11 @@ export default class IbmdotcomLibrary extends App {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            function initIBMCommon() {
+            window.addEventListener("load", function() {
               var element = document.createElement("script");
               element.src = "//1.www.s81c.com/common/stats/ibm-common.js";
               document.body.appendChild(element);
-            }
-            if (window.addEventListener) {
-              window.addEventListener("load", initIBMCommon, false);
-            } else if (window.attachEvent) {
-              window.attachEvent("onload", initIBMCommon);
-            } else {
-              window.onload = initIBMCommon;
-            }
+            });            
            `,
           }}
         />
