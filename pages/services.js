@@ -6,25 +6,23 @@ import { ArrowRight20 } from "@carbon/icons-react";
 
 import { AccordionItem, Accordion } from "carbon-components-react";
 import {
-  LeadSpace,
-  TableOfContents,
-  ContentBlockSegmented,
-  CTASection,
-  ContentGroupHorizontal,
-  Layout,
-  ContentBlockMedia,
-  LinkList,
+  CardLink,
   CalloutWithMedia,
   ContentBlockCards,
+  ContentBlockMedia,
   ContentBlockSegmented,
-  CardLink,
-
+  ContentGroupHorizontal,
+  CTASection,
+  Layout,
+  LeadSpace,
+  LinkList,
+  TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
 import React from "react";
 
 /**
- * DDS patters template
+ * Services template
  *
  * @returns {*} JSX for Services template
  */
@@ -62,7 +60,10 @@ const Services = () => (
       <a name="content-block-segmented" data-title="Content Block Segmented" />
       <ContentBlockSegmented
         heading="Content Block Segmented Title"
-        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien."
+        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque
+        diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et,
+        tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim
+        sapien."
         cta={{
           style: "card",
           type: "local",
@@ -77,7 +78,8 @@ const Services = () => (
             copy: `
             — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. 
 
-            — Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. 
+            — Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, 
+            venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. 
 
 
             — Donec quis pretium odio, in dignissim sapien.`,
@@ -87,7 +89,8 @@ const Services = () => (
             copy: `
             — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. 
 
-            — Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. 
+            — Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, 
+            venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. 
 
             
             — Donec quis pretium odio, in dignissim sapien.`,
@@ -97,7 +100,8 @@ const Services = () => (
             copy: `
             — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. 
 
-            — Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. 
+            — Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, 
+            venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. 
 
             
             — Donec quis pretium odio, in dignissim sapien.`,
@@ -116,7 +120,8 @@ const Services = () => (
                 mediaType: "video",
                 heading: "Content Title",
                 copy:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
+                  "pellentesque diam.",
 
                 mediaData: {
                   videoId: "0_uka1msg4",
@@ -134,7 +139,8 @@ const Services = () => (
                 mediaType: "video",
                 heading: "Content Title",
                 copy:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
+                  "pellentesque diam.",
 
                 mediaData: {
                   videoId: "0_uka1msg4",
@@ -152,7 +158,8 @@ const Services = () => (
                 mediaType: "video",
                 heading: "Content Title",
                 copy:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam.",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
+                  "pellentesque diam.",
 
                 mediaData: {
                   videoId: "0_uka1msg4",
@@ -276,8 +283,8 @@ const Services = () => (
             href: "https;//www.ibm.com/services",
             icon: {
               src: ArrowRight20,
-            }
-          }
+            },
+          },
         }}
       />
 
@@ -468,7 +475,6 @@ const Services = () => (
      />
     </TableOfContents>
 
-
     <CTASection
       theme="g10"
       cta={{
@@ -487,7 +493,8 @@ const Services = () => (
       }}
       items={[{}]}
       heading="CTA Section"
-      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo consequat"
+      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo
+      consequat"
     />
 
     <Accordion>
@@ -495,7 +502,6 @@ const Services = () => (
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </AccordionItem>
     </Accordion>
-
   </>
 );
 export default Services;
