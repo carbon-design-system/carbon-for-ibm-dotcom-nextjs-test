@@ -7,7 +7,6 @@
 @import "~@carbon/ibmdotcom-styles/scss/patterns/sections/ctasection/index";
 @import "~@carbon/ibmdotcom-styles/scss/patterns/sections/leadspace/leadspace";
 
-
 @import "~@carbon/ibmdotcom-styles/scss/components/link-list/index";
 
 @import "~@carbon/ibmdotcom-styles/scss/components/card-link/card-link";
@@ -17,3 +16,11 @@
 @import "~@carbon/ibmdotcom-styles/scss/components/tableofcontents/index";
 @import "~@carbon/ibmdotcom-styles/scss/patterns/blocks/callout-data/index";
 
+.cta-section {
+  @include carbon--breakpoint("md") {
+    margin-left: 25%;
+  }
+  @include carbon--breakpoint("sm") {
+    margin-left: $spacing-05;
+  }
+}
