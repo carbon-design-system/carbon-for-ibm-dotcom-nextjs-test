@@ -396,10 +396,6 @@ const Services = () => (
               type: "local",
               copy: ["Lorem ipsum"],
             },
-            {
-              type: "local",
-              copy: ["Lorem ipsum"],
-            },
           ],
         }}
         items={[{}]}
