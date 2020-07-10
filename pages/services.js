@@ -109,6 +109,7 @@ const Services = () => (
         ]}
       />
 
+
       <Layout nested={true} type="2-1" border={false}>
         <div>
           <a name="content-block-media" data-title="Content Block Media" />
@@ -202,6 +203,7 @@ const Services = () => (
         }}
       />
 
+
       <a
         name="content-block-cards-and-card-link"
         data-title="Content Block Cards and Card Link"
@@ -241,6 +243,31 @@ const Services = () => (
             },
             eyebrow: "Lorem",
             heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x528/ee5396/161616%26text=2:1",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x594/ee5396/161616%26text=16:9",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading:
+              "Lorem ipsum dolor sit amet, consectetur adip possib illo inventore veritatis",
             cta: {
               href: "https://www.example.com",
             },
@@ -378,6 +405,74 @@ const Services = () => (
           },
         ]}
       />
+    <a name="content-block-card" data-title="Content Block Cards" />
+      <ContentBlockCards
+        heading="Content Block Cards"
+        cards={[
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/792x1056/ee5396/161616%26text=3:4",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x1056/ee5396/161616%26text=1:1",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x528/ee5396/161616%26text=2:1",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+          {
+            image: {
+              defaultSrc:
+                "https://dummyimage.com/1056x594/ee5396/161616%26text=16:9",
+              alt: "Image alt text",
+            },
+            eyebrow: "Lorem",
+            heading:
+              "Lorem ipsum dolor sit amet, consectetur adip possib illo inventore veritatis",
+            cta: {
+              href: "https://www.example.com",
+            },
+          },
+        ]}
+     />
     </TableOfContents>
 
     <CTASection
