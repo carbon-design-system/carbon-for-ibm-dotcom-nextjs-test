@@ -19,9 +19,7 @@
   },
   "dependencies": {
     "@carbon/ibmdotcom-react": "^1.9.0-alpha.4534",
-    "@carbon/ibmdotcom-services": "^1.9.0-alpha.4519",
     "@carbon/ibmdotcom-styles": "^1.9.0-alpha.4534",
-    "@carbon/ibmdotcom-utilities": "^1.9.0-alpha.4519",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "^10.9.0",
     "@commitlint/cli": "^8.3.5",
