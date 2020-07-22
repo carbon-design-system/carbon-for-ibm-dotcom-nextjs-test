@@ -115,7 +115,6 @@ const Services = () => (
         source="Dolor sit amet"
       />
 
-
       <Layout nested={true} type="2-1" border={false}>
         <div>
           <a name="content-block-media" data-title="Content Block Media" />
@@ -208,7 +207,6 @@ const Services = () => (
           showCaption: true,
         }}
       />
-
 
       <a
         name="content-block-cards-and-card-link"
@@ -411,7 +409,7 @@ const Services = () => (
           },
         ]}
       />
-    <a name="content-block-card" data-title="Content Block Cards" />
+      <a name="content-block-card" data-title="Content Block Cards" />
       <ContentBlockCards
         heading="Content Block Cards"
         cards={[
@@ -478,26 +476,31 @@ const Services = () => (
             },
           },
         ]}
-     />
-    </TableOfContents>
-    <div className="cta-section ">
-      <CTASection
-        theme="g10"
-        cta={{
-          style: "button",
-          type: "local",
-          buttons: [
-            {
-              type: "local",
-              copy: ["Lorem ipsum"],
-            },
-          ],
-        }}
-        items={[{}]}
-        heading="CTA Section"
-        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo
-        consequat"
       />
+    </TableOfContents>
+
+    <div className="bx--grid">
+      <div className="bx--row">
+        <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
+          <CTASection
+            theme="white"
+            cta={{
+              style: "button",
+              type: "local",
+              buttons: [
+                {
+                  type: "local",
+                  copy: ["Lorem ipsum"],
+                },
+              ],
+            }}
+            items={[{}]}
+            heading="CTA Section"
+            copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo
+            consequat"
+          />
+        </div>
+      </div>
     </div>
     <Accordion>
       <AccordionItem title="Footnotes">
