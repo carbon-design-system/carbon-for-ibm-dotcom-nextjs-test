@@ -396,45 +396,49 @@ const dds = () => (
         }}
       />
     </TableOfContents>
-    <CTASection
-      theme="g10"
-      cta={{
-        style: "button",
-        type: "local",
-        buttons: [
-          {
-            type: "local",
-            copy: ["Contact sales"],
-          },
-        ],
-      }}
-      items={[
-        {
-          heading: "Get connected",
-          copy: `
-            IBM DevOps partners have a wide range of expertise.
-            Find one to build the right solution for you.
-            `,
-          cta: {
-            copy: "Find a partner",
-            type: "local",
-            href: "https://example.com/",
-          },
-        },
-        {
-          heading: "Learn how",
-          copy:
-            "Dig into more self-directed learning about DevOps methodologies.",
-          cta: {
-            copy: "Browse tutorials",
-            type: "local",
-            href: "https://example.com/",
-          },
-        },
-      ]}
-      heading="CTA Section"
-      copy="Want to discuss your options with a DevOps expert? Contact our sales team to evaluate your needs."
-    />
+    <div className="bx--grid">
+      <div className="bx--row">
+        <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
+          <CTASection
+            theme="white"
+            cta={{
+              style: "button",
+              type: "local",
+              buttons: [
+                {
+                  type: "local",
+                  copy: ["Contact sales"],
+                },
+              ],
+            }}
+            items={[
+              {
+                heading: "Get connected",
+                copy: `IBM DevOps partners have a wide range of expertise.
+                  Find one to build the right solution for you.`,
+                cta: {
+                  copy: "Find a partner",
+                  type: "local",
+                  href: "https://example.com/",
+                },
+              },
+              {
+                heading: "Learn how",
+                copy:
+                  "Dig into more self-directed learning about DevOps methodologies.",
+                cta: {
+                  copy: "Browse tutorials",
+                  type: "local",
+                  href: "https://example.com/",
+                },
+              },
+            ]}
+            heading="CTA Section"
+            copy="Want to discuss your options with a DevOps expert? Contact our sales team to evaluate your needs."
+          />
+        </div>
+      </div>
+    </div>
   </>
 );
 
