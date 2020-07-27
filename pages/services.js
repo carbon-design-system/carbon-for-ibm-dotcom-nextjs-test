@@ -16,6 +16,7 @@ import {
   Layout,
   LeadSpace,
   LinkList,
+  CalloutData,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
@@ -108,7 +109,11 @@ const Services = () => (
           },
         ]}
       />
-
+      <CalloutData
+        data="51%"
+        copy="Lorem ipsum dolor sit amet"
+        source="Dolor sit amet"
+      />
 
       <Layout nested={true} type="2-1" border={false}>
         <div>
@@ -202,7 +207,6 @@ const Services = () => (
           showCaption: true,
         }}
       />
-
 
       <a
         name="content-block-cards-and-card-link"
@@ -405,7 +409,7 @@ const Services = () => (
           },
         ]}
       />
-    <a name="content-block-card" data-title="Content Block Cards" />
+      <a name="content-block-card" data-title="Content Block Cards" />
       <ContentBlockCards
         heading="Content Block Cards"
         cards={[
@@ -472,31 +476,32 @@ const Services = () => (
             },
           },
         ]}
-     />
+      />
     </TableOfContents>
 
-    <CTASection
-      theme="g10"
-      cta={{
-        style: "button",
-        type: "local",
-        buttons: [
-          {
-            type: "local",
-            copy: ["Lorem ipsum"],
-          },
-          {
-            type: "local",
-            copy: ["Lorem ipsum"],
-          },
-        ],
-      }}
-      items={[{}]}
-      heading="CTA Section"
-      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo
-      consequat"
-    />
-
+    <div className="bx--grid">
+      <div className="bx--row">
+        <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
+          <CTASection
+            theme="white"
+            cta={{
+              style: "button",
+              type: "local",
+              buttons: [
+                {
+                  type: "local",
+                  copy: ["Lorem ipsum"],
+                },
+              ],
+            }}
+            items={[{}]}
+            heading="CTA Section"
+            copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo
+            consequat"
+          />
+        </div>
+      </div>
+    </div>
     <Accordion>
       <AccordionItem title="Footnotes">
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
