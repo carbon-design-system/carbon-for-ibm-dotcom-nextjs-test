@@ -1,5 +1,8 @@
+/* eslint-disable sort-imports */
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
 import "../styles/solutions.scss";
+
+import { ArrowRight20 } from "@carbon/icons-react";
 
 import {
   CalloutQuote,
@@ -8,77 +11,71 @@ import {
   ContentBlockSegmented,
   ContentGroupHorizontal,
   CTASection,
-  Layout,
   LeadSpaceBlock,
   LogoGrid,
   FeatureCardBlockLarge,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
-import { ArrowRight20 } from "@carbon/icons-react";
 import React from "react";
 
 /**
- * DDS patterns template
+ * Solutions template
  *
- * @returns {*} JSX for Learn template
+ * @returns {*} JSX for Solution template
  */
-const dds = () => (
+const Solutions = () => (
   <>
-    <TableOfContents menuLabel="Jump to" theme="white">
+    <TableOfContents theme="white" menuLabel="Jump to" stickyOffset={48}>
       <a name="section-1" data-title="Lead Space Block" />
-      <Layout type="2-1">
-        <div>
-          <LeadSpaceBlock
-            title="Lead Space Block"
-            copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
-            mediaType="video"
-            mediaData={{
-              videoId: "0_uka1msg4",
-              showDescription: true,
-            }}
-            items={{
-              heading: "Featured products",
-              items: [
-                {
-                  type: "local",
-                  copy: "IBM Cloud Continuous Delivery",
-                  cta: {
-                    href: "https://ibm.com",
-                  },
-                },
-                {
-                  type: "local",
-                  copy: "UrbanCode",
-                  cta: {
-                    href: "https://ibm.com",
-                  },
-                },
-                {
-                  type: "local",
-                  copy: "View all products",
-                  cta: {
-                    href: "https://ibm.com",
-                  },
-                },
-              ],
-            }}
-            cta={{
-              style: "button",
+
+      <LeadSpaceBlock
+        title="Lead Space Block"
+        copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+        mediaType="video"
+        mediaData={{
+          videoId: "0_uka1msg4",
+          showDescription: true,
+        }}
+        items={{
+          heading: "Featured products",
+          items: [
+            {
               type: "local",
-              buttons: [
-                {
-                  type: "local",
-                  copy: "Excepteur sint occaecat",
-                  href: "https://example.com/",
-                },
-              ],
-            }}
-          />
-        </div>
-        <></>
-      </Layout>
+              copy: "IBM Cloud Continuous Delivery",
+              cta: {
+                href: "https://ibm.com",
+              },
+            },
+            {
+              type: "local",
+              copy: "UrbanCode",
+              cta: {
+                href: "https://ibm.com",
+              },
+            },
+            {
+              type: "local",
+              copy: "View all products",
+              cta: {
+                href: "https://ibm.com",
+              },
+            },
+          ],
+        }}
+        cta={{
+          style: "button",
+          type: "local",
+          buttons: [
+            {
+              type: "local",
+              copy: "Excepteur sint occaecat",
+              href: "https://example.com/",
+            },
+          ],
+        }}
+      />
 
       <a name="section-2" data-title="Content Block Segmented" />
       <ContentBlockSegmented
@@ -245,7 +242,6 @@ const dds = () => (
           showCaption: true,
         }}
       />
-
       <a name="section-4" data-title="Content Group Horizontal" />
       <ContentGroupHorizontal
         heading="Content Group Horizontal"
@@ -337,7 +333,6 @@ const dds = () => (
         ctaCopy="Amet justo donec"
         ctaHref="https://www.example.com"
       />
-
       <a name="section-6" data-title="Content Block Cards" />
       <ContentBlockCards
         heading="Content Block Cards"
@@ -396,6 +391,7 @@ const dds = () => (
         }}
       />
     </TableOfContents>
+
     <div className="bx--grid">
       <div className="bx--row">
         <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
@@ -441,5 +437,4 @@ const dds = () => (
     </div>
   </>
 );
-
-export default dds;
+export default Solutions;
