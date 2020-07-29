@@ -984,47 +984,37 @@
     "@carbon/import-once" "^10.3.0"
     "@carbon/layout" "^10.11.0"
 
-"@carbon/ibmdotcom-react@^1.9.0-alpha.4534":
-  version "1.9.0-alpha.4534"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.9.0-alpha.4534.tgz#5b42f2547f605607f249bbd1ab6931c7e146d65e"
-  integrity sha512-vLIN07yG7JSZBB35u+FhaBtY9V6BnoLWSNMatXnIvU3/0YdOny66e2Ii7tJBBOL3loVYi9VgoJbWWsBghSvPzA==
+"@carbon/ibmdotcom-react@^1.9.0-rc.1":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.9.0.tgz#fa8920cea243101524e87dee7c9e839518643a5f"
+  integrity sha512-l2F4h0t+RR1DhNLnG76nNX4SOu1WMmj/J2WZU3RDPNUjK6Z97EXeKMN3ZUEHVIW6DVT+fWywZ28My5ZVMgHUvQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
-    "@carbon/ibmdotcom-services" "1.8.0"
-    "@carbon/ibmdotcom-styles" "1.9.0-alpha.4534+675c919"
-    "@carbon/ibmdotcom-utilities" "1.8.0"
+    "@carbon/ibmdotcom-services" "1.9.0"
+    "@carbon/ibmdotcom-styles" "1.9.0"
+    "@carbon/ibmdotcom-utilities" "1.9.0"
     autosuggest-highlight "^3.1.1"
-    carbon-components "10.14.0"
+    carbon-components "10.15.0"
     carbon-components-react "7.14.0"
     carbon-icons "7.0.7"
     classnames "2.2.6"
     react-autosuggest "^9.4.3"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-services@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.8.0.tgz#3aa83b902091bf4908ee6ca450b4b8578b7024be"
-  integrity sha512-B1A/2oOHMt3pGDpSNutugGR4zHhCe22ngwZ8Mhs/eqU9Exaq6gBp4PUUMeVB1sC1wsdlkRG13Sc4WL1bz8SJ3A==
+"@carbon/ibmdotcom-services@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.9.0.tgz#7caa5fbcb7ca6dcafe0af6ad3fbaf0eefa38fbc1"
+  integrity sha512-kAExm5Jf5cyELQ4zxmx5Ikvy09ylNLiN0m6PdiisQKn9y+yHAcYIxjjgujB1nHS6mTD9rQ6PDUoVM5ldMUhIHA==
   dependencies:
-    "@carbon/ibmdotcom-utilities" "1.8.0"
+    "@carbon/ibmdotcom-utilities" "1.9.0"
     axios "^0.19.0"
     jsonp "^0.2.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-services@^1.9.0-alpha.4519":
-  version "1.9.0-alpha.4519"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.9.0-alpha.4519.tgz#d4d33c650d08b1f0748def87ddfa7f1e69a0b79e"
-  integrity sha512-MqHMWOB7wFlpt5ZTXZzrI5ymvOrgPQHsjQ1//2Mv9EQznILSkOcWlefXage8Oj4Wl+lYwz+cscO4BLkNCrBbWA==
-  dependencies:
-    "@carbon/ibmdotcom-utilities" "1.9.0-alpha.4519+3e3c3c5"
-    axios "^0.19.0"
-    jsonp "^0.2.1"
-    window-or-global "^1.0.1"
-
-"@carbon/ibmdotcom-styles@1.9.0-alpha.4534+675c919", "@carbon/ibmdotcom-styles@^1.9.0-alpha.4534":
-  version "1.9.0-alpha.4534"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.9.0-alpha.4534.tgz#7db07f58052c60b2fb446d32b51a5783c8459ba6"
-  integrity sha512-iuQCkoSl6u7df6iTrL5PT6RcGPUtwOx5QvkuRxBIza1c/xEKFBCeOXyjBdK2MjbCg1yDhUoTgO8GZhrokuLOdg==
+"@carbon/ibmdotcom-styles@1.9.0", "@carbon/ibmdotcom-styles@^1.9.0-rc.1":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.9.0.tgz#62d18f0680ab68b52d81440321c5e71ed66a6693"
+  integrity sha512-DYwx02VpIX1ha8eh1aMS15foIOxtttbBbeRtPy4SeNbtqZ/zdAM8aNpJ1oWcmlkrvyTNHk6FgdWIewaFV/L7kw==
   dependencies:
     "@carbon/grid" "10.12.0"
     "@carbon/import-once" "10.3.0"
@@ -1032,25 +1022,15 @@
     "@carbon/motion" "10.9.0"
     "@carbon/themes" "10.14.0"
     "@carbon/type" "10.12.0"
-    carbon-components "10.14.0"
+    carbon-components "10.15.0"
 
-"@carbon/ibmdotcom-utilities@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.8.0.tgz#4a5a40806dfb65aef865892fb4d6064992ce3022"
-  integrity sha512-Wwsdksd3lj2J343vqXygCFXfO2Lem6skrcUKnmzHcovyz2Zz7UlXPMBr7PLNm5eYIj7CZmfaVGDy+GCaSg5HPA==
+"@carbon/ibmdotcom-utilities@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.9.0.tgz#613f85e351cb9c82f87c45c9490ca09cd651d5a2"
+  integrity sha512-N4JkH14mZOkYzoBi/9n6DknFhbTaPnJyDah3iabIP4KL7Hut9lWELSrUJvgDcVkBWwFleaEIkvvvJXq0avAsqA==
   dependencies:
     axios "^0.19.0"
-    carbon-components "^10.7.4"
-    js-cookie "^2.2.1"
-    window-or-global "^1.0.1"
-
-"@carbon/ibmdotcom-utilities@1.9.0-alpha.4519+3e3c3c5", "@carbon/ibmdotcom-utilities@^1.9.0-alpha.4519":
-  version "1.9.0-alpha.4519"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.9.0-alpha.4519.tgz#8a2baacdc261a306188667b3c9956c91711a4e3f"
-  integrity sha512-irwU4rVBYfgrTYBCDzCyA/JTDD07TyqX+BUwUr75OQAA5qmVrPSXs1ZEY1ou5+YOyAri1gban/7owAhie7+YXg==
-  dependencies:
-    axios "^0.19.0"
-    carbon-components "^10.14.0"
+    carbon-components "^10.15.0"
     isomorphic-dompurify "0.4.0"
     js-cookie "^2.2.1"
     marked "1.1.0"
@@ -2691,19 +2671,19 @@ carbon-components-react@7.14.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@10.14.0, carbon-components@^10.7.4:
-  version "10.14.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.14.0.tgz#1d688b8c03e082b8bac35f173246da4bf7d24f25"
-  integrity sha512-uE2BbCSxXH3zcJR7qJplGuoJ98g4MIJK3nyy00W7rHnzLww70x012EtbZWa2dho6qK0lzlo7m/t/IzotCYpHAw==
+carbon-components@10.15.0:
+  version "10.15.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.15.0.tgz#1bf5fcb49a5780c5596596a449600e01a0701f67"
+  integrity sha512-Cv9c9tzyNf8E5N6kaUHW213fyEqQp0rlzrVCZ1UxmDZuYcxihjoFtGOFLyEvHRFU0jYgqzrDgLv/wNGzAD/ENQ==
   dependencies:
     flatpickr "4.6.1"
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
 
-carbon-components@^10.14.0:
-  version "10.15.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.15.0.tgz#1bf5fcb49a5780c5596596a449600e01a0701f67"
-  integrity sha512-Cv9c9tzyNf8E5N6kaUHW213fyEqQp0rlzrVCZ1UxmDZuYcxihjoFtGOFLyEvHRFU0jYgqzrDgLv/wNGzAD/ENQ==
+carbon-components@^10.15.0:
+  version "10.16.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.16.0.tgz#1f631788ea16485041729c5a6b65d1d79063eb86"
+  integrity sha512-7MltjxNKEjjJ+TOJv3qexE2wBiXQ5qNtMb+in2OJqAWEfixeDHLB+ZtkShAQmKzNw5jIX7w8jfsp2JC4CkApiw==
   dependencies:
     flatpickr "4.6.1"
     lodash.debounce "^4.0.8"
