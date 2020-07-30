@@ -1,9 +1,5 @@
-/* eslint-disable sort-imports */
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
 import "../styles/solutions.scss";
-
-import { ArrowRight20 } from "@carbon/icons-react";
-
 import {
   CalloutQuote,
   CalloutWithMedia,
@@ -17,6 +13,7 @@ import {
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
+import { ArrowRight20 } from "@carbon/icons-react";
 import React from "react";
 
 /**
