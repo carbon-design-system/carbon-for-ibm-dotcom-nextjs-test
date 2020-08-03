@@ -1,12 +1,9 @@
-/* eslint-disable sort-imports */
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
 import "../styles/services.scss";
-
-import { ArrowRight20 } from "@carbon/icons-react";
-
 import { AccordionItem, Accordion } from "carbon-components-react";
 import {
   CardLink,
+  CalloutData,
   CalloutWithMedia,
   ContentBlockCards,
   ContentBlockMedia,
@@ -16,10 +13,9 @@ import {
   Layout,
   LeadSpace,
   LinkList,
-  CalloutData,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
-
+import { ArrowRight20 } from "@carbon/icons-react";
 import React from "react";
 
 /**
