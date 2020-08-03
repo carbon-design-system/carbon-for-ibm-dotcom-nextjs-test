@@ -254,18 +254,22 @@ const dds = () => (
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
             copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+              "Lorem ipsum dolor sit amet, _consectetur_ adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin.",
             cta: {
               items: [
                 {
                   type: "local",
                   copy: "Link text",
-                  href: "https://example.com",
+                  cta: {
+                    href: "https://example.com",
+                  },
                 },
                 {
                   type: "external",
                   copy: "External link text",
-                  href: "https://example.com",
+                  cta: {
+                    href: "https://example.com",
+                  },
                 },
               ],
             },
@@ -280,12 +284,16 @@ const dds = () => (
                 {
                   type: "local",
                   copy: "Link text",
-                  href: "https://example.com",
+                  cta: {
+                    href: "https://example.com",
+                  },
                 },
                 {
                   type: "external",
                   copy: "External link text",
-                  href: "https://example.com",
+                  cta: {
+                    href: "https://example.com",
+                  },
                 },
               ],
             },
