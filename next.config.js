@@ -45,6 +45,11 @@ module.exports = withSass(
     },
     sassLoaderOptions: {
       includePaths: [path.resolve(__dirname, "node_modules")],
+      data: `
+        $feature-flags: (
+          enable-css-custom-properties: true
+        );
+      `,
     },
     webpack: (config) => {
       config.module.rules.push({
