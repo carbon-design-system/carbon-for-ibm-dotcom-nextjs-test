@@ -984,7 +984,7 @@
     "@carbon/import-once" "^10.3.0"
     "@carbon/layout" "^10.12.0"
 
-"@carbon/ibmdotcom-react@^1.10.0-alpha.4795":
+"@carbon/ibmdotcom-react@1.10.0-alpha.4795":
   version "1.10.0-alpha.4795"
   resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.10.0-alpha.4795.tgz#ee3cc9032e3a17ee772b3940ab496674e1ca8ecc"
   integrity sha512-pp/NoAJA78iHZsOBbX14k5EAn7GD8E6PgZ6HjdpPudRFt7vTjxdpVyLSLaCD9agXlq5o7bt17a4cXCesq0MJ4w==
@@ -1011,7 +1011,7 @@
     jsonp "^0.2.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-styles@1.10.0-alpha.4795+d523870", "@carbon/ibmdotcom-styles@^1.10.0-alpha.4795":
+"@carbon/ibmdotcom-styles@1.10.0-alpha.4795", "@carbon/ibmdotcom-styles@1.10.0-alpha.4795+d523870":
   version "1.10.0-alpha.4795"
   resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.10.0-alpha.4795.tgz#5d0610dd49de4eb50d0ec50d104a9593e64183b3"
   integrity sha512-ZstiPqunpCau76mA2chQux14ArjbRw+G34jPo3XMSycAqenxdyi+oNhUw+PUazxi3KlSZGKxAOfW0K0H5FG0MA==
