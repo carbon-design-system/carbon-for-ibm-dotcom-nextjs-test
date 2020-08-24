@@ -3,8 +3,4 @@
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
 
-$feature-flags: (
-  enable-css-custom-properties: true,
-);
-
 @import "~@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell";

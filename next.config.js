@@ -1,6 +1,5 @@
 require("dotenv").config();
 const path = require("path");
-const withCSS = require("@zeit/next-css");
 const withSass = require("@zeit/next-sass");
 const WebpackBar = require("webpackbar");
 
@@ -23,6 +22,11 @@ const sassLoader = {
   options: {
     includePaths: [path.resolve(__dirname, "node_modules")],
     sourceMap: process.env.NODE_ENV !== "production",
+    data: `
+      $feature-flags: (
+        enable-css-custom-properties: true
+      );
+    `,
   },
 };
 
@@ -30,41 +34,44 @@ const fastSassLoader = {
   loader: "fast-sass-loader",
   options: {
     includePaths: [path.resolve(__dirname, "node_modules")],
+    data: `
+      $feature-flags: (
+        enable-css-custom-properties: true
+      );
+    `,
   },
 };
 
-module.exports = withSass(
-  withCSS({
-    assetPrefix: ".",
-    env: {
-      CORS_PROXY: process.env.CORS_PROXY || "",
-      ROOT_PATH: process.env.ROOT_PATH || "/",
-      KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
-      KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
-      DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
-    },
-    sassLoaderOptions: {
-      includePaths: [path.resolve(__dirname, "node_modules")],
-    },
-    webpack: (config) => {
-      config.module.rules.push({
-        test: /\.scss$/,
-        sideEffects: true,
-        use: [
-          ...styleLoaders,
-          process.env.NODE_ENV === "production" ? sassLoader : fastSassLoader,
-        ],
-      });
+module.exports = withSass({
+  assetPrefix: ".",
+  env: {
+    CORS_PROXY: process.env.CORS_PROXY || "",
+    ROOT_PATH: process.env.ROOT_PATH || "/",
+    KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
+    KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
+    DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
+  },
+  sassLoaderOptions: {
+    includePaths: [path.resolve(__dirname, "node_modules")],
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.scss$/,
+      sideEffects: true,
+      use: [
+        ...styleLoaders,
+        process.env.NODE_ENV === "production" ? sassLoader : fastSassLoader,
+      ],
+    });
 
-      config.plugins.push(
-        new WebpackBar({
-          fancy: true,
-          profile: true,
-          basic: false,
-        })
-      );
+    config.plugins.push(
+      new WebpackBar({
+        fancy: true,
+        profile: true,
+        basic: false,
+      })
+    );
 
-      return config;
-    },
-  })
-);
+    return config;
+  },
+});
