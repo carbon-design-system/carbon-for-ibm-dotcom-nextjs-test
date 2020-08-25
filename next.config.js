@@ -1,7 +1,6 @@
 require("dotenv").config();
 const path = require("path");
 const withSass = require("@zeit/next-sass");
-const WebpackBar = require("webpackbar");
 
 const styleLoaders = [
   {
@@ -63,14 +62,6 @@ module.exports = withSass({
         process.env.NODE_ENV === "production" ? sassLoader : fastSassLoader,
       ],
     });
-
-    config.plugins.push(
-      new WebpackBar({
-        fancy: true,
-        profile: true,
-        basic: false,
-      })
-    );
 
     return config;
   },
