@@ -12,9 +12,6 @@ module.exports = withSass({
     KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
     DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
   },
-  sassLoaderOptions: {
-    includePaths: [path.resolve(__dirname, "node_modules")],
-  },
   webpack: (config) => {
     config.devtool =
       process.env.NODE_ENV !== "production"
@@ -23,7 +20,6 @@ module.exports = withSass({
 
     config.module.rules.push({
       test: /\.scss$/,
-      sideEffects: true,
       use: [
         {
           loader: "postcss-loader",
