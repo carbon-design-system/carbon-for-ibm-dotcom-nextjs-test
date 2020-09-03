@@ -7,7 +7,7 @@ import React from "react";
  * @type {string|string}
  * @private
  */
-const _rootPath = process.env.ROOT_PATH || "/";
+const _rootPath = process.env.ALTLANG_ROOT_PATH || "/";
 
 /**
  * Renders the list of altlang items
