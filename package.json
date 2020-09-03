@@ -14,12 +14,13 @@
     "build-export": "next build && next export",
     "lint": "eslint pages && eslint components",
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
-    "update": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary",
-    "update-staging": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest"
+    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary",
+    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next",
+    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest"
   },
   "dependencies": {
-    "@carbon/ibmdotcom-react": "^1.10.0-alpha.4668",
-    "@carbon/ibmdotcom-styles": "^1.10.0-alpha.4668",
+    "@carbon/ibmdotcom-react": "^1.10.0-alpha.4798",
+    "@carbon/ibmdotcom-styles": "^1.10.0-alpha.4798",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "^10.9.0",
     "@commitlint/cli": "^8.3.5",
