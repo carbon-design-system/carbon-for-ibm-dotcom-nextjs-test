@@ -16,6 +16,11 @@ module.exports = withSass({
     includePaths: [path.resolve(__dirname, "node_modules")],
   },
   webpack: (config) => {
+    config.devtool =
+      process.env.NODE_ENV !== "production"
+        ? "eval-cheap-module-source-map"
+        : "";
+
     config.module.rules.push({
       test: /\.scss$/,
       sideEffects: true,
@@ -43,6 +48,7 @@ module.exports = withSass({
                 enable-css-custom-properties: true
               );
             `,
+            sourceMap: process.env.NODE_ENV !== "production",
           },
         },
       ],
