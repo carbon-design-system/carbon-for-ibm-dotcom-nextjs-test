@@ -8,33 +8,6 @@ import packageJson from "../package.json";
 import React from "react";
 
 /**
- * Language codes for the DotcomShell for server side render
- *
- * @type {{cc: string, lc: string}}
- * @private
- */
-const _defaultLang = {
-  cc: "us",
-  lc: "en",
-};
-
-/**
- * Gets the lang combination based on passed in query param object
- *
- * @param {object} router Router object
- * @returns {object} lang code object
- * @private
- */
-function _getLang(router) {
-  return router && router.query && router.query.lc
-    ? {
-        lc: router.query.lc,
-        cc: router.query.cc,
-      }
-    : _defaultLang;
-}
-
-/**
  * Class IbmdotcomLibrary
  */
 export default class IbmdotcomLibrary extends App {
@@ -44,8 +17,7 @@ export default class IbmdotcomLibrary extends App {
    * @returns {*} Page wrapper JSX
    */
   render() {
-    const { Component, pageProps, router } = this.props;
-    const useLang = _getLang(router);
+    const { Component, pageProps } = this.props;
     const reactVersion = packageJson.dependencies["@carbon/ibmdotcom-react"];
     const stylesVersion = packageJson.dependencies["@carbon/ibmdotcom-styles"];
     return (
@@ -68,34 +40,26 @@ export default class IbmdotcomLibrary extends App {
             dangerouslySetInnerHTML={{
               __html: `
             var params = new URLSearchParams(window.location.search);
-            var lang = params.has('lc') ? params.get('lc') + '-' + params.get('cc') : 'en-US';
-            document.getElementsByTagName("html")[0].setAttribute("lang", lang);
+            
+            if(params.has('lc') && params.has('cc')) {
+              var lang = params.get('lc') + '-' + params.get('cc').toUpperCase();
+              document.getElementsByTagName("html")[0].setAttribute("lang", lang);
+              digitalData.page.pageInfo.language = lang;
+              digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
+            }
            `,
             }}
           />
           <Altlang />
+          <script src="//1.www.s81c.com/common/stats/ibm-common.js" defer />
         </Head>
         <DotcomShell
           mastheadProps={{
             navigation: "default",
           }}
-          footerProps={{
-            langCode: useLang,
-          }}
         >
           <Component {...pageProps} />
         </DotcomShell>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.addEventListener("load", function() {
-              var element = document.createElement("script");
-              element.src = "//1.www.s81c.com/common/stats/ibm-common.js";
-              document.body.appendChild(element);
-            });            
-           `,
-          }}
-        />
       </>
     );
   }
