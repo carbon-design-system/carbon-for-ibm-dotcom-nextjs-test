@@ -51,5 +51,8 @@
   },
   "resolutions": {
     "serialize-javascript": ">= 2.1.2"
+  },
+  "devDependencies": {
+    "rtlcss": "^2.6.0"
   }
 }
