@@ -11,6 +11,7 @@ module.exports = withSass({
     KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
     KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
     DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
+    ENABLE_RTL: process.env.ENABLE_RTL || "false",
   },
   webpack: (config) => {
     config.devtool =

@@ -1,9 +1,9 @@
 ---
 applications:
-  - name: ibmdotcom-nextjs-test
+  - name: ibmdotcom-nextjs-rtl
     path: ./out
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
     routes:
-      - route: ibmdotcom-nextjs-test.mybluemix.net
+      - route: ibmdotcom-nextjs-rtl.mybluemix.net
 
