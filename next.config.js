@@ -1,7 +1,6 @@
 require("dotenv").config();
 const path = require("path");
 const withSass = require("@zeit/next-sass");
-const WebpackBar = require("webpackbar");
 
 const styleLoaders = [
   {
@@ -50,6 +49,7 @@ module.exports = withSass({
     KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
     KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
     DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
+    ENABLE_RTL: process.env.ENABLE_RTL || "false",
   },
   sassLoaderOptions: {
     includePaths: [path.resolve(__dirname, "node_modules")],
@@ -63,14 +63,6 @@ module.exports = withSass({
         process.env.NODE_ENV === "production" ? sassLoader : fastSassLoader,
       ],
     });
-
-    config.plugins.push(
-      new WebpackBar({
-        fancy: true,
-        profile: true,
-        basic: false,
-      })
-    );
 
     return config;
   },

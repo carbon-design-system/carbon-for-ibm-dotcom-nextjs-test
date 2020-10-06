@@ -73,6 +73,18 @@ export default class IbmdotcomLibrary extends App {
            `,
             }}
           />
+
+          {process.env.ENABLE_RTL === "true" && (
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+            document.documentElement.dir = 'rtl';
+            document.getElementsByTagName('html')[0].setAttribute('dir', 'rtl');
+            `,
+              }}
+            />
+          )}
+
           <Altlang />
         </Head>
         <DotcomShell
