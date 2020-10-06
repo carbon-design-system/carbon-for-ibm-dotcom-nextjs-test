@@ -51,5 +51,8 @@
   },
   "resolutions": {
     "serialize-javascript": ">= 2.1.2"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.2.6"
   }
 }
