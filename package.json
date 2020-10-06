@@ -19,6 +19,7 @@
     "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest"
   },
   "dependencies": {
+    "@actions/core": "^1.2.6",
     "@carbon/ibmdotcom-react": "^1.11.0",
     "@carbon/ibmdotcom-styles": "^1.11.0",
     "@carbon/icons-react": "^10.9.1",
@@ -46,13 +47,11 @@
     "prop-types": "^15.7.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
+    "rtlcss": "^2.6.0",
     "stylelint": "^13.3.2",
     "webpack": "^4.41.5"
   },
   "resolutions": {
     "serialize-javascript": ">= 2.1.2"
-  },
-  "devDependencies": {
-    "@actions/core": "^1.2.6"
   }
 }
