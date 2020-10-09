@@ -1,5 +1,5 @@
 {
-  "name": "ibm-dotcom-library-nextjs-test",
+  "name": "carbon-for-ibm-dotcom-nextjs-test",
   "private": true,
   "workspaces": {
     "packages": [

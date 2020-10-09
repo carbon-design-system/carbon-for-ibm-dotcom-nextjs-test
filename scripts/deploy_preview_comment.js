@@ -1,33 +1,33 @@
-'use strict';
+"use strict";
 
-const https = require('https');
-const program = require('commander');
+const https = require("https");
+const program = require("commander");
 
 program
-  .option('-t, --token <github token>', 'Github Token')
-  .option('-b, --bucket <bucket name>', 'S3 Bucket Name')
-  .option('-d, --domain <preview domain>', 'S3 Preview Domain')
-  .option('-i, --id <pull request id>', 'Pull Request ID')
-  .option('-s, --sha <pull request sha>', 'Pull Request SHA');
+  .option("-t, --token <github token>", "Github Token")
+  .option("-b, --bucket <bucket name>", "S3 Bucket Name")
+  .option("-d, --domain <preview domain>", "S3 Preview Domain")
+  .option("-i, --id <pull request id>", "Pull Request ID")
+  .option("-s, --sha <pull request sha>", "Pull Request SHA");
 
 /**
  * Bot user to check for in comments
  * @type {string}
  */
-const botUser = 'ibmdotcom-bot';
+const botUser = "ibmdotcom-bot";
 
 /**
  * Github Repo Slug
  * @type {string}
  */
-const repoSlug = 'carbon-design-system/ibm-dotcom-library-nextjs-test';
+const repoSlug = "carbon-design-system/carbon-for-ibm-dotcom-nextjs-test";
 
 /**
  * Github host
  * @type {string}
  * @private
  */
-const _host = 'api.github.com';
+const _host = "api.github.com";
 
 /**
  * Stores the arguments
@@ -90,12 +90,12 @@ const data = JSON.stringify({
  *
  * @param {Array} results array of comment results for the PR
  */
-const prComment = results => {
+const prComment = (results) => {
   let path = commentUrl;
-  let method = 'POST';
+  let method = "POST";
   if (results.length > 0) {
     path = `${commentPatchUrl}/${results[0].id}`;
-    method = 'PATCH';
+    method = "PATCH";
   }
 
   const options = {
@@ -103,24 +103,24 @@ const prComment = results => {
     path,
     method,
     headers: {
-      'User-Agent': 'node/https',
+      "User-Agent": "node/https",
       Authorization: `token ${githubToken}`,
     },
   };
 
-  const req = https.request(options, res => {
-    let response = '';
+  const req = https.request(options, (res) => {
+    let response = "";
 
-    res.on('data', chunk => {
+    res.on("data", (chunk) => {
       response += chunk;
     });
 
-    res.on('end', () => {
+    res.on("end", () => {
       console.log(response);
     });
   });
 
-  req.on('error', error => {
+  req.on("error", (error) => {
     console.error(error);
   });
 
@@ -136,25 +136,25 @@ const getComments = () => {
     hostname: _host,
     path: commentUrl,
     headers: {
-      'User-Agent': 'node/https',
+      "User-Agent": "node/https",
       Authorization: `token ${githubToken}`,
     },
   };
 
-  const req = https.request(options, res => {
-    let response = '';
+  const req = https.request(options, (res) => {
+    let response = "";
 
-    res.on('data', chunk => {
+    res.on("data", (chunk) => {
       response += chunk;
     });
 
-    res.on('end', () => {
+    res.on("end", () => {
       response = JSON.parse(response);
 
-      const results = response.filter(comment => {
+      const results = response.filter((comment) => {
         return (
           comment.user.login === botUser &&
-          comment.body.indexOf('Deploy preview created') !== -1
+          comment.body.indexOf("Deploy preview created") !== -1
         );
       });
 
@@ -162,7 +162,7 @@ const getComments = () => {
     });
   });
 
-  req.on('error', error => {
+  req.on("error", (error) => {
     console.error(error);
   });
 

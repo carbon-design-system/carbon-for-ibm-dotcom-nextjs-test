@@ -1,11 +1,10 @@
-# IBM.com Library React with Next.js
+# Carbon for IBM.com React with Next.js
 
-This is an example Next.js setup utilizing the IBM.com Library React. 
+This is an example Next.js setup utilizing Carbon for IBM.com React.
 
 This will deploy a vanilla instance of Next.js with the
-[DotcomShell](https://github.com/carbon-design-system/ibm-dotcom-library/blob/master/packages/react/src/components/DotcomShell/README.md), 
-along with other various patterns and components available in the IBM.com Library. 
-
+[DotcomShell](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/master/packages/react/src/components/DotcomShell/README.md),
+along with other various patterns and components available in Carbon for IBM.com.
 
 To get
 started:
