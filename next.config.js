@@ -7,21 +7,21 @@ module.exports = withSass({
   assetPrefix: ".",
   basePath: process.env.BASE_PATH || "",
   env: {
-    CORS_PROXY: process.env.CORS_PROXY || "",
     ALTLANG_ROOT_PATH: process.env.ALTLANG_ROOT_PATH || "/",
     KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
     KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
     DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
     ENABLE_RTL: process.env.ENABLE_RTL || "false",
   },
+  sassLoaderOptions: {
+    sassOptions: {
+      includePaths: [path.resolve(__dirname, "node_modules")],
+    },
+  },
   webpack: (config) => {
-    config.devtool =
-      process.env.NODE_ENV !== "production"
-        ? "eval-cheap-module-source-map"
-        : "";
-
     config.module.rules.push({
       test: /\.scss$/,
+      sideEffects: true,
       use: [
         {
           loader: "postcss-loader",
@@ -41,15 +41,25 @@ module.exports = withSass({
             process.env.NODE_ENV === "production"
               ? "sass-loader"
               : "fast-sass-loader",
-          options: {
-            includePaths: [path.resolve(__dirname, "node_modules")],
-            data: `
+          options: Object.assign(
+            process.env.NODE_ENV === "production"
+              ? {
+                  sassOptions: {
+                    includePaths: [path.resolve(__dirname, "node_modules")],
+                  },
+                }
+              : {
+                  includePaths: [path.resolve(__dirname, "node_modules")],
+                },
+            {
+              additionalData: `
               $feature-flags: (
                 enable-css-custom-properties: true
               );
             `,
-            sourceMap: process.env.NODE_ENV !== "production",
-          },
+              sourceMap: process.env.NODE_ENV !== "production",
+            }
+          ),
         },
       ],
     });
