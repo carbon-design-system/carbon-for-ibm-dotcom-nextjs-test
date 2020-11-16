@@ -1,6 +1,12 @@
 {
   "name": "carbon-for-ibm-dotcom-nextjs-test",
   "private": true,
+  "version": "0.0.0",
+  "repository": "git@github.com:carbon-design-system/carbon-for-ibm-dotcom-nextjs-test.git",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "12.x"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
@@ -12,7 +18,7 @@
     "export": "next export",
     "start": "node server.js",
     "build-export": "next build && next export",
-    "lint": "eslint pages && eslint components",
+    "lint": "eslint pages",
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
     "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary",
     "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next",
@@ -20,15 +26,15 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@carbon/ibmdotcom-react": "^1.11.0",
-    "@carbon/ibmdotcom-styles": "^1.11.0",
+    "@carbon/ibmdotcom-react": "^1.12.0",
+    "@carbon/ibmdotcom-styles": "^1.12.0",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "^10.9.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "^9.8.4",
+    "autoprefixer": "9.8.6",
+    "commander": "^6.2.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.0.1",
     "eslint-plugin-jsdoc": "^23.0.0",
@@ -37,10 +43,10 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-tree-shaking": "^1.8.0",
     "express": "^4.17.1",
-    "fast-sass-loader": "^1.5.0",
+    "fast-sass-loader": "1.5.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
-    "next": "^9.5.3",
+    "next": "9.5.5",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.13.0",
     "prettier": "^2.0.4",
@@ -52,6 +58,8 @@
     "webpack": "^4.41.5"
   },
   "resolutions": {
-    "serialize-javascript": ">= 2.1.2"
+    "node-fetch": ">=2.6.1",
+    "object-path": ">=0.11.5",
+    "serialize-javascript": ">= 3.1.0"
   }
 }
