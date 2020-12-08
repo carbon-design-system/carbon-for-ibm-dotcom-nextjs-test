@@ -40,3 +40,7 @@ jobs:
           cf-region: us-south
           cf-app: ibmdotcom-nextjs-staging
           cf-manifest: manifest-staging.yml
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+        if: failure()
