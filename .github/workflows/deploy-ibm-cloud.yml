@@ -10,6 +10,8 @@ on:
 jobs:
   deploy-test:
     runs-on: ubuntu-16.04
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
@@ -42,8 +44,14 @@ jobs:
           cf-region: us-south
           cf-app: ibmdotcom-nextjs-test
           cf-manifest: manifest.yml
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+        if: failure()
   deploy-rtl:
     runs-on: ubuntu-16.04
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
@@ -77,3 +85,7 @@ jobs:
           cf-region: us-south
           cf-app: ibmdotcom-nextjs-rtl
           cf-manifest: manifest-rtl.yml
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+        if: failure()
