@@ -71,6 +71,7 @@ jobs:
           KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
           DDS_CALLOUT_DATA: true
           ENABLE_RTL: true
+          SASS_PATH: node_modules:src
       - name: Build project
         run: yarn build
       - name: Export project
