@@ -17,7 +17,7 @@ jobs:
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: "12.x"
       - name: Install dependencies
         run: yarn install
       - name: Update to latest canary
@@ -29,6 +29,7 @@ jobs:
         env:
           KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
           KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
           DDS_CALLOUT_DATA: true
           SASS_PATH: node_modules:src
       - name: Build project
@@ -57,7 +58,7 @@ jobs:
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: "12.x"
       - name: Install dependencies
         run: yarn install
       - name: Update to latest canary
@@ -69,6 +70,7 @@ jobs:
         env:
           KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
           KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
           DDS_CALLOUT_DATA: true
           SASS_PATH: node_modules:src
           ENABLE_RTL: true
