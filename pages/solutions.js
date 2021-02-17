@@ -400,7 +400,8 @@ const Solutions = () => (
               buttons: [
                 {
                   type: "local",
-                  copy: ["Contact sales"],
+                  copy: "Contact sales",
+                  href: "https://example.com/",
                 },
               ],
             }}
