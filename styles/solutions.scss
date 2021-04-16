@@ -14,3 +14,21 @@
 @import "~@carbon/ibmdotcom-styles/scss/components/quote/quote";
 @import "~@carbon/ibmdotcom-styles/scss/components/tableofcontents/index";
 @import "~@carbon/ibmdotcom-styles/scss/components/video-player/video-player";
+@import "@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss";
+
+.bx--logo-grid__col,
+.bx--card-group__cards__col,
+.bx--content-item-wrapper > .bx--content-item {
+  &:nth-of-type(3n) {
+    --dds--fade-in-out-delay: 0;
+  }
+  &:nth-of-type(3n + 1) {
+    --dds--fade-in-out-delay: 250ms;
+  }
+  &:nth-of-type(3n + 2) {
+    --dds--fade-in-out-delay: 500ms;
+  }
+  &:nth-of-type(3n + 3) {
+    --dds--fade-in-out-delay: 750ms;
+  }
+}
