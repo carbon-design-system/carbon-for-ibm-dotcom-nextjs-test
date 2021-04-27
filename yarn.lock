@@ -1376,52 +1376,58 @@
     "@carbon/import-once" "^10.6.0"
     "@carbon/layout" "^10.22.0"
 
-"@carbon/ibmdotcom-react@^1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.18.0.tgz#eaafaeb38d9465d806343cd18ccb0095b363a896"
-  integrity sha512-ohhJATR02PRgpsX/4hyoY6oxNtEPbI06F7WFZMOsCCOfjcB4aSWNI7XCXRAsV8o5qzAtJUO9ckQP8BamVyL7Ag==
+"@carbon/ibmdotcom-react@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.18.1.tgz#a0f61908cf509f5de5c8985ba2091a0d35334192"
+  integrity sha512-VzTdD6TsiZjUkUUcVCCEc3Uyw4t3TBTmeSoRLYwUWa7oa1gvF3rSNOqIC7qj2H30Y68DMb0n/PUTagq99hh8gA==
   dependencies:
     "@babel/runtime" "^7.5.5"
-    "@carbon/ibmdotcom-services" "1.18.0"
-    "@carbon/ibmdotcom-styles" "1.18.0"
-    "@carbon/ibmdotcom-utilities" "1.18.0"
+    "@carbon/ibmdotcom-services" "1.18.1"
+    "@carbon/ibmdotcom-styles" "1.18.1"
+    "@carbon/ibmdotcom-utilities" "1.18.1"
+    "@carbon/telemetry" "^0.0.0-alpha.6"
     autosuggest-highlight "^3.1.1"
-    carbon-components "10.32.1"
-    carbon-components-react "7.32.1"
     carbon-icons "7.0.7"
     classnames "2.2.6"
     react-autosuggest "^10.1.0"
     window-or-global "^1.0.1"
+  optionalDependencies:
+    carbon-components "10.32.1"
+    carbon-components-react "7.32.1"
 
-"@carbon/ibmdotcom-services@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.18.0.tgz#a5c9a9d98c34e8222b7413ce21e14e25d4bb3384"
-  integrity sha512-hQcnaUWGnLLx5cwOb2jCbSFwCEpzh3r7IJR3m6UB6BHrJO7dwDVNEgST+cTAORl42QJ2pVh8L5Jdtioq9pfxKQ==
+"@carbon/ibmdotcom-services@1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.18.1.tgz#ac41de85086065018f6a5068083473e10d42c3c6"
+  integrity sha512-LBjpAzsNOtZrFZSCzKOTQ6a1hy0tbDho7AtA5PgGMe2qClA4ADDgFujaZhLDCabWGEBl1XPyXbuKKG5QUKe3mw==
   dependencies:
     "@babel/runtime" "^7.5.0"
-    "@carbon/ibmdotcom-utilities" "1.18.0"
+    "@carbon/ibmdotcom-utilities" "1.18.1"
+    "@carbon/telemetry" "0.0.0-alpha.6"
     axios "^0.21.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-styles@1.18.0", "@carbon/ibmdotcom-styles@^1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.18.0.tgz#77fa087b7c95d2b6a9dc8ef04dcabd655e0155ff"
-  integrity sha512-KKvwj5tCe6ZV9JvFja3pjMi4sfLMkSkH0+Si1sUrbeLblDmyRu2zx1BjftrMgIm4lJ3imq9GkjqMgB/AxGXPIA==
+"@carbon/ibmdotcom-styles@1.18.1", "@carbon/ibmdotcom-styles@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.18.1.tgz#6c761d8498c9b00c5396d52145ca7c4de2cb3fab"
+  integrity sha512-OYhffGqmLJD0AE/ihgCZBDIXFQxbNjmUkU9ZuuinA1W6EIi0UiTkx0zOLjWDJ/6oH57JFZN9eiFNYP6IwLWEuw==
   dependencies:
     "@carbon/grid" "10.24.0"
     "@carbon/icons-react" "10.29.0"
     "@carbon/import-once" "10.5.0"
     "@carbon/layout" "10.22.0"
     "@carbon/motion" "10.15.0"
+    "@carbon/telemetry" "0.0.0-alpha.6"
     "@carbon/themes" "10.31.0"
     "@carbon/type" "10.25.0"
+  optionalDependencies:
     carbon-components "10.32.1"
 
-"@carbon/ibmdotcom-utilities@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.18.0.tgz#63df570c54ea92a2f71538c39e34676eccf62a1e"
-  integrity sha512-tu1SRAQP6Tx8qlwiQtaVaGxVhvqhBrvMGGTIrj+qA6m0yCs9wMeXWENC7GPq20JNE+rxrdEubwa9zJvrKVUnRw==
+"@carbon/ibmdotcom-utilities@1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.18.1.tgz#6058a0d583ce4176a19e054f7d02f5c9567accd7"
+  integrity sha512-a/DZwgN5tfgpKXFiix0fuEnTSnOOPKDMCrwqu3VqGFWjimTEdu6HBM22a+ikBgqWQM2VKHXKbP6qLz+0QViJng==
   dependencies:
+    "@carbon/telemetry" "0.0.0-alpha.6"
     axios "^0.21.1"
     carbon-components "10.32.1"
     isomorphic-dompurify "0.4.0"
@@ -1500,7 +1506,7 @@
   dependencies:
     "@carbon/icon-helpers" "^10.9.0"
 
-"@carbon/telemetry@0.0.0-alpha.6":
+"@carbon/telemetry@0.0.0-alpha.6", "@carbon/telemetry@^0.0.0-alpha.6":
   version "0.0.0-alpha.6"
   resolved "https://registry.yarnpkg.com/@carbon/telemetry/-/telemetry-0.0.0-alpha.6.tgz#1d11e64f310e98f32c3db0c55f02e047f2398087"
   integrity sha512-DCE8ui/tFi+qvCH+mewbUbWzsiq5Ko3HU1lgrVbpjWv1LfswLKFmMg4Os+PmX6edYoBj39qVChJPeaN/UyfJDw==
