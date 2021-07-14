@@ -1,0 +1,72 @@
+name: percy-update-base
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  percy-update:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: ['14.x']
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest canary release
+        run: yarn update-canary
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+        env:
+          KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
+          KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
+          DDS_CALLOUT_DATA: true
+          SASS_PATH: node_modules:src
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      - name: Build project
+        run: yarn build
+      - name: Export project
+        run: yarn export
+      - name: Run e2e tests
+        run: yarn test:e2e:local
+  percy-update-upstream:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: [ '14.x' ]
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest canary release
+        run: yarn update-canary
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+        env:
+          KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
+          KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
+          DDS_CALLOUT_DATA: true
+          SASS_PATH: node_modules:src
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      - name: Build project
+        run: yarn build
+      - name: Export project
+        run: yarn export
+      - name: Run e2e tests
+        run: yarn test:e2e:local

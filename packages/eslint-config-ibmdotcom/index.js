@@ -14,7 +14,14 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:jsdoc/recommended",
   ],
-  plugins: ["react", "jsdoc", "jsx-a11y", "react-hooks", "tree-shaking"],
+  plugins: [
+    "react",
+    "jsdoc",
+    "jsx-a11y",
+    "react-hooks",
+    "tree-shaking",
+    "cypress",
+  ],
   rules: {
     // Handle cases where we are destructuring but may not be using the initial
     // variables
@@ -106,6 +113,7 @@ module.exports = {
     es6: true,
     jest: true,
     jasmine: true,
+    "cypress/globals": true,
   },
   globals: {
     __DEV__: true,

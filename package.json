@@ -5,7 +5,7 @@
   "repository": "git@github.com:carbon-design-system/carbon-for-ibm-dotcom-nextjs-test.git",
   "license": "Apache-2.0",
   "engines": {
-    "node": "12.x"
+    "node": "12 || 14"
   },
   "workspaces": {
     "packages": [
@@ -20,6 +20,7 @@
     "build-export": "next build && next export",
     "lint": "eslint pages",
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
+    "test:e2e:local": "start-server-and-test 'http-server -c-1 out --silent' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config-file tests/e2e/cypress.json'",
     "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary",
     "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next",
     "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest"
@@ -62,5 +63,14 @@
     "node-fetch": ">=2.6.1",
     "object-path": ">=0.11.5",
     "serialize-javascript": ">= 3.1.0"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.58",
+    "@percy/cypress": "^3.1.0",
+    "@percy/dom": "^1.0.0-beta.58",
+    "cypress": "^7.7.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "http-server": "^0.12.3",
+    "start-server-and-test": "^1.12.6"
   }
 }
