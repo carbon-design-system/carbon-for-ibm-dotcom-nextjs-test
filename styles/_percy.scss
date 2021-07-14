@@ -1,0 +1,9 @@
+// Styles that are included only in percy snapshots
+/* stylelint-disable declaration-no-important */
+@media only percy {
+  .bx--video-player,
+  .bx--card__video,
+  .bx--link-list__list--video {
+    display: none !important;
+  }
+}
