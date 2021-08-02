@@ -158,23 +158,23 @@ const Learn = () => (
                 sources: [
                   {
                     src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                     breakpoint: 320,
                   },
                   {
                     src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                     breakpoint: 400,
                   },
                   {
                     src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                     breakpoint: 672,
                   },
                 ],
                 alt: "Image alt text",
                 defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
               },
             },
             heading: "Content Group - Simple",
@@ -243,23 +243,23 @@ const Learn = () => (
                 sources: [
                   {
                     src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                     breakpoint: 320,
                   },
                   {
                     src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                     breakpoint: 400,
                   },
                   {
                     src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                     breakpoint: 672,
                   },
                 ],
                 alt: "Image alt text",
                 defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
               },
             }}
             items={[
@@ -277,23 +277,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum to
                     sources: [
                       {
                         src:
-                          "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                         breakpoint: 320,
                       },
                       {
                         src:
-                          "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                         breakpoint: 400,
                       },
                       {
                         src:
-                          "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                         breakpoint: 672,
                       },
                     ],
                     alt: "Image alt text",
                     defaultSrc:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                   },
                 },
                 copy: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.
@@ -325,23 +325,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum to
                 sources: [
                   {
                     src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                     breakpoint: 320,
                   },
                   {
                     src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                     breakpoint: 400,
                   },
                   {
                     src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                     breakpoint: 672,
                   },
                 ],
                 alt: "Image alt text",
                 defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
               },
             }}
             cta={{
@@ -377,23 +377,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum to
                     sources: [
                       {
                         src:
-                          "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                         breakpoint: 320,
                       },
                       {
                         src:
-                          "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                         breakpoint: 400,
                       },
                       {
                         src:
-                          "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                         breakpoint: 672,
                       },
                     ],
                     alt: "Image alt text",
                     defaultSrc:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                   },
                 },
                 heading: "Lorem ipsum dolor sit amet",
@@ -426,23 +426,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum to
                     sources: [
                       {
                         src:
-                          "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                         breakpoint: 320,
                       },
                       {
                         src:
-                          "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                         breakpoint: 400,
                       },
                       {
                         src:
-                          "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                          "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                         breakpoint: 672,
                       },
                     ],
                     alt: "Image alt text",
                     defaultSrc:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                   },
                 },
                 heading: "Lorem ipsum dolor sit amet",
