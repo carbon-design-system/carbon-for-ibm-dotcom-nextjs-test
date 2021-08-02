@@ -199,7 +199,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -211,7 +211,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/792x1056/ee5396/161616%26text=3:4",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -223,7 +223,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x1056/ee5396/161616%26text=1:1",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -235,7 +235,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x528/ee5396/161616%26text=2:1",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -247,7 +247,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x594/ee5396/161616%26text=16:9",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -384,7 +384,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -396,7 +396,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/792x1056/ee5396/161616%26text=3:4",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -408,7 +408,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x1056/ee5396/161616%26text=1:1",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -421,7 +421,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x528/ee5396/161616%26text=2:1",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",
@@ -433,7 +433,7 @@ const Services = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x594/ee5396/161616%26text=16:9",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Lorem",

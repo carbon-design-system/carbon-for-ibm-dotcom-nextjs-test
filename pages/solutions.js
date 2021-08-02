@@ -336,7 +336,7 @@ const Solutions = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -348,7 +348,7 @@ const Solutions = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -360,7 +360,7 @@ const Solutions = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
