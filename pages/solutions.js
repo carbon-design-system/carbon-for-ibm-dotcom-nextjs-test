@@ -122,27 +122,27 @@ const Solutions = () => (
         image={{
           sources: [
             {
-              src: "https://dummyimage.com/320x160/ee5396/161616&text=2:1",
+              src: "https://dummyimage.com/320x160/ee5396/161616&text=2x1",
               breakpoint: "sm",
             },
             {
-              src: "https://dummyimage.com/400x200/ee5396/161616&text=2:1",
+              src: "https://dummyimage.com/400x200/ee5396/161616&text=2x1",
               breakpoint: "md",
             },
             {
-              src: "https://dummyimage.com/600x600/ee5396/161616&text=1:1",
+              src: "https://dummyimage.com/600x600/ee5396/161616&text=1x1",
               breakpoint: 991,
             },
             {
-              src: "https://dummyimage.com/600x300/ee5396/161616&text=2:1",
+              src: "https://dummyimage.com/600x300/ee5396/161616&text=2x1",
               breakpoint: "lg",
             },
             {
-              src: "https://dummyimage.com/672x672/ee5396/161616&text=1:1",
+              src: "https://dummyimage.com/672x672/ee5396/161616&text=1x1",
               breakpoint: "xlg",
             },
           ],
-          defaultSrc: "https://dummyimage.com/600x600/ee5396/161616&text=1:1",
+          defaultSrc: "https://dummyimage.com/600x600/ee5396/161616&text=1x1",
           alt: "Image alt text",
         }}
       />
@@ -161,23 +161,23 @@ const Solutions = () => (
                 sources: [
                   {
                     src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                     breakpoint: 320,
                   },
                   {
                     src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                     breakpoint: 400,
                   },
                   {
                     src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                     breakpoint: 672,
                   },
                 ],
                 alt: "Image alt text",
                 defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
               },
             },
             cta: {
@@ -196,23 +196,23 @@ const Solutions = () => (
                 sources: [
                   {
                     src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
                     breakpoint: 320,
                   },
                   {
                     src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
                     breakpoint: 400,
                   },
                   {
                     src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
                     breakpoint: 672,
                   },
                 ],
                 alt: "Image alt text",
                 defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16:9",
+                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
               },
             },
           },
@@ -336,7 +336,7 @@ const Solutions = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -348,7 +348,7 @@ const Solutions = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -360,7 +360,7 @@ const Solutions = () => (
           {
             image: {
               defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4:3",
+                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
