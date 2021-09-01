@@ -30,7 +30,6 @@ jobs:
           KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
           KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
           PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
-          DDS_CALLOUT_DATA: true
           SASS_PATH: node_modules:src
       - name: Build project
         run: yarn build
@@ -71,7 +70,6 @@ jobs:
           KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
           KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
           PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
-          DDS_CALLOUT_DATA: true
           SASS_PATH: node_modules:src
           ENABLE_RTL: true
       - name: Build project
