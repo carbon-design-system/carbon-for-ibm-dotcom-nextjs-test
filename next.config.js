@@ -10,7 +10,6 @@ module.exports = withSass({
     ALTLANG_ROOT_PATH: process.env.ALTLANG_ROOT_PATH || "/",
     KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
     KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
-    DDS_CALLOUT_DATA: process.env.DDS_CALLOUT_DATA || "false",
     ENABLE_RTL: process.env.ENABLE_RTL || "false",
   },
   sassLoaderOptions: {

@@ -2,7 +2,6 @@
 import "../styles/services.scss";
 import { AccordionItem, Accordion } from "carbon-components-react";
 import {
-  CalloutData,
   CalloutWithMedia,
   ContentBlockCards,
   ContentBlockMedia,
@@ -90,12 +89,6 @@ const Services = () => (
           },
         ]}
       />
-      <CalloutData
-        data="51%"
-        copy="Lorem ipsum dolor sit amet"
-        source="Dolor sit amet"
-      />
-
       <Layout nested={true} type="2-1" border={false}>
         <div>
           <a name="content-block-media" data-title="Content Block Media" />
