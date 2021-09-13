@@ -14,6 +14,10 @@ import {
 } from "@carbon/ibmdotcom-react";
 
 import { ArrowRight20 } from "@carbon/icons-react";
+import DDSContentGroupBanner from "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner";
+import DDSContentGroupHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading";
+import DDSLinkList from "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list";
+import DDSLinkListItemCTA from "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta";
 import React from "react";
 
 /**
@@ -432,6 +436,28 @@ const Solutions = () => (
         </div>
       </div>
     </div>
+
+    <DDSContentGroupBanner>
+      <DDSContentGroupHeading>
+        Curabitur malesuada varius mi eu posuere
+      </DDSContentGroupHeading>
+      <DDSLinkList type="vertical" slot="complementary">
+        <DDSLinkListItemCTA
+          icon-placement="right"
+          href="https://www.ibm.com"
+          cta-type="local"
+        >
+          Link text
+        </DDSLinkListItemCTA>
+        <DDSLinkListItemCTA
+          icon-placement="right"
+          href="https://www.ibm.com"
+          cta-type="external"
+        >
+          External link text
+        </DDSLinkListItemCTA>
+      </DDSLinkList>
+    </DDSContentGroupBanner>
   </>
 );
 export default Solutions;
