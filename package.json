@@ -75,5 +75,6 @@
     "eslint-plugin-cypress": "^2.11.3",
     "http-server": "^0.12.3",
     "start-server-and-test": "^1.12.6"
-  }
+  },
+  "type": "module"
 }
