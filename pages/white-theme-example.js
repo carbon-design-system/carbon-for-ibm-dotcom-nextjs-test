@@ -498,7 +498,7 @@ const WhiteThemeExample = () => (
                 {
                   type: "local",
                   copy: ["See alternate template"],
-                  href: `./dark-theme-example${_htmlExtension}`,
+                  href: `./g100-theme-example${_htmlExtension}`,
                 },
                 {
                   type: "local",
@@ -537,11 +537,6 @@ const WhiteThemeExample = () => (
         </div>
       </div>
     </div>
-    <Accordion>
-      <AccordionItem title="Footnotes">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </AccordionItem>
-    </Accordion>
   </>
 );
 export default WhiteThemeExample;
