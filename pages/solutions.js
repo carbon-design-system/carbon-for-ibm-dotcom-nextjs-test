@@ -14,10 +14,34 @@ import {
 } from "@carbon/ibmdotcom-react";
 
 import { ArrowRight20 } from "@carbon/icons-react";
-import DDSContentGroupBanner from "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner";
-import DDSContentGroupHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading";
-import DDSLinkList from "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list";
-import DDSLinkListItemCTA from "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta";
+import dynamic from "next/dynamic";
+
+const DDSContentGroupBanner = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner"
+  ),
+  { ssr: false }
+);
+
+const DDSContentGroupHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading"
+  ),
+  { ssr: false }
+);
+const DDSLinkList = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list"
+  ),
+  { ssr: false }
+);
+const DDSLinkListItemCTA = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta"
+  ),
+  { ssr: false }
+);
+
 import React from "react";
 
 /**
