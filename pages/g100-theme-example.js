@@ -13,46 +13,219 @@ import {
 // eslint-disable-next-line sort-imports
 import { ArrowDown20, ArrowRight20 } from "@carbon/icons-react";
 
-import DDSButtonGroup from "@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group";
-import DDSButtonGroupItem from "@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group-item";
+const DDSButtonGroup = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group"
+  ),
+  { ssr: false }
+);
+const DDSButtonGroupItem = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group-item"
+  ),
+  { ssr: false }
+);
 
-import DDSCTABlock from "@carbon/ibmdotcom-web-components/es/components-react/cta-block/cta-block";
-import DDSCTASection from "@carbon/ibmdotcom-web-components/es/components-react/cta-section/cta-section.js";
+const DDSCTABlock = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/cta-block/cta-block"
+  ),
+  { ssr: false }
+);
+const DDSCTASection = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/cta-section/cta-section.js"
+  ),
+  { ssr: false }
+);
 
 // eslint-disable-next-line sort-imports
-import DDSCard from "@carbon/ibmdotcom-web-components/es/components-react/card/card";
-import DDSCardCTAFooter from "@carbon/ibmdotcom-web-components/es/components-react/cta/card-cta-footer";
-import DDSCardEyebrow from "@carbon/ibmdotcom-web-components/es/components-react/card/card-eyebrow";
+const DDSCard = dynamic(
+  import("@carbon/ibmdotcom-web-components/es/components-react/card/card"),
+  { ssr: false }
+);
 
-import DDSCardFooter from "@carbon/ibmdotcom-web-components/es/components-react/card/card-footer";
-import DDSCardHeading from "@carbon/ibmdotcom-web-components/es/components-react/card/card-heading";
-import DDSCardInCard from "@carbon/ibmdotcom-web-components/es/components-react/card-in-card/card-in-card";
-import DDSCardInCardImage from "@carbon/ibmdotcom-web-components/es/components-react/card-in-card/card-in-card-image";
-import DDSCardSectionCarousel from "@carbon/ibmdotcom-web-components/es/components-react/card-section-carousel/card-section-carousel";
-import DDSCarousel from "@carbon/ibmdotcom-web-components/es/components-react/carousel/carousel";
+const DDSCardCTAFooter = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/cta/card-cta-footer"
+  ),
+  { ssr: false }
+);
 
-import DDSContentBlockCopy from "@carbon/ibmdotcom-web-components/es/components-react/content-block/content-block-copy";
-import DDSContentBlockHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-block/content-block-heading";
+const DDSCardEyebrow = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card/card-eyebrow"
+  ),
+  { ssr: false }
+);
 
-import DDSContentItemHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-item/content-item-heading";
-import DDSContentItemHorizontalMedia from "@carbon/ibmdotcom-web-components/es/components-react/content-item-horizontal/content-item-horizontal-media";
-import DDSContentItemHorizontalMediaCopy from "@carbon/ibmdotcom-web-components/es/components-react/content-item-horizontal/content-item-horizontal-media-copy";
-import DDSContentSectionCopy from "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-copy.js";
-import DDSContentSectionHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-heading.js";
-import DDSImage from "@carbon/ibmdotcom-web-components/es/components-react/image/image.js";
-import DDSLinkList from "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list";
-import DDSLinkListHeading from "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list-heading";
-import DDSLinkListItem from "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list-item";
-import DDSLinkListItemCTA from "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta";
-import DDSLinkListSection from "@carbon/ibmdotcom-web-components/es/components-react/link-list-section/link-list-section";
-import DDSLinkWithIcon from "@carbon/ibmdotcom-web-components/es/components-react/link-with-icon/link-with-icon.js";
+const DDSCardFooter = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card/card-footer"
+  ),
+  { ssr: false }
+);
 
-import DDSTab from "@carbon/ibmdotcom-web-components/es/components-react/tabs-extended/tab.js";
-import DDSTableOfContents from "@carbon/ibmdotcom-web-components/es/components-react/table-of-contents/table-of-contents.js";
-import DDSTabsExtendedMedia from "@carbon/ibmdotcom-web-components/es/components-react/tabs-extended-media/tabs-extended-media.js";
+const DDSCardHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card/card-heading"
+  ),
+  { ssr: false }
+);
 
-import DDSVideoPlayerContainer from "@carbon/ibmdotcom-web-components/es/components-react/video-player/video-player-container.js";
+const DDSCardInCard = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card-in-card/card-in-card"
+  ),
+  { ssr: false }
+);
 
+const DDSCardInCardImage = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card-in-card/card-in-card-image"
+  ),
+  { ssr: false }
+);
+
+const DDSCardSectionCarousel = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card-section-carousel/card-section-carousel"
+  ),
+  { ssr: false }
+);
+
+const DDSCarousel = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/carousel/carousel"
+  ),
+  { ssr: false }
+);
+
+const DDSContentBlockCopy = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-block/content-block-copy"
+  ),
+  { ssr: false }
+);
+
+const DDSContentBlockHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-block/content-block-heading"
+  ),
+  { ssr: false }
+);
+
+const DDSContentItemHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-item/content-item-heading"
+  ),
+  { ssr: false }
+);
+
+const DDSContentItemHorizontalMedia = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-item-horizontal/content-item-horizontal-media"
+  ),
+  { ssr: false }
+);
+
+const DDSContentItemHorizontalMediaCopy = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-item-horizontal/content-item-horizontal-media-copy"
+  ),
+  { ssr: false }
+);
+
+const DDSContentSectionCopy = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-copy.js"
+  ),
+  { ssr: false }
+);
+
+const DDSContentSectionHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-heading.js"
+  ),
+  { ssr: false }
+);
+
+const DDSImage = dynamic(
+  import("@carbon/ibmdotcom-web-components/es/components-react/image/image.js"),
+  { ssr: false }
+);
+
+const DDSLinkList = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkListHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list-heading"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkListItem = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list-item"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkListItemCTA = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkListSection = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-list-section/link-list-section"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkWithIcon = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-with-icon/link-with-icon.js"
+  ),
+  { ssr: false }
+);
+
+const DDSTab = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/tabs-extended/tab.js"
+  ),
+  { ssr: false }
+);
+
+const DDSTableOfContents = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/table-of-contents/table-of-contents.js"
+  ),
+  { ssr: false }
+);
+
+const DDSTabsExtendedMedia = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/tabs-extended-media/tabs-extended-media.js"
+  ),
+  { ssr: false }
+);
+
+const DDSVideoPlayerContainer = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/video-player/video-player-container.js"
+  ),
+  { ssr: false }
+);
+
+import dynamic from "next/dynamic";
 import React from "react";
 
 /**

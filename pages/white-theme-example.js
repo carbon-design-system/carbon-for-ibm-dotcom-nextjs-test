@@ -21,18 +21,89 @@ import {
   SecureSearch,
 } from "@carbon/pictograms-react";
 
-import DDSCard from "@carbon/ibmdotcom-web-components/es/components-react/card/card";
-import DDSCardFooter from "@carbon/ibmdotcom-web-components/es/components-react/card/card-footer";
-import DDSCardHeading from "@carbon/ibmdotcom-web-components/es/components-react/card/card-heading";
-import DDSCardSectionCarousel from "@carbon/ibmdotcom-web-components/es/components-react/card-section-carousel/card-section-carousel";
-import DDSCarousel from "@carbon/ibmdotcom-web-components/es/components-react/carousel/carousel";
-import DDSContentGroupBanner from "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner";
-import DDSContentGroupHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading";
-import DDSContentSectionCopy from "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-copy.js";
-import DDSContentSectionHeading from "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-heading.js";
-import DDSLinkList from "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list";
-import DDSLinkListItemCTA from "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta";
-import DDSLinkWithIcon from "@carbon/ibmdotcom-web-components/es/components-react/link-with-icon/link-with-icon.js";
+const DDSCard = dynamic(
+  import("@carbon/ibmdotcom-web-components/es/components-react/card/card"),
+  { ssr: false }
+);
+
+const DDSCardFooter = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card/card-footer"
+  ),
+  { ssr: false }
+);
+
+const DDSCardHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card/card-heading"
+  ),
+  { ssr: false }
+);
+
+const DDSCardSectionCarousel = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/card-section-carousel/card-section-carousel"
+  ),
+  { ssr: false }
+);
+
+const DDSCarousel = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/carousel/carousel"
+  ),
+  { ssr: false }
+);
+
+const DDSContentGroupBanner = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner"
+  ),
+  { ssr: false }
+);
+
+const DDSContentGroupHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading"
+  ),
+  { ssr: false }
+);
+
+const DDSContentSectionCopy = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-copy.js"
+  ),
+  { ssr: false }
+);
+
+const DDSContentSectionHeading = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-heading.js"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkList = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkListItemCTA = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta"
+  ),
+  { ssr: false }
+);
+
+const DDSLinkWithIcon = dynamic(
+  import(
+    "@carbon/ibmdotcom-web-components/es/components-react/link-with-icon/link-with-icon.js"
+  ),
+  { ssr: false }
+);
+
+import dynamic from "next/dynamic";
 import React from "react";
 
 /**
