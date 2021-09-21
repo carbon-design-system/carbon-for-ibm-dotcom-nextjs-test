@@ -27,14 +27,14 @@ $feature-flags: (
   margin: 1rem 0;
 }
 
-:root,
+.g100-theme-page,
 .bx--card-group.bx--card-group--g100,
 .bx--content-block-segmented {
   @include carbon--theme($carbon--theme--g100, true);
 }
 
 // Seems NextJS isn't using the actual token but rather the hex values instead
-.bx--card-group__cards__row::after {
+.g100-theme-page > div.bx--card-group__cards__row::after {
   @include carbon--theme($carbon--theme--g100, true);
 
   box-shadow: inset 0 0 0 1px $ui-background !important; /* stylelint-disable-line declaration-no-important */

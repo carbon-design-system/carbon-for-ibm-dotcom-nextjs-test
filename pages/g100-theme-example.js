@@ -255,6 +255,8 @@ const linkListProps = {
     },
     {
       type: "video",
+      copy: "Link to a video",
+      videoTitle: "test",
       media: {
         src: "1_9h94wo6b",
         type: "video",
@@ -262,6 +264,8 @@ const linkListProps = {
     },
     {
       type: "video",
+      copy: "Link to another video",
+      videoTitle: "test",
       media: {
         src: "1_9h94wo6b",
         type: "video",
@@ -307,7 +311,7 @@ const selectorTargets = `
  * @returns {*} JSX for White theme example page
  */
 const WhiteThemeExample = () => (
-  <>
+  <div className="g100-theme-page">
     <LeadSpace
       type="tall"
       theme="g100"
@@ -851,6 +855,11 @@ const WhiteThemeExample = () => (
         </DDSCTASection>
       </DDSTableOfContents>
     </ScrollAnimations>
-  </>
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `document.querySelector('.bx--dotcom-shell').style = 'background: #161616;'`,
+      }}
+    />
+  </div>
 );
 export default WhiteThemeExample;
