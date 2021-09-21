@@ -136,6 +136,7 @@ const linkListProps = {
     {
       type: "video",
       copy: "Link to a video",
+      videoTitle: "test",
       media: {
         src: "1_9h94wo6b",
         type: "video",
