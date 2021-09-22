@@ -7,11 +7,11 @@
 
 "use strict";
 
-describe("services page", () => {
-  it("should load the default services page", () => {
-    cy.visit("/services.html");
+describe("Example page C page", () => {
+  it("should load the default example-page-c page", () => {
+    cy.visit("/example-page-c.html");
 
     // Take a snapshot for visual diffing
-    cy.percySnapshot("services page | default");
+    cy.percySnapshot("example page c | default");
   });
 });
