@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@carbon/ibmdotcom-react": "canary",
-    "@carbon/ibmdotcom-styles": "canary",
+    "@carbon/ibmdotcom-react": "latest",
+    "@carbon/ibmdotcom-styles": "latest",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "^11.15.0",
     "@commitlint/cli": "^11.0.0",
