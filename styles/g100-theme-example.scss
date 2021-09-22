@@ -37,13 +37,13 @@ $feature-flags: (
 .g100-theme-page > div.bx--card-group__cards__row::after {
   @include carbon--theme($carbon--theme--g100, true);
 
-  box-shadow: inset 0 0 0 1px $ui-background !important; /* stylelint-disable-line declaration-no-important */
+  box-shadow: inset 0 0 0 1px $ui-background;
 }
 
 .bx--feature-card-large {
   @include carbon--theme($carbon--theme--g100, true);
 
-  background-color: $inverse-02 !important; /* stylelint-disable-line declaration-no-important */
+  background-color: $inverse-02;
 }
 
 body {
