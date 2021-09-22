@@ -1,16 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
 import "../styles/services.scss";
-import { AccordionItem, Accordion } from "carbon-components-react";
 import {
   CalloutWithMedia,
   ContentBlockCards,
   ContentBlockMedia,
   ContentBlockSegmented,
-  ContentGroupHorizontal,
+  ContentBlockHorizontal,
   CTASection,
   Layout,
   LeadSpace,
-  LinkList,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 import { ArrowRight20 } from "@carbon/icons-react";
@@ -37,140 +35,118 @@ const Services = () => (
         },
       ]}
       image={{
-        defaultSrc: "https://dummyimage.com/1056x480/ee5396/161616",
-        alt: "Image alt text",
         sources: [
           {
-            src: "https://dummyimage.com/320x370/ee5396/161616",
+            src: "/images/leadspace/fpo--leadspace--1584x560--003.jpg",
             breakpoint: "sm",
           },
           {
-            src: "https://dummyimage.com/672x400/ee5396/161616",
+            src: "/images/leadspace/fpo--leadspace--1584x560--003.jpg",
             breakpoint: "md",
           },
         ],
+        defaultSrc: "/images/leadspace/fpo--leadspace--1584x560--003.jpg",
+        alt: "lead space image",
       }}
     />
     <TableOfContents theme="white" menuLabel="Jump to" stickyOffset={48}>
-      <a name="content-block-segmented" data-title="Content Block Segmented" />
-      <ContentBlockSegmented
-        heading="Content Block Segmented Title"
-        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque
+      <Layout nested={true} type="2-1" border={true}>
+        <a
+          name="content-block-segmented"
+          data-title="Content Block Segmented"
+        />
+        <ContentBlockSegmented
+          heading="Content Block Segmented Title"
+          copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque
         diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et,
         tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim
         sapien."
-        cta={{
-          style: "card",
-          type: "local",
-          copy: "Services",
-          cta: {
-            href: "https;//www.ibm.com/services",
-          },
-        }}
-        items={[
-          {
-            heading: "Lorem ipsum doller",
-            copy: `— Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
+          cta={{
+            style: "card",
+            type: "local",
+            copy: "Services",
+            cta: {
+              href: "https;//www.ibm.com/services",
+            },
+          }}
+          items={[
+            {
+              heading: "Lorem ipsum doller",
+              copy: `— Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.`,
-          },
-          {
-            heading: "Lorem ipsum doller",
-            copy: `— Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
+            },
+            {
+              heading: "Lorem ipsum doller",
+              copy: `— Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.`,
-          },
-          {
-            heading: "Lorem ipsum doller",
-            copy: `— Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
+            },
+            {
+              heading: "Lorem ipsum doller",
+              copy: `— Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
               — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.`,
-          },
-        ]}
-      />
-      <Layout nested={true} type="2-1" border={false}>
-        <div>
-          <a name="content-block-media" data-title="Content Block Media" />
-          <ContentBlockMedia
-            heading="Content Block Media Title"
-            items={[
-              {
-                mediaType: "video",
-                heading: "Content Title",
-                copy:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
-                  "pellentesque diam.",
-
-                mediaData: {
-                  videoId: "0_uka1msg4",
-                  showCaption: true,
-                },
-
-                items: [
-                  {
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  },
-                ],
+            },
+          ]}
+        />
+      </Layout>
+      <Layout nested={true} type="2-1" border={true}>
+        <a name="content-block-media" data-title="Content Block Media" />
+        <ContentBlockMedia
+          heading="Content Block Media Title"
+          items={[
+            {
+              mediaType: "video",
+              heading: "Content Title",
+              copy:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
+                "pellentesque diam.",
+              mediaData: {
+                videoId: "0_uka1msg4",
+                showCaption: true,
               },
-              {
-                mediaType: "video",
-                heading: "Content Title",
-                copy:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
-                  "pellentesque diam.",
-
-                mediaData: {
-                  videoId: "0_uka1msg4",
-                  showCaption: true,
+              items: [
+                {
+                  copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
-
-                items: [
-                  {
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  },
-                ],
+              ],
+            },
+            {
+              mediaType: "video",
+              heading: "Content Title",
+              copy:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
+                "pellentesque diam.",
+              mediaData: {
+                videoId: "0_uka1msg4",
+                showCaption: true,
               },
-              {
-                mediaType: "video",
-                heading: "Content Title",
-                copy:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
-                  "pellentesque diam.",
-
-                mediaData: {
-                  videoId: "0_uka1msg4",
-                  showCaption: true,
+              items: [
+                {
+                  copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
-
-                items: [
-                  {
-                    copy:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  },
-                ],
+              ],
+            },
+            {
+              mediaType: "video",
+              heading: "Content Title",
+              copy:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id " +
+                "pellentesque diam.",
+              mediaData: {
+                videoId: "0_uka1msg4",
+                showCaption: true,
               },
-            ]}
-          />
-          <LinkList
-            heading="LinkList heading"
-            style="vertical-end"
-            items={[
-              {
-                heading: "heading link",
-                type: "local",
-                copy: "Lorem ipsum",
-                cta: {
-                  href: "https://www.ibm.com/services",
+              items: [
+                {
+                  copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
-              },
-            ]}
-          />
-        </div>
-
-        <> </>
+              ],
+            },
+          ]}
+        />
       </Layout>
       <CalloutWithMedia
         copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -182,89 +158,81 @@ const Services = () => (
         }}
       />
 
-      <a
-        name="content-block-cards-and-card-link"
-        data-title="Content Block Cards and Card Link"
-      />
-      <ContentBlockCards
-        heading="Content Block Cards and Card Link"
-        cards={[
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
+      <Layout nested={true} type="2-1" border={true}>
+        <a name="content-block-cards" data-title="Content Block Cards" />
+        <ContentBlockCards
+          heading="Content Block Cards"
+          cards={[
+            {
+              image: {
+                defaultSrc: "/images/1312/fpo--1x1--1312x1312--001.jpg",
+                alt: "Image alt text",
+              },
+              eyebrow: "Topic",
+              heading: "Natural language processing.",
+              cta: {
+                href: "https://www.example.com",
+              },
             },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
+            {
+              image: {
+                defaultSrc: "/images/1312/fpo--4x3--1312x984--002.jpg",
+                alt: "Image alt text",
+              },
+              eyebrow: "Blog",
+              heading: "Natural language processing.",
+              cta: {
+                href: "https://www.example.com",
+              },
             },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
+            {
+              image: {
+                defaultSrc: "/images/1312/fpo--2x1--1312x656--003.jpg",
+                alt: "Image alt text",
+              },
+              eyebrow: "Topic",
+              heading: "Natural language processing.",
+              cta: {
+                href: "https://www.example.com",
+              },
             },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
+            {
+              image: {
+                defaultSrc: "/images/1312/fpo--16x9--1312x738--005.jpg",
+                alt: "Image alt text",
+              },
+              eyebrow: "Blog",
+              heading: "Natural language processing.",
+              cta: {
+                href: "https://www.example.com",
+              },
             },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
+            {
+              image: {
+                defaultSrc: "/images/1312/fpo--3x2--874--004.jpg",
+                alt: "Image alt text",
+              },
+              eyebrow: "Topic",
+              heading: "Natural language processing.",
+              cta: {
+                href: "https://www.example.com",
+              },
             },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading:
-              "Lorem ipsum dolor sit amet, consectetur adip possib illo inventore veritatis",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-        ]}
-      />
+          ]}
+        />
+      </Layout>
 
       <a
-        name="content-group-horizontal"
-        data-title="Content Group Horizontal"
+        name="content-block-horizontal"
+        data-title="Content Block Horizontal"
       />
-      <ContentGroupHorizontal
-        heading="Content Group Horizontal"
+      <ContentBlockHorizontal
+        heading="Content Block Horizontal"
         items={[
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -288,8 +256,7 @@ const Services = () => (
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -305,8 +272,7 @@ const Services = () => (
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -318,8 +284,7 @@ const Services = () => (
                 },
                 {
                   type: "local",
-                  copy:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   cta: {
                     href: "https://example.com",
                   },
@@ -330,8 +295,7 @@ const Services = () => (
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -347,8 +311,7 @@ const Services = () => (
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -366,74 +329,6 @@ const Services = () => (
                   },
                 },
               ],
-            },
-          },
-        ]}
-      />
-      <a name="content-block-card" data-title="Content Block Cards" />
-      <ContentBlockCards
-        heading="Content Block Cards"
-        cards={[
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading: "Lorem ipsum dolor sit amet, consectetur adip possib",
-            cta: {
-              href: "https://www.example.com",
-            },
-          },
-          {
-            image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
-              alt: "Image alt text",
-            },
-            eyebrow: "Lorem",
-            heading:
-              "Lorem ipsum dolor sit amet, consectetur adip possib illo inventore veritatis",
-            cta: {
-              href: "https://www.example.com",
             },
           },
         ]}
@@ -463,11 +358,6 @@ const Services = () => (
         </div>
       </div>
     </div>
-    <Accordion>
-      <AccordionItem title="Footnotes">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </AccordionItem>
-    </Accordion>
   </>
 );
 export default Services;

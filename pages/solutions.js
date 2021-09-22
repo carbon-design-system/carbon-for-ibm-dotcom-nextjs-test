@@ -9,12 +9,30 @@ import {
   CTASection,
   LeadSpaceBlock,
   LogoGrid,
-  FeatureCardBlockLarge,
+  Layout,
   TableOfContents,
 } from "@carbon/ibmdotcom-react";
 
-import { ArrowRight20 } from "@carbon/icons-react";
 import React from "react";
+
+const contentBlockImages = {
+  sources: [
+    {
+      src: "/images/320/fpo--16x9--320x180--003.jpg",
+      breakpoint: 320,
+    },
+    {
+      src: "/images/480/fpo--16x9--480x270--003.jpg",
+      breakpoint: 400,
+    },
+    {
+      src: "/images/720/fpo--16x9--720x405--003.jpg",
+      breakpoint: 672,
+    },
+  ],
+  alt: "Image alt text",
+  defaultSrc: "/images/720/fpo--16x9--720x405--003.jpg",
+};
 
 /**
  * Solutions template
@@ -79,8 +97,7 @@ const Solutions = () => (
         items={[
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
+            copy: "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
             cta: {
               type: "local",
               copy: "Lorem Ipsum dolor sit",
@@ -89,13 +106,11 @@ const Solutions = () => (
           },
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
+            copy: "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
           },
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
+            copy: "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
             cta: {
               type: "local",
               copy: "Lorem Ipsum dolor sit",
@@ -104,138 +119,59 @@ const Solutions = () => (
           },
           {
             heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
+            copy: "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
           },
         ]}
-      />
-      <FeatureCardBlockLarge
-        eyebrow="scelerisque purus"
-        heading="Feature Card Block Large"
-        copy="Habitant morbi tristique senectus et netus et malesuada fames. Habitant morbi tristique."
-        cta={{
-          href: "https://example.com",
-          icon: {
-            src: ArrowRight20,
-          },
-        }}
-        image={{
-          sources: [
-            {
-              src: "https://dummyimage.com/320x160/ee5396/161616&text=2x1",
-              breakpoint: "sm",
-            },
-            {
-              src: "https://dummyimage.com/400x200/ee5396/161616&text=2x1",
-              breakpoint: "md",
-            },
-            {
-              src: "https://dummyimage.com/600x600/ee5396/161616&text=1x1",
-              breakpoint: 991,
-            },
-            {
-              src: "https://dummyimage.com/600x300/ee5396/161616&text=2x1",
-              breakpoint: "lg",
-            },
-            {
-              src: "https://dummyimage.com/672x672/ee5396/161616&text=1x1",
-              breakpoint: "xlg",
-            },
-          ],
-          defaultSrc: "https://dummyimage.com/600x600/ee5396/161616&text=1x1",
-          alt: "Image alt text",
-        }}
       />
 
-      <a name="section-3" data-title="Content Block Segmented (2)" />
-      <ContentBlockSegmented
-        heading="Content Block Segmented (2)"
-        items={[
-          {
-            heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
-            image: {
-              heading: "Mauris iaculis eget dolor nec hendrerit.",
+      <Layout nested={true} type="2-1" border={true}>
+        <a name="section-3" data-title="Content Block Segmented (2)" />
+        <ContentBlockSegmented
+          heading="Content Block Segmented (2)"
+          items={[
+            {
+              heading: "A scelerisque purus semper eget duis at tellus.",
+              copy: "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
               image: {
-                sources: [
-                  {
-                    src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
-                    breakpoint: 320,
-                  },
-                  {
-                    src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
-                    breakpoint: 400,
-                  },
-                  {
-                    src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
-                    breakpoint: 672,
-                  },
-                ],
-                alt: "Image alt text",
-                defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
+                heading: "Mauris iaculis eget dolor nec hendrerit.",
+                image: contentBlockImages,
+              },
+              cta: {
+                type: "local",
+                copy: "Lorem Ipsum dolor sit",
+                href: "https://example.com",
               },
             },
-            cta: {
-              type: "local",
-              copy: "Lorem Ipsum dolor sit",
-              href: "https://example.com",
-            },
-          },
-          {
-            heading: "A scelerisque purus semper eget duis at tellus.",
-            copy:
-              "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
-            image: {
-              heading: "Mauris iaculis eget dolor nec hendrerit.",
+            {
+              heading: "A scelerisque purus semper eget duis at tellus.",
+              copy: "Elementum nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus et malesuada fames.",
               image: {
-                sources: [
-                  {
-                    src:
-                      "https://dummyimage.com/320x180/ee5396/161616&text=16x9",
-                    breakpoint: 320,
-                  },
-                  {
-                    src:
-                      "https://dummyimage.com/400x225/ee5396/161616&text=16x9",
-                    breakpoint: 400,
-                  },
-                  {
-                    src:
-                      "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
-                    breakpoint: 672,
-                  },
-                ],
-                alt: "Image alt text",
-                defaultSrc:
-                  "https://dummyimage.com/672x378/ee5396/161616&text=16x9",
+                heading: "Mauris iaculis eget dolor nec hendrerit.",
+                image: contentBlockImages,
               },
             },
-          },
-        ]}
-        cta={{
-          style: "card",
-          disableImage: true,
-          type: "video",
-          media: {
-            src: "1_sf5ovm7u",
+          ]}
+          cta={{
+            style: "card",
+            disableImage: true,
             type: "video",
-          },
-        }}
-        mediaType="image"
-      />
+            media: {
+              src: "1_sf5ovm7u",
+              type: "video",
+            },
+          }}
+          mediaType="image"
+        />
+      </Layout>
+
       <CalloutWithMedia
-        heading="Callout With Media"
-        copy="Porttitor eget dolor morbi non arcu. Et ligula ullamcorper malesuada proin libero nunc consequat. In est ante in nibh mauris cursus mattis. Turpis tincidunt id aliquet risus feugiat in. Vel facilisis volutpat est velit egestas dui."
-        mediaType="video"
         mediaData={{
-          videoId: "1_v1z55w0b",
+          videoId: "1_9h94wo6b",
           showCaption: true,
         }}
+        mediaType="video"
+        heading="Callout With Media"
+        copy="Porttitor eget dolor morbi non arcu. Et ligula ullamcorper malesuada proin libero nunc consequat. In est ante in nibh mauris cursus mattis. Turpis tincidunt id aliquet risus feugiat in. Vel facilisis volutpat est velit egestas dui."
       />
 
       <a name="section-4" data-title="Content Group Horizontal" />
@@ -245,8 +181,7 @@ const Solutions = () => (
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ sellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -265,8 +200,7 @@ const Solutions = () => (
           {
             eyebrow: "Lorem ipsum",
             heading: "Aliquam condimentum",
-            copy:
-              "Lorem ipsum dolor sit amet, _consectetur_ adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin.",
+            copy: "Lorem ipsum dolor sit amet, _consectetur_ adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin.",
             cta: {
               items: [
                 {
@@ -289,38 +223,38 @@ const Solutions = () => (
         heading="Logo Grid"
         logosGroup={[
           {
-            title: "Company A",
-            imgSrc: "https://dummyimage.com/140x140",
+            title: "Microsoft",
+            imgSrc: "/images/logos/logo-microsoft.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
-            title: "Company B",
-            imgSrc: "https://dummyimage.com/140x140",
+            title: "Dell",
+            imgSrc: "/images/logos/logo-dell.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
-            title: "Company C",
-            imgSrc: "https://dummyimage.com/140x140",
+            title: "Rabobank",
+            imgSrc: "/images/logos/logo-rabobank.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
-            title: "Company D",
-            imgSrc: "https://dummyimage.com/140x140",
+            title: "Adobe",
+            imgSrc: "/images/logos/logo-adobe.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
-            title: "Company E",
-            imgSrc: "https://dummyimage.com/140x140",
+            title: "US Bank",
+            imgSrc: "/images/logos/logo-usbank.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
-            title: "Company F",
-            imgSrc: "https://dummyimage.com/140x140",
+            title: "Cisco",
+            imgSrc: "/images/logos/logo-cisco.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
@@ -335,8 +269,7 @@ const Solutions = () => (
         cards={[
           {
             image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
+              defaultSrc: "/images/1312/fpo--1x1--1312x1312--001.jpg",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -347,11 +280,10 @@ const Solutions = () => (
           },
           {
             image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
+              defaultSrc: "/images/1312/fpo--4x3--1312x984--002.jpg",
               alt: "Image alt text",
             },
-            eyebrow: "Topic",
+            eyebrow: "Blog",
             heading: "Natural language processing.",
             cta: {
               href: "https://www.example.com",
@@ -359,8 +291,7 @@ const Solutions = () => (
           },
           {
             image: {
-              defaultSrc:
-                "https://dummyimage.com/1056x792/ee5396/161616%26text=4x3",
+              defaultSrc: "/images/1312/fpo--2x1--1312x656--003.jpg",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -417,8 +348,7 @@ const Solutions = () => (
               },
               {
                 heading: "Learn how",
-                copy:
-                  "Dig into more self-directed learning about DevOps methodologies.",
+                copy: "Dig into more self-directed learning about DevOps methodologies.",
                 cta: {
                   copy: "Browse tutorials",
                   type: "local",

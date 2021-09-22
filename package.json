@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@carbon/ibmdotcom-react": "^1.24.0",
-    "@carbon/ibmdotcom-styles": "^1.24.0",
+    "@carbon/ibmdotcom-react": "canary",
+    "@carbon/ibmdotcom-styles": "canary",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "^11.15.0",
     "@commitlint/cli": "^11.0.0",
@@ -60,7 +60,6 @@
   },
   "resolutions": {
     "dot-prop": ">=5.1.1",
-    "node-fetch": ">=2.6.1",
     "object-path": ">=0.11.5",
     "serialize-javascript": ">= 3.1.0"
   },

@@ -230,25 +230,6 @@ const Learn = () => (
             {
               heading: "Lorem ipsum dolor sit amet.",
               copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit.",
-              image: {
-                sources: [
-                  {
-                    src: "https://fpoimg.com/672x672?text=16:9&bg_color=ee5396&text_color=161616",
-                    breakpoint: 320,
-                  },
-                  {
-                    src: "https://fpoimg.com/400x225?text=16:9&bg_color=ee5396&text_color=161616",
-                    breakpoint: 400,
-                  },
-                  {
-                    src: "https://fpoimg.com/672x378?text=16:9&bg_color=ee5396&text_color=161616",
-                    breakpoint: 672,
-                  },
-                ],
-                alt: "Image alt text",
-                defaultSrc:
-                  "https://fpoimg.com/672x378?text=16:9&bg_color=ee5396&text_color=161616",
-              },
             },
           ]}
           cta={{
