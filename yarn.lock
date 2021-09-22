@@ -262,7 +262,7 @@
     "@carbon/import-once" "^10.6.0"
     "@carbon/layout" "^10.29.0"
 
-"@carbon/ibmdotcom-react@latest":
+"@carbon/ibmdotcom-react@^1.24.0":
   version "1.24.0"
   resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.24.0.tgz#9b773c3117d0bead7bb697f80cc109b395facad3"
   integrity sha512-CQRYqpplsUUO4UdkR4jdyorbxMvVpm+HlVKaAA7GcYaFA0GOJ4lpytfZ9KQWtnkIK/ZJ2YLbP3abb+zYfZKihA==
@@ -291,7 +291,7 @@
     axios "^0.21.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-styles@1.24.0", "@carbon/ibmdotcom-styles@latest":
+"@carbon/ibmdotcom-styles@1.24.0", "@carbon/ibmdotcom-styles@^1.24.0":
   version "1.24.0"
   resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.24.0.tgz#794b12020a122b3ee70ff0da1b0e3c67c146ca4b"
   integrity sha512-/W342EFsRpi4IjScb8NeC1O13tnm6iGwC9v9LEJVJGGma6GXm/O7HZYbhs1Xni4ndAn7RXHPPNxPr2IrwqZmmQ==
@@ -325,9 +325,9 @@
   integrity sha512-axRNtdg5PAIpPFXGYAHRk2JudHhgHlu/o00BkFlsbMhgsLhEgsUddLZoVjCByBCEPxLwt9CSk048VmcKuJzm7w==
 
 "@carbon/icon-helpers@^10.22.0":
-  version "10.22.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.22.0.tgz#5992c75850ace09f9cf5015ebec652ccce96c23e"
-  integrity sha512-00HRYbb0P1v1L3XI+KuBqHoSzbeTZTYMiBWqMvITGm6y2bdE6++Xbp4eIQbZZypEYzuiJ0UmJf+VMx+ypBOjiw==
+  version "10.23.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.23.0.tgz#9811b44baead9422bb809f082ff6da27db8be1fa"
+  integrity sha512-nx2QoHMz9AoNWPwowsdgw2PfFhOR2sFw5G0DyuwuY1ZNUFkevKZ+qfK86XXB25L1h6gHn9dw1F1F1yvQHw/C8A==
 
 "@carbon/icons-react@10.37.0", "@carbon/icons-react@^10.37.0", "@carbon/icons-react@^10.9.1":
   version "10.37.0"
