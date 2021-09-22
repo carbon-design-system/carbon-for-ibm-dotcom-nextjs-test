@@ -225,7 +225,7 @@ const WhiteThemeExample = () => (
         },
       ]}
       image={{
-        defaultSrc: "images/NextJS-white-leadspace.png",
+        defaultSrc: "images/nextjs-white-leadspace.png",
         alt: "Image alt text",
       }}
     />

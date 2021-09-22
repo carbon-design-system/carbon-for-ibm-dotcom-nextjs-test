@@ -393,13 +393,13 @@
     axios "^0.21.1"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-services@1.25.0-canary.1243270330.0+6798bde":
-  version "1.25.0-canary.1243270330.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.25.0-canary.1243270330.0.tgz#dae741ebae8764fc199e60187e7691a6aec54d5c"
-  integrity sha512-bp1YtJcMNE6hRMnQDAynt2Z2r8pl3EDgbGNPUduZ/9+se7OOyI1x2x38mlxPvAgYIXuK6T1KUekBUiKjrb5ynw==
+"@carbon/ibmdotcom-services@1.25.0-rc.1":
+  version "1.25.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.25.0-rc.1.tgz#4ab63750643d5f9070071857fc6cc68500cca677"
+  integrity sha512-WClNYEO1t9/kYS2X+/GnssCE1DITXcexzIIsQ4Ph0pFZIrWKcixuXkoyKhMOYb3MuuRimUpqlgFZUmBrDkfTPw==
   dependencies:
     "@babel/runtime" "^7.5.0"
-    "@carbon/ibmdotcom-utilities" "1.25.0-canary.1243270330.0+6798bde"
+    "@carbon/ibmdotcom-utilities" "1.25.0-rc.1"
     "@carbon/telemetry" "0.0.0-alpha.6"
     axios "^0.21.1"
     window-or-global "^1.0.1"
@@ -419,10 +419,10 @@
     "@carbon/type" "10.33.0"
     carbon-components "10.41.0"
 
-"@carbon/ibmdotcom-styles@1.25.0-canary.1243270330.0+6798bde":
-  version "1.25.0-canary.1243270330.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.25.0-canary.1243270330.0.tgz#d5882d778a07de8c9519bcac8ffeb0c6e751e7ec"
-  integrity sha512-00yVZxrQ8ephubjPxMHqwvjzTy5f0s7pCBwd/KqDUyfudeaE8jw+Y/WPFqvpCQXv9BAS4zZZKH+Pf7AclzvZ1Q==
+"@carbon/ibmdotcom-styles@1.25.0-rc.1":
+  version "1.25.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.25.0-rc.1.tgz#527347eb28c3fc508424e5a3f0090de5cd5c85e8"
+  integrity sha512-7moZBkyQfA5QEqG7TZsrh6EnsJGscdXCQxGDPXpG7im/AFOGa+GG0gvbER7E7Np2V/T5tKVrC3NTaGiFwyCZNQ==
   dependencies:
     "@carbon/grid" "10.33.0"
     "@carbon/icons-react" "10.37.0"
@@ -447,10 +447,10 @@
     marked "1.1.0"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-utilities@1.25.0-canary.1243270330.0+6798bde":
-  version "1.25.0-canary.1243270330.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.25.0-canary.1243270330.0.tgz#ffa09a04782dd180e594db09e2bfd151948f2a00"
-  integrity sha512-9FKkA9rGyK96N6TEtp6BtA4TJK7BlXQXrzK2FrarEcnT2BslKnelhW+uwYmQ15UkKXBd68jAqu4z7jTBAMdUsA==
+"@carbon/ibmdotcom-utilities@1.25.0-rc.1":
+  version "1.25.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.25.0-rc.1.tgz#008b627e4a2d3b056c80103c11152d1331127dbf"
+  integrity sha512-KOsfLRBxPAzabM/yTea9m/fFYWcD4Bqs+3B73XXtibTdtOd75uziLTvURIjL5J2+etjcOjVE31OcwwJPnnwnpw==
   dependencies:
     "@carbon/telemetry" "0.0.0-alpha.6"
     axios "^0.21.1"
@@ -460,14 +460,14 @@
     marked "1.1.0"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-web-components@1.10.0-canary.1243270330.0":
-  version "1.10.0-canary.1243270330.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-web-components/-/ibmdotcom-web-components-1.10.0-canary.1243270330.0.tgz#e796bf8cdc81465b9ee493c1e4f29b843fd71d37"
-  integrity sha512-HVSnpRPdYht8bqAAGlMGHDdZ6ZZGCbGHvN14R+HQaxrZluRgdvGxwGiOs83Hanv6cyC1HygGyFL9jrqBDCbqWQ==
+"@carbon/ibmdotcom-web-components@1.10.0-rc.1":
+  version "1.10.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-web-components/-/ibmdotcom-web-components-1.10.0-rc.1.tgz#dc00f6bc00333e3c60291ece6cbd32b80d675024"
+  integrity sha512-mR2s+ydeBUgxVxX+zO7QOVDDL7lI4lc0AJ5MvJ7aX5CYFv+5ONMZ+I00gTSWiy/WptELnJib2NQxIYDdKkGxvQ==
   dependencies:
-    "@carbon/ibmdotcom-services" "1.25.0-canary.1243270330.0+6798bde"
-    "@carbon/ibmdotcom-styles" "1.25.0-canary.1243270330.0+6798bde"
-    "@carbon/ibmdotcom-utilities" "1.25.0-canary.1243270330.0+6798bde"
+    "@carbon/ibmdotcom-services" "1.25.0-rc.1"
+    "@carbon/ibmdotcom-styles" "1.25.0-rc.1"
+    "@carbon/ibmdotcom-utilities" "1.25.0-rc.1"
     "@carbon/layout" "10.23.0"
     "@carbon/telemetry" "0.0.0-alpha.6"
     carbon-components "10.41.0"
@@ -489,11 +489,6 @@
   version "10.21.0"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.21.0.tgz#446223e26afe436455cfffcc4da235e6a23dfe3f"
   integrity sha512-axRNtdg5PAIpPFXGYAHRk2JudHhgHlu/o00BkFlsbMhgsLhEgsUddLZoVjCByBCEPxLwt9CSk048VmcKuJzm7w==
-
-"@carbon/icon-helpers@^10.22.0":
-  version "10.22.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.22.0.tgz#5992c75850ace09f9cf5015ebec652ccce96c23e"
-  integrity sha512-00HRYbb0P1v1L3XI+KuBqHoSzbeTZTYMiBWqMvITGm6y2bdE6++Xbp4eIQbZZypEYzuiJ0UmJf+VMx+ypBOjiw==
 
 "@carbon/icon-helpers@^10.9.0":
   version "10.9.0"

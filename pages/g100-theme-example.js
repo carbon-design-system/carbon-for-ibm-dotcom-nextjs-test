@@ -331,7 +331,7 @@ const WhiteThemeExample = () => (
         },
       ]}
       image={{
-        defaultSrc: "images/NextJS-white-leadspace.png",
+        defaultSrc: "images/dark-leadspace-img.jpg",
         alt: "Image alt text",
       }}
     />
@@ -349,7 +349,7 @@ const WhiteThemeExample = () => (
             cards={[
               {
                 image: {
-                  defaultSrc: "images/Card-section-img-1.png",
+                  defaultSrc: "images/card-section-img-1.png",
                   alt: "Image alt text",
                 },
                 eyebrow: "Card section",
@@ -360,7 +360,7 @@ const WhiteThemeExample = () => (
               },
               {
                 image: {
-                  defaultSrc: "images/Card-section-img-2.png",
+                  defaultSrc: "images/card-section-img-2.png",
                   alt: "Image alt text",
                 },
                 eyebrow: "Card section",
@@ -372,7 +372,7 @@ const WhiteThemeExample = () => (
               },
               {
                 image: {
-                  defaultSrc: "images/Card-section-img-3.png",
+                  defaultSrc: "images/card-section-img-3.png",
                   alt: "Image alt text",
                 },
                 eyebrow: "Underlying component",
@@ -383,7 +383,7 @@ const WhiteThemeExample = () => (
               },
               {
                 image: {
-                  defaultSrc: "images/Card-section-img-4.jpg",
+                  defaultSrc: "images/card-section-img-4.jpg",
                   alt: "Image alt text",
                 },
                 eyebrow: "Card",
@@ -395,7 +395,7 @@ const WhiteThemeExample = () => (
               },
               {
                 image: {
-                  defaultSrc: "images/Card-section-img-5.png",
+                  defaultSrc: "images/card-section-img-5.png",
                   alt: "Image alt text",
                 },
                 eyebrow: "Usage",
@@ -426,7 +426,7 @@ const WhiteThemeExample = () => (
                       "The component comes in two sizes - medium and large. It is made up of an eyebrow, headline, image, and link. " +
                       "Body copy is optional. The entire card section, including the image, is clickable (or tappable on mobile).",
                     image: {
-                      defaultSrc: "images/Feature-card-illustration.png",
+                      defaultSrc: "images/feature-card-illustration.png",
                       alt: "Image alt text",
                     },
                   }}
@@ -567,7 +567,7 @@ const WhiteThemeExample = () => (
                 <DDSImage
                   slot="media"
                   alt="Image alt text"
-                  default-src="images/Tabs-media-1.jpg"
+                  default-src="images/tabs-media-1.jpg"
                 ></DDSImage>
                 <DDSContentItemHeading>Image media</DDSContentItemHeading>
                 <DDSContentItemHorizontalMediaCopy>
@@ -597,7 +597,7 @@ const WhiteThemeExample = () => (
                 <DDSImage
                   slot="media"
                   alt="Image alt text"
-                  default-src="images/Tabs-media-2.png"
+                  default-src="images/tabs-media-2.png"
                 ></DDSImage>
                 <DDSContentItemHeading>Another image</DDSContentItemHeading>
                 <DDSContentItemHorizontalMediaCopy>
