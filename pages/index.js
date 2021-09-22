@@ -21,24 +21,24 @@ const Home = () => (
     theme="white"
     cards={[
       {
-        heading: "Learn",
+        heading: "Example page A",
         copy: " ",
         cta: {
-          href: `./learn${_htmlExtension}`,
+          href: `./example-page-a${_htmlExtension}`,
         },
       },
       {
-        heading: "Solutions",
+        heading: "Example page B",
         copy: " ",
         cta: {
-          href: `./solutions${_htmlExtension}`,
+          href: `./example-page-b${_htmlExtension}`,
         },
       },
       {
-        heading: "Services",
+        heading: "Example page c",
         copy: " ",
         cta: {
-          href: `./services${_htmlExtension}`,
+          href: `./example-page-c${_htmlExtension}`,
         },
       },
       {
