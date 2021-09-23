@@ -42,10 +42,17 @@ const Home = () => (
         },
       },
       {
-        heading: "More coming soon!",
+        heading: "White theme example page",
         copy: " ",
         cta: {
-          href: `./learn${_htmlExtension}`,
+          href: `./white-theme-example${_htmlExtension}`,
+        },
+      },
+      {
+        heading: "Gray 100 theme example page",
+        copy: " ",
+        cta: {
+          href: `./g100-theme-example${_htmlExtension}`,
         },
       },
     ]}
