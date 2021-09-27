@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
-import "../styles/learn.scss";
+import "../styles/example-page-a.scss";
 import { Desktop, Pattern, Touch } from "@carbon/pictograms-react";
 import {
   TableOfContents,
