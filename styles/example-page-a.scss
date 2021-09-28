@@ -1,0 +1,14 @@
+@import "~@carbon/ibmdotcom-styles/scss/components/card-section-images/card-section-images";
+@import "~@carbon/ibmdotcom-styles/scss/components/card-section-simple/card-section-simple";
+@import "~@carbon/ibmdotcom-styles/scss/components/content-block-media/index";
+@import "~@carbon/ibmdotcom-styles/scss/components/content-block-mixed/index";
+@import "~@carbon/ibmdotcom-styles/scss/components/content-block-segmented/index";
+@import "~@carbon/ibmdotcom-styles/scss/components/content-block-simple/index";
+@import "~@carbon/ibmdotcom-styles/scss/components/layout/layout";
+@import "~@carbon/ibmdotcom-styles/scss/components/leadspace/leadspace";
+@import "~@carbon/ibmdotcom-styles/scss/components/link-list/index";
+@import "~@carbon/ibmdotcom-styles/scss/components/tableofcontents/index";
+
+.bx--content-section:not(:last-child) {
+  padding-bottom: 48px;
+}

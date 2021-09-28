@@ -137,8 +137,7 @@ const linkListProps = {
       type: "local",
       copy: "Content block media",
       cta: {
-        href:
-          "https://www.ibm.com/standards/carbon/components/content-block-media",
+        href: "https://www.ibm.com/standards/carbon/components/content-block-media",
       },
     },
     {
@@ -297,8 +296,7 @@ const WhiteThemeExample = () => (
         />
         <CalloutQuote
           quote={{
-            copy:
-              "The Callout quote is a typographic layout that is used to highlight an impactful client statement or user testimonial",
+            copy: "The Callout quote is a typographic layout that is used to highlight an impactful client statement or user testimonial",
             source: {
               heading: "Speaker’s name",
               copy: "Additional info such as title or company ",
@@ -306,8 +304,7 @@ const WhiteThemeExample = () => (
             cta: {
               copy: "See more about the Callout quote",
               type: "local",
-              href:
-                "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/callout-quote",
+              href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/callout-quote",
             },
           }}
         />
@@ -332,8 +329,7 @@ const WhiteThemeExample = () => (
                 "They work well with presentations and marketing communications.",
               cta: {
                 type: "local",
-                href:
-                  "https://www.ibm.com/standards/carbon/components/content-group-pictograms",
+                href: "https://www.ibm.com/standards/carbon/components/content-group-pictograms",
                 copy: "Content group pictograms",
               },
               pictogram: {
@@ -348,8 +344,7 @@ const WhiteThemeExample = () => (
                 "on creating a custom pictogram. Only the productive pictogram set are used in these sections.",
               cta: {
                 type: "local",
-                href:
-                  "https://www.ibm.com/design/language/iconography/pictograms/library",
+                href: "https://www.ibm.com/design/language/iconography/pictograms/library",
                 copy: "IBM Design Language pictogram library",
               },
               pictogram: {
@@ -381,38 +376,30 @@ const WhiteThemeExample = () => (
             items={[
               {
                 heading: "Default",
-                copy:
-                  "Content group cards includes a section heading, body copy, and any number of card components listed below.",
+                copy: "Content group cards includes a section heading, body copy, and any number of card components listed below.",
                 cta: {
-                  href:
-                    "https://www.ibm.com/standards/carbon/components/content-group-cards",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
               {
                 heading: "Usage in a content block",
-                copy:
-                  "This pattern can be used multiple times within a content block.",
+                copy: "This pattern can be used multiple times within a content block.",
                 cta: {
-                  href:
-                    "https://www.ibm.com/standards/carbon/components/content-group-cards",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
               {
                 heading: "Card component",
-                copy:
-                  "The Card component used here contains a title, body copy, and a CTA icon to communicate interactivity.",
+                copy: "The Card component used here contains a title, body copy, and a CTA icon to communicate interactivity.",
                 cta: {
-                  href:
-                    "https://www.ibm.com/standards/carbon/components/content-group-cards",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
               {
                 heading: "Avoid solo cards",
-                copy:
-                  "Try to avoid having orphan or single hanging cards in a row by itself.",
+                copy: "Try to avoid having orphan or single hanging cards in a row by itself.",
                 cta: {
-                  href:
-                    "https://www.ibm.com/standards/carbon/components/content-group-cards",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
             ]}
@@ -507,16 +494,14 @@ const WhiteThemeExample = () => (
           },
           {
             heading: "Variation",
-            copy:
-              "Previewed here is a variation of Card section that includes the high contrast card at the end of the card collection.",
+            copy: "Previewed here is a variation of Card section that includes the high contrast card at the end of the card collection.",
             cta: {
               href: `https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section`,
             },
           },
           {
             heading: "Avoid orphan cards",
-            copy:
-              "Try to avoid having orphan or single hanging cards in a row by itself.",
+            copy: "Try to avoid having orphan or single hanging cards in a row by itself.",
             cta: {
               href: `https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section`,
             },
@@ -631,8 +616,7 @@ const WhiteThemeExample = () => (
                   {
                     type: "local",
                     copy: ["Carbon for IBM.com"],
-                    href:
-                      "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section",
+                    href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section",
                   },
                 ],
               }}
@@ -643,8 +627,7 @@ const WhiteThemeExample = () => (
                   cta: {
                     copy: "More on CTA section",
                     type: "local",
-                    href:
-                      "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section",
+                    href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section",
                   },
                 },
                 {
@@ -653,8 +636,7 @@ const WhiteThemeExample = () => (
                   cta: {
                     copy: "More on Call-to-action",
                     type: "local",
-                    href:
-                      "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta",
+                    href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta",
                   },
                 },
               ]}

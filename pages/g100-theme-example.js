@@ -249,8 +249,7 @@ const linkListProps = {
       type: "local",
       copy: "Content block media",
       cta: {
-        href:
-          "https://www.ibm.com/standards/carbon/components/content-block-media",
+        href: "https://www.ibm.com/standards/carbon/components/content-block-media",
       },
     },
     {
@@ -490,16 +489,14 @@ const WhiteThemeExample = () => (
                             type: "local",
                             copy: "Learn more",
                             cta: {
-                              href:
-                                "https://www.ibm.com/standards/carbon/components/content-block-horizontal",
+                              href: "https://www.ibm.com/standards/carbon/components/content-block-horizontal",
                             },
                           },
                           {
                             type: "local",
                             copy: "See design specs",
                             cta: {
-                              href:
-                                "https://ibm.box.com/s/rv5kmm0a4d9ded74v6yfk8ad5id5ghmx",
+                              href: "https://ibm.box.com/s/rv5kmm0a4d9ded74v6yfk8ad5id5ghmx",
                             },
                           },
                         ],
@@ -517,16 +514,14 @@ const WhiteThemeExample = () => (
                             type: "local",
                             copy: "See Web Component Storybook",
                             cta: {
-                              href:
-                                "https://www.ibm.com/standards/carbon/web-components/?path=/story/components-scroll-animations--fade-once",
+                              href: "https://www.ibm.com/standards/carbon/web-components/?path=/story/components-scroll-animations--fade-once",
                             },
                           },
                           {
                             type: "local",
                             copy: "See React Storybook",
                             cta: {
-                              href:
-                                "https://www.ibm.com/standards/carbon/react/?path=/story/components-scroll-animations--default",
+                              href: "https://www.ibm.com/standards/carbon/react/?path=/story/components-scroll-animations--default",
                             },
                           },
                         ],
@@ -544,8 +539,7 @@ const WhiteThemeExample = () => (
                             type: "local",
                             copy: "Learn more",
                             cta: {
-                              href:
-                                "https://www.ibm.com/standards/carbon/guidelines/spacing",
+                              href: "https://www.ibm.com/standards/carbon/guidelines/spacing",
                             },
                           },
                         ],
