@@ -18,20 +18,20 @@ import React from "react";
 const contentBlockImages = {
   sources: [
     {
-      src: "/images/320/fpo--16x9--320x180--003.jpg",
+      src: "images/320/fpo--16x9--320x180--003.jpg",
       breakpoint: 320,
     },
     {
-      src: "/images/480/fpo--16x9--480x270--003.jpg",
+      src: "images/480/fpo--16x9--480x270--003.jpg",
       breakpoint: 400,
     },
     {
-      src: "/images/720/fpo--16x9--720x405--003.jpg",
+      src: "images/720/fpo--16x9--720x405--003.jpg",
       breakpoint: 672,
     },
   ],
   alt: "Image alt text",
-  defaultSrc: "/images/720/fpo--16x9--720x405--003.jpg",
+  defaultSrc: "images/720/fpo--16x9--720x405--003.jpg",
 };
 
 /**
@@ -50,15 +50,15 @@ const Learn = () => (
       image={{
         sources: [
           {
-            src: "/images/leadspace/fpo--leadspace--1584x560--003.jpg",
+            src: "images/leadspace/fpo--leadspace--1584x560--003.jpg",
             breakpoint: "sm",
           },
           {
-            src: "/images/leadspace/fpo--leadspace--1584x560--003.jpg",
+            src: "images/leadspace/fpo--leadspace--1584x560--003.jpg",
             breakpoint: "md",
           },
         ],
-        defaultSrc: "/images/leadspace/fpo--leadspace--1584x560--003.jpg",
+        defaultSrc: "images/leadspace/fpo--leadspace--1584x560--003.jpg",
         alt: "lead space image",
       }}
     />
@@ -261,20 +261,20 @@ const Learn = () => (
             image: {
               sources: [
                 {
-                  src: "/images/320/fpo--16x9--320x180--003.jpg",
+                  src: "images/320/fpo--16x9--320x180--003.jpg",
                   breakpoint: 320,
                 },
                 {
-                  src: "/images/480/fpo--16x9--480x270--003.jpg",
+                  src: "images/480/fpo--16x9--480x270--003.jpg",
                   breakpoint: 400,
                 },
                 {
-                  src: "/images/720/fpo--16x9--720x405--003.jpg",
+                  src: "images/720/fpo--16x9--720x405--003.jpg",
                   breakpoint: 672,
                 },
               ],
               alt: "Image alt text",
-              defaultSrc: "/images/720/fpo--16x9--720x405--003.jpg",
+              defaultSrc: "images/720/fpo--16x9--720x405--003.jpg",
             },
           }}
           cta={{
@@ -303,20 +303,20 @@ const Learn = () => (
                 image: {
                   sources: [
                     {
-                      src: "/images/320/fpo--16x9--320x180--003.jpg",
+                      src: "images/320/fpo--16x9--320x180--003.jpg",
                       breakpoint: 320,
                     },
                     {
-                      src: "/images/480/fpo--16x9--480x270--003.jpg",
+                      src: "images/480/fpo--16x9--480x270--003.jpg",
                       breakpoint: 400,
                     },
                     {
-                      src: "/images/720/fpo--16x9--720x405--003.jpg",
+                      src: "images/720/fpo--16x9--720x405--003.jpg",
                       breakpoint: 672,
                     },
                   ],
                   alt: "Image alt text",
-                  defaultSrc: "/images/720/fpo--16x9--720x405--003.jpg",
+                  defaultSrc: "images/720/fpo--16x9--720x405--003.jpg",
                 },
               },
               heading: "Lorem ipsum dolor sit amet",
@@ -346,20 +346,20 @@ const Learn = () => (
                 image: {
                   sources: [
                     {
-                      src: "/images/320/fpo--16x9--320x180--003.jpg",
+                      src: "images/320/fpo--16x9--320x180--003.jpg",
                       breakpoint: 320,
                     },
                     {
-                      src: "/images/480/fpo--16x9--480x270--003.jpg",
+                      src: "images/480/fpo--16x9--480x270--003.jpg",
                       breakpoint: 400,
                     },
                     {
-                      src: "/images/720/fpo--16x9--720x405--003.jpg",
+                      src: "images/720/fpo--16x9--720x405--003.jpg",
                       breakpoint: 672,
                     },
                   ],
                   alt: "Image alt text",
-                  defaultSrc: "/images/720/fpo--16x9--720x405--003.jpg",
+                  defaultSrc: "images/720/fpo--16x9--720x405--003.jpg",
                 },
               },
               heading: "Lorem ipsum dolor sit amet",
@@ -389,7 +389,7 @@ const Learn = () => (
               type: "local",
               heading: "Consectetur adipisicing elit",
               image: {
-                defaultSrc: "/images/720/fpo--1x1--720x720--003.jpg",
+                defaultSrc: "images/720/fpo--1x1--720x720--003.jpg",
                 alt: "Image alt text",
               },
               cta: {
@@ -407,7 +407,7 @@ const Learn = () => (
       cards={[
         {
           image: {
-            defaultSrc: "/images/1312/fpo--16x9--1312x738--005.jpg",
+            defaultSrc: "images/1312/fpo--16x9--1312x738--005.jpg",
             alt: "Image alt text",
           },
           eyebrow: "Topic",
@@ -418,7 +418,7 @@ const Learn = () => (
         },
         {
           image: {
-            defaultSrc: "/images/1312/fpo--1x1--1312x1312--001.jpg",
+            defaultSrc: "images/1312/fpo--1x1--1312x1312--001.jpg",
             alt: "Image alt text",
           },
           eyebrow: "Blog",
@@ -429,7 +429,7 @@ const Learn = () => (
         },
         {
           image: {
-            defaultSrc: "/images/1312/fpo--2x1--1312x656--003.jpg",
+            defaultSrc: "images/1312/fpo--2x1--1312x656--003.jpg",
             alt: "Image alt text",
           },
           eyebrow: "Topic",
@@ -440,7 +440,7 @@ const Learn = () => (
         },
         {
           image: {
-            defaultSrc: "/images/1312/fpo--3x2--874--004.jpg",
+            defaultSrc: "images/1312/fpo--3x2--874--004.jpg",
             alt: "Image alt text",
           },
           eyebrow: "Blog",
@@ -452,7 +452,7 @@ const Learn = () => (
         },
         {
           image: {
-            defaultSrc: "/images/1312/fpo--4x3--1312x984--002.jpg",
+            defaultSrc: "images/1312/fpo--4x3--1312x984--002.jpg",
             alt: "Image alt text",
           },
           eyebrow: "Topic",

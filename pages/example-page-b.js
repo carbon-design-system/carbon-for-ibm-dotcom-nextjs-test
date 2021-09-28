@@ -18,20 +18,20 @@ import React from "react";
 const contentBlockImages = {
   sources: [
     {
-      src: "/images/320/fpo--16x9--320x180--003.jpg",
+      src: "images/320/fpo--16x9--320x180--003.jpg",
       breakpoint: 320,
     },
     {
-      src: "/images/480/fpo--16x9--480x270--003.jpg",
+      src: "images/480/fpo--16x9--480x270--003.jpg",
       breakpoint: 400,
     },
     {
-      src: "/images/720/fpo--16x9--720x405--003.jpg",
+      src: "images/720/fpo--16x9--720x405--003.jpg",
       breakpoint: 672,
     },
   ],
   alt: "Image alt text",
-  defaultSrc: "/images/720/fpo--16x9--720x405--003.jpg",
+  defaultSrc: "images/720/fpo--16x9--720x405--003.jpg",
 };
 
 /**
@@ -224,37 +224,37 @@ const Solutions = () => (
         logosGroup={[
           {
             title: "Microsoft",
-            imgSrc: "/images/logos/logo-microsoft.png",
+            imgSrc: "images/logos/logo-microsoft.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
             title: "Dell",
-            imgSrc: "/images/logos/logo-dell.png",
+            imgSrc: "images/logos/logo-dell.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
             title: "Rabobank",
-            imgSrc: "/images/logos/logo-rabobank.png",
+            imgSrc: "images/logos/logo-rabobank.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
             title: "Adobe",
-            imgSrc: "/images/logos/logo-adobe.png",
+            imgSrc: "images/logos/logo-adobe.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
             title: "US Bank",
-            imgSrc: "/images/logos/logo-usbank.png",
+            imgSrc: "images/logos/logo-usbank.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
           {
             title: "Cisco",
-            imgSrc: "/images/logos/logo-cisco.png",
+            imgSrc: "images/logos/logo-cisco.png",
             altText: "Image alt text",
             href: "http://example.com/",
           },
@@ -269,7 +269,7 @@ const Solutions = () => (
         cards={[
           {
             image: {
-              defaultSrc: "/images/1312/fpo--1x1--1312x1312--001.jpg",
+              defaultSrc: "images/1312/fpo--1x1--1312x1312--001.jpg",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
@@ -280,7 +280,7 @@ const Solutions = () => (
           },
           {
             image: {
-              defaultSrc: "/images/1312/fpo--4x3--1312x984--002.jpg",
+              defaultSrc: "images/1312/fpo--4x3--1312x984--002.jpg",
               alt: "Image alt text",
             },
             eyebrow: "Blog",
@@ -291,7 +291,7 @@ const Solutions = () => (
           },
           {
             image: {
-              defaultSrc: "/images/1312/fpo--2x1--1312x656--003.jpg",
+              defaultSrc: "images/1312/fpo--2x1--1312x656--003.jpg",
               alt: "Image alt text",
             },
             eyebrow: "Topic",
