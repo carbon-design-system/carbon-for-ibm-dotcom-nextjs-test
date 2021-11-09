@@ -58,6 +58,11 @@ export default class CarbonForIBMDotcom extends App {
           <meta name="geo.country" content="US" />
           <meta name="robots" content="index,follow" />
 
+          <link
+            rel="stylesheet"
+            href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/themes.css"
+          />
+
           <script dangerouslySetInnerHTML={{ __html: digitalData }} />
 
           <script
