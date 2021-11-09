@@ -22,15 +22,15 @@
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
     "test:e2e:local": "start-server-and-test 'http-server -c-1 out --silent' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:with-video": "start-server-and-test 'http-server -c-1 out --silent' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config-file tests/e2e/cypress.json'",
-    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary",
-    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next",
-    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest"
+    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
+    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next",
+    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest"
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@carbon/ibmdotcom-react": "^1.26.0",
     "@carbon/ibmdotcom-styles": "^1.26.0",
-    "@carbon/ibmdotcom-web-components": "1.10.0-rc.1",
+    "@carbon/ibmdotcom-web-components": "^1.11.0",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "11.15.0",
     "@commitlint/cli": "^11.0.0",
