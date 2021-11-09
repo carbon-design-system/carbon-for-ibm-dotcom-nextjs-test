@@ -5,28 +5,28 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import "cypress-wait-until";
+
+/**
+ * Mocks the Masthead/Footer data
+ */
+Cypress.Commands.add("mockMastheadFooterData", () => {
+  cy.intercept(
+    "https://1.www.s81c.com/common/js/dynamicnav/www/countrylist/jsononly/usen-utf8.json",
+    {
+      fixture: "countrylist.json",
+    }
+  );
+  cy.intercept(
+    "https://1.www.s81c.com/common/carbon-for-ibm-dotcom/translations/masthead-footer/usen.json",
+    {
+      fixture: "translation.json",
+    }
+  );
+  cy.intercept("https://login.ibm.com/v1/mgmt/idaas/user/status/", {
+    fixture: "status.json",
+  });
+  cy.intercept("https://www-api.ibm.com/search/typeahead/v1?*", {
+    fixture: "typeahead.json",
+  });
+});
