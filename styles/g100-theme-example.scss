@@ -17,6 +17,8 @@
 @import "~@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss";
 @import "~@carbon/ibmdotcom-styles/scss/components/tableofcontents/index";
 
+@import "~@carbon/themes/scss/themes";
+
 .bx--tableofcontents .bx--hr {
   margin: 1rem 0;
 }
