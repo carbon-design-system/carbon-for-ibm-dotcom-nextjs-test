@@ -6,13 +6,10 @@ const rtlcss = require("rtlcss");
 const sassLoader = {
   loader: "sass-loader",
   options: {
-    includePaths: [path.resolve(__dirname, "..", "node_modules")],
-    data: `
-         $feature-flags: (
-           enable-css-custom-properties: true
-         );
-       `,
-    sourceMap: true,
+    sassOptions: {
+      includePaths: [path.resolve(__dirname, "node_modules")],
+    },
+    additionalData: `$feature-flags: ( enable-css-custom-properties: true );`,
   },
 };
 
@@ -20,11 +17,7 @@ const fastSassLoader = {
   loader: "fast-sass-loader",
   options: {
     includePaths: [path.resolve(__dirname, "node_modules")],
-    data: `
-       $feature-flags: (
-         enable-css-custom-properties: true
-       );
-     `,
+    data: `$feature-flags: ( enable-css-custom-properties: true );`,
   },
 };
 
