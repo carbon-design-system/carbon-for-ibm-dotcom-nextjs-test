@@ -305,15 +305,14 @@ const selectorTargets = `
 `;
 
 /**
- * White Theme Example page
+ * g100 theme example page
  *
- * @returns {*} JSX for White theme example page
+ * @returns {*} JSX for g100 theme example page
  */
-const WhiteThemeExample = () => (
-  <div className="g100-theme-page">
+const g100ThemeExample = () => (
+  <div className="dds-theme-zone-g100">
     <LeadSpace
       type="tall"
-      theme="g100"
       title="Leadspace left-aligned"
       copy="Lead space helps users understand where they landed, and what type of content they are going to find on the webpage. It will always be positioned at the top."
       gradient={true}
@@ -344,7 +343,6 @@ const WhiteThemeExample = () => (
           <a name="1" data-title="Card section images"></a>
           <CardSectionImages
             heading="Card section images"
-            theme="g100"
             cards={[
               {
                 image: {
@@ -856,4 +854,4 @@ const WhiteThemeExample = () => (
     />
   </div>
 );
-export default WhiteThemeExample;
+export default g100ThemeExample;

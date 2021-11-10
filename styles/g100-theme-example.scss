@@ -1,7 +1,3 @@
-$feature-flags: (
-  enable-css-custom-properties: true,
-);
-
 @import "~@carbon/ibmdotcom-styles/scss/components/callout-with-media/index";
 @import "~@carbon/ibmdotcom-styles/scss/components/callout-quote/index";
 @import "~@carbon/ibmdotcom-styles/scss/components/card-link/card-link";
@@ -25,25 +21,6 @@ $feature-flags: (
 
 .bx--tableofcontents .bx--hr {
   margin: 1rem 0;
-}
-
-.g100-theme-page,
-.bx--card-group.bx--card-group--g100,
-.bx--content-block-segmented {
-  @include carbon--theme($carbon--theme--g100, true);
-}
-
-// Seems NextJS isn't using the actual token but rather the hex values instead
-.g100-theme-page > div.bx--card-group__cards__row::after {
-  @include carbon--theme($carbon--theme--g100, true);
-
-  box-shadow: inset 0 0 0 1px $ui-background;
-}
-
-.bx--feature-card-large {
-  @include carbon--theme($carbon--theme--g100, true);
-
-  background-color: $inverse-02;
 }
 
 body {

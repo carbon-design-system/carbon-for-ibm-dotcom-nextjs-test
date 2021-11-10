@@ -3,6 +3,24 @@ const path = require("path");
 const withSass = require("@zeit/next-sass");
 const rtlcss = require("rtlcss");
 
+const sassLoader = {
+  loader: "sass-loader",
+  options: {
+    sassOptions: {
+      includePaths: [path.resolve(__dirname, "node_modules")],
+    },
+    additionalData: `$feature-flags: ( enable-css-custom-properties: true );`,
+  },
+};
+
+const fastSassLoader = {
+  loader: "fast-sass-loader",
+  options: {
+    includePaths: [path.resolve(__dirname, "node_modules")],
+    data: `$feature-flags: ( enable-css-custom-properties: true );`,
+  },
+};
+
 module.exports = withSass({
   assetPrefix: ".",
   basePath: process.env.BASE_PATH || "",
@@ -11,11 +29,6 @@ module.exports = withSass({
     KALTURA_PARTNER_ID: process.env.KALTURA_PARTNER_ID || "1773841",
     KALTURA_UICONF_ID: process.env.KALTURA_UICONF_ID || "27941801",
     ENABLE_RTL: process.env.ENABLE_RTL || "false",
-  },
-  sassLoaderOptions: {
-    sassOptions: {
-      includePaths: [path.resolve(__dirname, "node_modules")],
-    },
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -35,31 +48,7 @@ module.exports = withSass({
             },
           },
         },
-        {
-          loader:
-            process.env.NODE_ENV === "production"
-              ? "sass-loader"
-              : "fast-sass-loader",
-          options: Object.assign(
-            process.env.NODE_ENV === "production"
-              ? {
-                  sassOptions: {
-                    includePaths: [path.resolve(__dirname, "node_modules")],
-                  },
-                }
-              : {
-                  includePaths: [path.resolve(__dirname, "node_modules")],
-                },
-            {
-              additionalData: `
-              $feature-flags: (
-                enable-css-custom-properties: true
-              );
-            `,
-              sourceMap: process.env.NODE_ENV !== "production",
-            }
-          ),
-        },
+        process.env.NODE_ENV === "production" ? sassLoader : fastSassLoader,
       ],
     });
 
