@@ -13,10 +13,10 @@
     ]
   },
   "scripts": {
-    "build": "next build",
-    "build-export": "next build && next export",
-    "dev": "next dev",
-    "export": "next export",
+    "build": "NODE_OPTIONS=--max_old_space_size=4096 next build",
+    "build-export": "NODE_OPTIONS=--max_old_space_size=4096 next build && next export",
+    "dev": "NODE_OPTIONS=--max_old_space_size=4096 next dev",
+    "export": "NODE_OPTIONS=--max_old_space_size=4096 next export",
     "lint": "eslint pages",
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
     "start": "node server.js",
