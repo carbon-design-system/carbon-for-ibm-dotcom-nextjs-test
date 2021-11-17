@@ -28,7 +28,7 @@
     "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "1.6.0",
     "@carbon/ibmdotcom-react": "^1.27.0",
     "@carbon/ibmdotcom-styles": "^1.27.0",
     "@carbon/ibmdotcom-web-components": "^1.12.0",
