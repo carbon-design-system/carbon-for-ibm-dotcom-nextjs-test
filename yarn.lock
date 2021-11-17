@@ -365,11 +365,6 @@
     react-dom "^16.10.0 || ^17.0.0"
     react-redux "^7.2.0"
 
-"@carbon/icon-helpers@^10.21.0":
-  version "10.21.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.21.0.tgz#446223e26afe436455cfffcc4da235e6a23dfe3f"
-  integrity sha512-axRNtdg5PAIpPFXGYAHRk2JudHhgHlu/o00BkFlsbMhgsLhEgsUddLZoVjCByBCEPxLwt9CSk048VmcKuJzm7w==
-
 "@carbon/icon-helpers@^10.23.0":
   version "10.23.0"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.23.0.tgz#9811b44baead9422bb809f082ff6da27db8be1fa"
@@ -430,12 +425,12 @@
   resolved "https://registry.yarnpkg.com/@carbon/motion/-/motion-10.26.0.tgz#28a997cd8cd95e57ca480b00fe6e077d9d257bc7"
   integrity sha512-xNkDoRBfNsTKsUR0Hk7FItcdCDH7Mrn0mwvV83C8srV0M4x1D9Uh6Mg7pO9YLbUDMNEmihYp5u4Lf9zJv+XEVg==
 
-"@carbon/pictograms-react@11.15.0":
-  version "11.15.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms-react/-/pictograms-react-11.15.0.tgz#eff6a7f296800956e92ba23b15dca0ee6214d86a"
-  integrity sha512-tlyRh5zKp8ehzc8qxDd+7B3Z6KG0p1i4S+11MvnNDWYaix02hyz4vB4N/xhPE7tS4ev0m5aaedDJDJ8wAovXHg==
+"@carbon/pictograms-react@11.20.0":
+  version "11.20.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms-react/-/pictograms-react-11.20.0.tgz#5cb8faf1f5803e2cdc4a8b33f0c4092bf213f7cf"
+  integrity sha512-JfNQro7884XJdiXkHbIzgrs8d2dLajpR66nuoYshA/TlbcH/gSdH+gDQYQ3FIC0SSk12zfKJ8edzdw7suIAWIA==
   dependencies:
-    "@carbon/icon-helpers" "^10.21.0"
+    "@carbon/icon-helpers" "^10.25.0"
     "@carbon/telemetry" "0.0.0-alpha.6"
     prop-types "^15.7.2"
 
