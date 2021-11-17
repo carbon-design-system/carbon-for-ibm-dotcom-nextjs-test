@@ -37,7 +37,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "9.8.6",
+    "autoprefixer": "9.8.8",
     "carbon-components-react": "^7.44.1",
     "commander": "^6.2.0",
     "dotenv": "^8.2.0",
