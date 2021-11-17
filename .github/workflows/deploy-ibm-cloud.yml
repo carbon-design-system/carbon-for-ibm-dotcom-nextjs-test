@@ -41,7 +41,7 @@ jobs:
       - name: Export project
         run: yarn export
       - name: Deploying NextJS Test to IBM Cloud
-        uses: carbon-design-system/action-ibmcloud-cf@v1.2.0
+        uses: carbon-design-system/action-ibmcloud-cf@v1.3.0
         with:
           cloud-api-key: ${{ secrets.CLOUD_API_KEY }}
           cf-org: ibm-digital-design
@@ -82,7 +82,7 @@ jobs:
       - name: Export project
         run: yarn export
       - name: Deploying NextJS Test (RTL) to IBM Cloud
-        uses: carbon-design-system/action-ibmcloud-cf@v1.2.0
+        uses: carbon-design-system/action-ibmcloud-cf@v1.3.0
         with:
           cloud-api-key: ${{ secrets.CLOUD_API_KEY }}
           cf-org: ibm-digital-design
