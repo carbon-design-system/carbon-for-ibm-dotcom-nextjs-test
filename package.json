@@ -77,7 +77,7 @@
     "cypress": "^8.7.0",
     "cypress-wait-until": "^1.7.2",
     "eslint-plugin-cypress": "^2.11.3",
-    "http-server": "0.13.0",
+    "http-server": "14.0.0",
     "start-server-and-test": "^1.12.6"
   }
 }
