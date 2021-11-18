@@ -40,7 +40,7 @@
     "autoprefixer": "9.8.8",
     "carbon-components-react": "^7.44.1",
     "commander": "^6.2.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "eslint": "^6.0.1",
     "eslint-plugin-jsdoc": "^23.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
