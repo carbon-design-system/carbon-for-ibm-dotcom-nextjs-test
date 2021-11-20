@@ -63,7 +63,7 @@
     "rtlcss": "^2.6.0",
     "sass-loader": "^10.2.0",
     "stylelint": "^14.0.0",
-    "webpack": "^4.41.5"
+    "webpack": "^5.0.0"
   },
   "resolutions": {
     "dot-prop": ">=5.1.1",
