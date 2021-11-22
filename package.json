@@ -50,7 +50,7 @@
     "express": "^4.17.1",
     "fast-sass-loader": "^1.5.0",
     "husky": "^7.0.0",
-    "lint-staged": "^8.1.5",
+    "lint-staged": "^12.0.0",
     "lit-element": "^2.5.1",
     "lit-html": "^1.4.1",
     "next": "10.2.3",
