@@ -151,14 +151,18 @@ const getComments = () => {
     res.on("end", () => {
       response = JSON.parse(response);
 
-      const results = response.filter((comment) => {
-        return (
-          comment.user.login === botUser &&
-          comment.body.indexOf("Deploy preview created") !== -1
-        );
-      });
-
-      prComment(results);
+      try {
+        const results = response.filter((comment) => {
+          return (
+            comment.user.login === botUser &&
+            comment.body.indexOf("Deploy preview created") !== -1
+          );
+        });
+        prComment(results);
+      } catch (err) {
+        console.log(response);
+        console.error(err);
+      }
     });
   });
 
