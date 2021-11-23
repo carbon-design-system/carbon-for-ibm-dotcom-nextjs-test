@@ -1,0 +1,26 @@
+name: e2e-tests
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  web-components-test:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: ['14.x']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest canary release
+        run: yarn update-canary
+      - name: Build project
+        run: yarn build
+      - name: Run e2e tests
+        run: yarn test:e2e:local:no-percy
