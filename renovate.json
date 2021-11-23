@@ -4,5 +4,7 @@
     ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
     "schedule:nonOfficeHours"
-  ]
+  ],
+  "updateNotScheduled": false,
+  "rangeStrategy": "replace"
 }
