@@ -3,8 +3,8 @@
     "config:base",
     ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
-    "schedule:nonOfficeHours"
+    "schedule:weekends",
+    ":noUnscheduledUpdates"
   ],
-  "updateNotScheduled": false,
   "rangeStrategy": "replace"
 }
