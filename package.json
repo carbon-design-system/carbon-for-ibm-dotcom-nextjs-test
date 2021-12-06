@@ -25,7 +25,8 @@
     "test:e2e:run": "http-server -c-1 out --silent",
     "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
     "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest",
-    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next"
+    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
@@ -78,6 +79,7 @@
     "cypress-wait-until": "^1.7.2",
     "eslint-plugin-cypress": "^2.11.3",
     "http-server": "14.0.0",
-    "start-server-and-test": "^1.12.6"
+    "start-server-and-test": "^1.12.6",
+    "husky": "^7.0.0"
   }
 }
