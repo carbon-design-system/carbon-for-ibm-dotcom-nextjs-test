@@ -3,7 +3,7 @@ name: deploy-ibm-cloud-staging (Deploy staging environments to IBM Cloud)
 on:
   push:
     branches:
-      - master
+      - main
   repository_dispatch:
     types: [deploy-staging]
 

@@ -8,7 +8,13 @@
 "use strict";
 
 module.exports = {
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ["@babel/preset-env", "@babel/preset-react"],
+    },
+  },
   extends: [
     "eslint:recommended",
     "plugin:jsx-a11y/recommended",
