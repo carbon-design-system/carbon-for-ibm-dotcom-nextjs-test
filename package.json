@@ -52,8 +52,6 @@
     "fast-sass-loader": "^1.5.0",
     "husky": "^7.0.0",
     "lint-staged": "^12.0.0",
-    "lit-element": "^2.5.1",
-    "lit-html": "^1.4.1",
     "next": "10.2.3",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.13.0",

@@ -11,7 +11,7 @@ import React from "react";
 /**
  * Sets the root path of the alternative urls
  * Learn more about configuring alternative languages at:
- * https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/master/docs/building-for-ibm-dotcom.md
+ * https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/main/docs/building-for-ibm-dotcom.md
  *
  * @type {string|string}
  * @private
@@ -93,7 +93,10 @@ export default class CarbonForIBMDotcom extends App {
             />
           )}
 
-          <script src="//1.www.s81c.com/common/stats/ibm-common.js" defer />
+          <script
+            src="//1.www.s81c.com/common/stats/ibm-common.js"
+            async="async"
+          />
         </Head>
         <DotcomShell
           mastheadProps={{
