@@ -80,17 +80,17 @@ features, by not reporting duplicate issues.
 1. Search this repository for an open or closed Pull Request that relates to
    your submission. You don't want to duplicate effort.
 
-2. Pull the latest master branch from `upstream`:
+2. Pull the latest main branch from `upstream`:
 
    ```
-   $ git pull upstream master
+   $ git pull upstream main
    ```
 
 3. Always work and submit pull requests from a branch. _Do not submit pull
-   requests from the `master` branch of your fork_.
+   requests from the `main` branch of your fork_.
 
    ```
-   $ git checkout -b { YOUR_BRANCH_NAME } master
+   $ git checkout -b { YOUR_BRANCH_NAME } main
    ```
 
 4. Create your patch or feature.
@@ -144,6 +144,6 @@ features, by not reporting duplicate issues.
     squash and merge your commits for you.
 
 For all details related to development, make sure to check out our
-[development guide](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/master/docs/developing.md)!
+[development guide](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/main/docs/developing.md)!
 
 **That's it! Thank you for your contribution!**

@@ -26,13 +26,14 @@
     "test:e2e:run": "http-server -c-1 out --silent",
     "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
     "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest",
-    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next"
+    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@carbon/ibmdotcom-react": "^1.27.0",
-    "@carbon/ibmdotcom-styles": "^1.27.0",
-    "@carbon/ibmdotcom-web-components": "^1.12.0",
+    "@carbon/ibmdotcom-react": "^1.29.1",
+    "@carbon/ibmdotcom-styles": "^1.29.1",
+    "@carbon/ibmdotcom-web-components": "^1.14.1",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "11.20.0",
     "@commitlint/cli": "^15.0.0",
@@ -52,8 +53,6 @@
     "fast-sass-loader": "^1.5.0",
     "husky": "^7.0.0",
     "lint-staged": "^12.0.0",
-    "lit-element": "^2.5.1",
-    "lit-html": "^1.4.1",
     "next": "10.2.3",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.13.0",
@@ -74,11 +73,12 @@
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.58",
     "@percy/cypress": "^3.1.0",
-    "@percy/dom": "1.0.0-beta.70",
+    "@percy/dom": "1.0.0-beta.71",
     "cypress": "^9.0.0",
     "cypress-wait-until": "^1.7.2",
     "eslint-plugin-cypress": "^2.11.3",
     "http-server": "14.0.0",
+    "husky": "^7.0.0",
     "start-server-and-test": "^1.12.6"
   }
 }
