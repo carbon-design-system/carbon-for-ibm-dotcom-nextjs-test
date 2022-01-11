@@ -21,6 +21,6 @@ jobs:
       - name: Grab latest canary release
         run: yarn update-canary
       - name: Build project
-        run: yarn build
+        run: yarn build-export
       - name: Run e2e tests
         run: yarn test:e2e:local:no-percy
