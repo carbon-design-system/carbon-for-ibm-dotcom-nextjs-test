@@ -115,14 +115,16 @@ describe("Example page A page", () => {
   });
 
   it("should load the masthead and megamenu", () => {
-    cy.get(".bx--header__menu-item").eq(0).click();
+    cy.get(".bx--header__menu-item").eq(0).click({ force: true });
 
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page a | megamenu opens");
   });
 
   it("should load the masthead search", () => {
-    cy.get('[data-autoid="dds--masthead-default__l0-search"]').click();
+    cy.get('[data-autoid="dds--masthead-default__l0-search"]').click({
+      force: true,
+    });
 
     cy.get('[data-autoid="dds--masthead__search"]')
       .find('input[data-autoid="dds--header__search--input"]')
@@ -135,7 +137,9 @@ describe("Example page A page", () => {
   });
 
   it("should have 2 menu items under the login menu", () => {
-    cy.get('[data-autoid="dds--masthead-default__l0-account"]').click();
+    cy.get('[data-autoid="dds--masthead-default__l0-account"]').click({
+      force: true,
+    });
     cy.get(".bx--masthead__profile-item").should("have.length", 2);
 
     // Take a snapshot for visual diffing
@@ -143,6 +147,8 @@ describe("Example page A page", () => {
   });
 
   it("should render leadspace below the masthead", () => {
+    cy.visit("/example-page-a.html");
+    cy.viewport(1280, 780);
     cy.get('[data-autoid="dds--leadspace"]').then(($image) => {
       expect($image[0].getBoundingClientRect().top).to.equal(48);
     });
