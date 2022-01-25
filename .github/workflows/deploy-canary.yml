@@ -1,0 +1,122 @@
+name: deploy-canary (Deploy test environments to Github Pages)
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [deploy-canary]
+
+concurrency:
+  group: deploy-canary-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  canary:
+    if: github.repository == 'jeffchew/carbon-for-ibm-dotcom-nextjs-test'
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.BOT_TOKEN}}
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Update to latest canary
+        run: yarn update-canary
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+        env:
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
+          BASE_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary'
+          ALTLANG_ROOT_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary/'
+          SASS_PATH: node_modules:src
+      - name: Build project
+        run: yarn build
+      - name: Export project
+        run: yarn export
+      - name: Deploying to Github Pages
+        run: |
+          git config --global user.email ${{ secrets.BOT_EMAIL }}
+          git config --global user.name ${{ secrets.BOT_NAME }}
+
+          git checkout -- package.json
+          git checkout -- yarn.lock
+          git fetch origin gh-pages
+          git checkout -b gh-pages origin/gh-pages
+          git update-ref -d refs/remotes/origin/gh-pages
+          git pull origin gh-pages
+
+          mkdir -p canary
+          cp -rf out/* canary
+
+          git add -f canary
+          git commit -m "chore(deploy): deploy canary to GitHub Pages"
+          git push origin gh-pages
+      - name: Notify Slack upon failure
+        uses: act10ns/slack@v1
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}
+  canary-rtl:
+    if: github.repository == 'jeffchew/carbon-for-ibm-dotcom-nextjs-test'
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.BOT_TOKEN}}
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+      - name: Install dependencies
+        run: yarn install
+      - name: Update to latest canary
+        run: yarn update-canary
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+        env:
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
+          BASE_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary-rtl'
+          ALTLANG_ROOT_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary-rtl/'
+          SASS_PATH: node_modules:src
+          ENABLE_RTL: true
+      - name: Build project
+        run: yarn build
+      - name: Export project
+        run: yarn export
+      - name: Deploying to Github Pages
+        run: |
+          git config --global user.email ${{ secrets.BOT_EMAIL }}
+          git config --global user.name ${{ secrets.BOT_NAME }}
+
+          git checkout -- package.json
+          git checkout -- yarn.lock
+          git fetch origin gh-pages
+          git checkout -b gh-pages origin/gh-pages
+          git update-ref -d refs/remotes/origin/gh-pages
+          git pull origin gh-pages
+
+          mkdir -p canary-rtl
+          cp -rf out/* canary-rtl
+
+          git add -f canary-rtl
+          git commit -m "chore(deploy): deploy canary (RTL) to GitHub Pages"
+          git push origin gh-pages
+      - name: Notify Slack upon failure
+        uses: act10ns/slack@v1
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}

@@ -1,0 +1,68 @@
+name: deploy-next (Deploy staging environments to Github Actions)
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [deploy-next,deploy-staging]
+
+concurrency:
+  group: deploy-next-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  next:
+    if: github.repository == 'jeffchew/carbon-for-ibm-dotcom-nextjs-test'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.BOT_TOKEN}}
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Update to latest release candidate
+        run: yarn update-next
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+        env:
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
+          BASE_PATH: '/carbon-for-ibm-dotcom-nextjs-test/next'
+          ALTLANG_ROOT_PATH: '/carbon-for-ibm-dotcom-nextjs-test/next/'
+          SASS_PATH: node_modules:src
+      - name: Build project
+        run: yarn build
+      - name: Export project
+        run: yarn export
+      - name: Deploying to Github Pages
+        run: |
+          git config --global user.email ${{ secrets.BOT_EMAIL }}
+          git config --global user.name ${{ secrets.BOT_NAME }}
+
+          git checkout -- package.json
+          git checkout -- yarn.lock
+          git fetch origin gh-pages
+          git checkout -b gh-pages origin/gh-pages
+          git update-ref -d refs/remotes/origin/gh-pages
+          git pull origin gh-pages
+
+          mkdir -p next
+          cp -rf out/* next
+
+          git add -f next
+          git commit -m "chore(deploy): deploy next to GitHub Pages"
+          git push origin gh-pages
+      - name: Notify Slack upon failure
+        uses: act10ns/slack@v1
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}
