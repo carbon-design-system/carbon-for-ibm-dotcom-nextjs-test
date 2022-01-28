@@ -53,7 +53,9 @@ jobs:
           git update-ref -d refs/remotes/origin/gh-pages
           git pull origin gh-pages
 
+          rm -rf canary
           mkdir -p canary
+          touch canary/.nojekyll
           cp -rf out/* canary
 
           git add -f canary
@@ -107,6 +109,8 @@ jobs:
           git update-ref -d refs/remotes/origin/gh-pages
           git pull origin gh-pages
 
+          rm -rf canary-rtl
+          touch canary-rtl/.nojekyll
           mkdir -p canary-rtl
           cp -rf out/* canary-rtl
 
