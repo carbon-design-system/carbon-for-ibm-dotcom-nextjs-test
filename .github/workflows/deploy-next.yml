@@ -54,7 +54,6 @@ jobs:
           git pull origin gh-pages
 
           rm -rf next
-          touch next/.nojekyll
           mkdir -p next
           cp -rf out/* next
 
