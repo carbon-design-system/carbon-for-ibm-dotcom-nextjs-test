@@ -8,10 +8,6 @@
 "use strict";
 
 describe("White theme example page", () => {
-  beforeEach(() => {
-    cy.mockMastheadFooterData();
-  });
-
   it("should load the default white-theme-example page", () => {
     cy.visit("/white-theme-example.html");
 

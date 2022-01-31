@@ -104,7 +104,6 @@ const _tests = {
 
 describe("Example page A page", () => {
   beforeEach(() => {
-    cy.mockMastheadFooterData();
     cy.visit("/example-page-a.html");
     cy.viewport(1280, 780);
   });

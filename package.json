@@ -70,10 +70,10 @@
     "serialize-javascript": ">= 3.1.0"
   },
   "devDependencies": {
-    "@percy/cli": "^1.0.0-beta.58",
-    "@percy/cypress": "^3.1.0",
-    "@percy/dom": "1.0.0-beta.71",
-    "cypress": "^9.0.0",
+    "@percy/cli": "^1.0.0-beta.74",
+    "@percy/cypress": "^3.1.1",
+    "@percy/dom": "1.0.0-beta.74",
+    "cypress": "^9.4.1",
     "cypress-wait-until": "^1.7.2",
     "eslint-plugin-cypress": "^2.11.3",
     "http-server": "14.0.0",

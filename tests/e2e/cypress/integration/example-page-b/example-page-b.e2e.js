@@ -8,10 +8,6 @@
 "use strict";
 
 describe("Example page B page", () => {
-  beforeEach(() => {
-    cy.mockMastheadFooterData();
-  });
-
   it("should load the default example-page-b page", () => {
     cy.visit("/example-page-b.html");
 
