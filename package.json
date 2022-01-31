@@ -65,7 +65,6 @@
     "webpack": "^4.41.5"
   },
   "resolutions": {
-    "dot-prop": ">=5.1.1",
     "object-path": ">=0.11.5",
     "serialize-javascript": ">= 3.1.0"
   },
