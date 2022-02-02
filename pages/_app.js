@@ -31,7 +31,9 @@ export default class CarbonForIBMDotcom extends App {
     const { Component, pageProps } = this.props;
     const reactVersion = packageJson.dependencies["@carbon/ibmdotcom-react"];
     const stylesVersion = packageJson.dependencies["@carbon/ibmdotcom-styles"];
-    const digitalData = `digitalData=${JSON.stringify(DDO)};`;
+    const digitalData = `window.digitalData = window.digitalData || ${JSON.stringify(
+      DDO
+    )};`;
 
     const items = altlangs.map((alt, i) => (
       <link
