@@ -8,10 +8,6 @@
 "use strict";
 
 describe("g100 theme example page", () => {
-  beforeEach(() => {
-    cy.mockMastheadFooterData();
-  });
-
   it("should load the default g100-theme-example page", () => {
     cy.visit("/g100-theme-example.html");
 
