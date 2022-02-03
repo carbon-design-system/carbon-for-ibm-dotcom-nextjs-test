@@ -11,6 +11,12 @@ describe("White theme example page", () => {
   it("should load the default white-theme-example page", () => {
     cy.visit("/white-theme-example.html");
 
+    cy.waitUntil(() =>
+      cy
+        .get('[data-autoid="dds--masthead-default__l0-nav0"]')
+        .should("be.visible")
+    );
+
     // Take a snapshot for visual diffing
     cy.percySnapshot("white theme example | default");
   });
