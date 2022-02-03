@@ -156,8 +156,6 @@ describe("Example page A page", () => {
   });
 
   it("should render leadspace below the masthead", () => {
-    cy.visit("/example-page-a.html");
-    cy.viewport(1280, 780);
     cy.get('[data-autoid="dds--leadspace"]').then(($image) => {
       expect($image[0].getBoundingClientRect().top).to.equal(48);
     });
