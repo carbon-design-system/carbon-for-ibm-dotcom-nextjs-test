@@ -8,14 +8,18 @@
 "use strict";
 
 describe("Example page C page", () => {
-  beforeEach(() => {
-    cy.mockMastheadFooterData();
-  });
-
   it("should load the default example-page-c page", () => {
     cy.visit("/example-page-c.html");
 
-    cy.wait(800);
+    cy.waitUntil(() =>
+      cy
+        .get('[data-autoid="dds--masthead-default__l0-nav0"]')
+        .should("be.visible")
+    );
+
+    cy.get(".bx--image__img").each(($img) => {
+      cy.waitUntil(() => cy.wrap($img).should("be.visible"));
+    });
 
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page c | default");
