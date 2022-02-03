@@ -104,9 +104,18 @@ const _tests = {
 
 describe("Example page A page", () => {
   beforeEach(() => {
-    cy.mockMastheadFooterData();
     cy.visit("/example-page-a.html");
     cy.viewport(1280, 780);
+
+    cy.waitUntil(() =>
+      cy
+        .get('[data-autoid="dds--masthead-default__l0-nav0"]')
+        .should("be.visible")
+    );
+
+    cy.get(".bx--image__img").each(($img) => {
+      cy.waitUntil(() => cy.wrap($img).should("be.visible"));
+    });
   });
 
   it("should load the default example-page-a page", () => {
