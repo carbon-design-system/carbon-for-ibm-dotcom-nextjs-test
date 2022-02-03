@@ -11,6 +11,16 @@ describe("Example page B page", () => {
   it("should load the default example-page-b page", () => {
     cy.visit("/example-page-b.html");
 
+    cy.waitUntil(() =>
+      cy
+        .get('[data-autoid="dds--masthead-default__l0-nav0"]')
+        .should("be.visible")
+    );
+
+    cy.get(".bx--image__img").each(($img) => {
+      cy.waitUntil(() => cy.wrap($img).should("be.visible"));
+    });
+
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page b | default");
   });
