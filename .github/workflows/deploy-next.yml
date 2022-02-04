@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   next:
-    if: github.repository == 'jeffchew/carbon-for-ibm-dotcom-nextjs-test'
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-nextjs-test'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

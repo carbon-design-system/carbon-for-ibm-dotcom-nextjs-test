@@ -25,6 +25,16 @@ jobs:
         with:
           node-version: '14.x'
           cache: yarn
+      - name: Caching NextJS
+        id: nextjs-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            .next
+            out
+          key: ${{ runner.os }}-percy-update-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-percy-update-
       - name: Install dependencies
         run: yarn install
       - name: Grab latest canary release
@@ -58,6 +68,16 @@ jobs:
         with:
           node-version: '14.x'
           cache: yarn
+      - name: Caching NextJS
+        id: nextjs-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            .next
+            out
+          key: ${{ runner.os }}-percy-update-upstream-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-percy-update-upstream-
       - name: Install dependencies
         run: yarn install
       - name: Grab latest canary release

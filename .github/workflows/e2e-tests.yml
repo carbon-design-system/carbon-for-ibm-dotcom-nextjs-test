@@ -1,0 +1,54 @@
+name: e2e-tests
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: e2e-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  e2e-tests:
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-nextjs-test'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['14.x']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          cache: yarn
+      - name: Caching NextJS
+        id: nextjs-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            .next
+            out
+          key: ${{ runner.os }}-e2e-tests-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-e2e-tests-
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest canary release
+        run: yarn update-canary
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+        env:
+          KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
+          KALTURA_UICONF_ID: ${{ secrets.KALTURA_UICONF_ID }}
+          PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
+          SASS_PATH: node_modules:src
+      - name: Build project
+        run: yarn build
+      - name: Export project
+        run: yarn export
+      - name: Run e2e tests
+        run: yarn test:e2e:local:no-percy

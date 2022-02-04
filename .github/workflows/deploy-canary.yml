@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   canary:
-    if: github.repository == 'jeffchew/carbon-for-ibm-dotcom-nextjs-test'
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-nextjs-test'
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -68,7 +68,7 @@ jobs:
         with:
           status: ${{ job.status }}
   canary-rtl:
-    if: github.repository == 'jeffchew/carbon-for-ibm-dotcom-nextjs-test'
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-nextjs-test'
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

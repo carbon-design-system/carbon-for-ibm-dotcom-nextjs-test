@@ -13,8 +13,8 @@ describe("White theme example page", () => {
 
     cy.waitUntil(() =>
       cy
-        .get('[data-autoid="dds--masthead-default__l0-nav0"]')
-        .should("be.visible")
+        .get('[data-autoid="dds--masthead-default__l0-nav0"] a')
+        .should("not.be.empty")
     );
 
     // Take a snapshot for visual diffing
