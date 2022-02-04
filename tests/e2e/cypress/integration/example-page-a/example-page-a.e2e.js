@@ -106,6 +106,16 @@ describe("Example page A page", () => {
   beforeEach(() => {
     cy.visit("/example-page-a.html");
     cy.viewport(1280, 780);
+
+    cy.waitUntil(() =>
+      cy
+        .get('[data-autoid="dds--masthead-default__l0-nav0"]')
+        .should("be.visible")
+    );
+
+    cy.get(".bx--image__img").each(($img) => {
+      cy.waitUntil(() => cy.wrap($img).should("be.visible"));
+    });
   });
 
   it("should load the default example-page-a page", () => {
@@ -146,8 +156,6 @@ describe("Example page A page", () => {
   });
 
   it("should render leadspace below the masthead", () => {
-    cy.visit("/example-page-a.html");
-    cy.viewport(1280, 780);
     cy.get('[data-autoid="dds--leadspace"]').then(($image) => {
       expect($image[0].getBoundingClientRect().top).to.equal(48);
     });
