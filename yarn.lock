@@ -1646,6 +1646,11 @@
   resolved "https://registry.yarnpkg.com/@percy/dom/-/dom-1.0.0-beta.74.tgz#271f3d3ecc6a7fb0bd2e4f6f2ec37d06ecc560ed"
   integrity sha512-9rNL9Rvb6qClVLZqTIhd6ofeDlencCCaILb3TkUmlBEvVzlJ9f5OdOHT+vK+B8xIXvub1gJNERnUe/59+hCCKg==
 
+"@percy/dom@1.0.0-beta.75":
+  version "1.0.0-beta.75"
+  resolved "https://registry.yarnpkg.com/@percy/dom/-/dom-1.0.0-beta.75.tgz#6f368d385acef68e17423993548b9d67e79f19d1"
+  integrity sha512-H+H8141JTTUGHh2w/VslK2Z4UxgH8YWkKTxJ3VPoqbmXoke+jbqdxW++Qe7RFe5gCJAD7u2LvcCNtYvUTckbRQ==
+
 "@percy/env@1.0.0-beta.74":
   version "1.0.0-beta.74"
   resolved "https://registry.yarnpkg.com/@percy/env/-/env-1.0.0-beta.74.tgz#05a272527fd27d092ef6de72c7431aaac003bc65"
