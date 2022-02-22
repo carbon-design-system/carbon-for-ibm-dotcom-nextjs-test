@@ -21,6 +21,8 @@ describe("Example page B page", () => {
       cy.waitUntil(() => cy.wrap($img).should("be.visible"));
     });
 
+    cy.wait(1000);
+
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page b | default");
   });
