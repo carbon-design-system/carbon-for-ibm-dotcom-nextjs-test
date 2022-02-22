@@ -70,7 +70,7 @@
     "serialize-javascript": ">= 3.1.0"
   },
   "devDependencies": {
-    "@percy/cli": "^1.0.0-beta.74",
+    "@percy/cli": "1.0.0-beta.75",
     "@percy/cypress": "^3.1.1",
     "@percy/dom": "1.0.0-beta.75",
     "cypress": "^9.4.1",
