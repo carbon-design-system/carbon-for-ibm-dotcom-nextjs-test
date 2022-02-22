@@ -119,12 +119,16 @@ describe("Example page A page", () => {
   });
 
   it("should load the default example-page-a page", () => {
+    cy.wait(1000);
+
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page a | default");
   });
 
   it("should load the masthead and megamenu", () => {
     cy.get(".bx--header__menu-item").eq(0).click({ force: true });
+
+    cy.wait(1000);
 
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page a | megamenu opens");
@@ -141,6 +145,8 @@ describe("Example page A page", () => {
 
     cy.get(".react-autosuggest__suggestions-list li").should("have.length", 10);
 
+    cy.wait(1000);
+
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page a | masthead search opens");
   });
@@ -150,6 +156,8 @@ describe("Example page A page", () => {
       force: true,
     });
     cy.get(".bx--masthead__profile-item").should("have.length", 2);
+
+    cy.wait(1000);
 
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page a | profile options loading");
@@ -310,6 +318,8 @@ describe("Example page A page", () => {
       .then((e) => {
         expect(e.text()).to.equal("Mexico");
       });
+
+    cy.wait(1000);
 
     // Take a snapshot for visual diffing
     cy.percySnapshot("example page a | locale modale opened");

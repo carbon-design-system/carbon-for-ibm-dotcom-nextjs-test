@@ -17,6 +17,8 @@ describe("White theme example page", () => {
         .should("not.be.empty")
     );
 
+    cy.wait(1000);
+
     // Take a snapshot for visual diffing
     cy.percySnapshot("white theme example | default");
   });
