@@ -75,7 +75,7 @@ const Learn = () => (
           },
           style: "card",
           type: "local",
-          copy: "Lorem ipsum dolor sit ametttt",
+          heading: "Lorem ipsum dolor sit amet",
         }}
         items={[
           {
@@ -238,7 +238,7 @@ const Learn = () => (
             },
             style: "card",
             type: "local",
-            copy: "Lorem ipsum dolor",
+            heading: "Lorem ipsum dolor",
           }}
         />
       </Layout>
@@ -283,7 +283,7 @@ const Learn = () => (
             },
             style: "card",
             type: "external",
-            copy: "Lorem ipsum dolor sit ametttt",
+            heading: "Lorem ipsum dolor sit amet",
           }}
         />
       </Layout>
