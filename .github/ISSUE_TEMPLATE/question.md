@@ -2,7 +2,7 @@
 name: Question 🤔
 about: Usage question or discussion about the Carbon for IBM.com NextJS Test Application.
 labels: question
-assignees: jeffchew, RaphaelAmadeu, kennylam, annawen1
+assignees: jeffchew, kennylam, annawen1
 ---
 
 <!--

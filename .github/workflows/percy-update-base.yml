@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   percy-update:
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-nextjs-test'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,6 +25,16 @@ jobs:
         with:
           node-version: '14.x'
           cache: yarn
+      - name: Caching NextJS
+        id: nextjs-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            .next
+            out
+          key: ${{ runner.os }}-percy-update-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-percy-update-
       - name: Install dependencies
         run: yarn install
       - name: Grab latest canary release
@@ -44,7 +55,15 @@ jobs:
         run: yarn export
       - name: Run e2e tests
         run: yarn test:e2e:local
+      - name: Notify Slack upon failure
+        uses: act10ns/slack@v1
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}
   percy-update-upstream:
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-nextjs-test'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -56,6 +75,16 @@ jobs:
         with:
           node-version: '14.x'
           cache: yarn
+      - name: Caching NextJS
+        id: nextjs-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            .next
+            out
+          key: ${{ runner.os }}-percy-update-upstream-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-percy-update-upstream-
       - name: Install dependencies
         run: yarn install
       - name: Grab latest canary release
@@ -76,3 +105,10 @@ jobs:
         run: yarn export
       - name: Run e2e tests
         run: yarn test:e2e:local
+      - name: Notify Slack upon failure
+        uses: act10ns/slack@v1
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}

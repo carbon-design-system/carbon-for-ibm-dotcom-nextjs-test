@@ -8,12 +8,20 @@
 "use strict";
 
 describe("g100 theme example page", () => {
-  beforeEach(() => {
-    cy.mockMastheadFooterData();
-  });
-
   it("should load the default g100-theme-example page", () => {
     cy.visit("/g100-theme-example.html");
+
+    cy.waitUntil(() =>
+      cy
+        .get('[data-autoid="dds--masthead-default__l0-nav0"] a')
+        .should("not.be.empty")
+    );
+
+    cy.get(".bx--image__img").each(($img) => {
+      cy.waitUntil(() => cy.wrap($img).should("be.visible"));
+    });
+
+    cy.wait(1000);
 
     // Take a snapshot for visual diffing
     cy.percySnapshot("g100-theme-example page | default");

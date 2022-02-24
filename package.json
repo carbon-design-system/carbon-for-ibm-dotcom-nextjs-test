@@ -21,7 +21,8 @@
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
     "start": "node server.js",
     "test:e2e:local": "start-server-and-test 'yarn test:e2e:run' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
-    "test:e2e:local:with-video": "start-server-and-test 'yarn test:e2e:run' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config-file tests/e2e/cypress.json'",
+    "test:e2e:local:no-percy": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
+    "test:e2e:local:no-percy:with-video": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config-file tests/e2e/cypress.json'",
     "test:e2e:run": "http-server -c-1 out --silent",
     "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
     "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest",
@@ -34,7 +35,7 @@
     "@carbon/ibmdotcom-styles": "^1.30.0",
     "@carbon/ibmdotcom-web-components": "^1.15.0",
     "@carbon/icons-react": "^10.9.1",
-    "@carbon/pictograms-react": "11.20.0",
+    "@carbon/pictograms-react": "11.21.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@zeit/next-sass": "^1.0.1",
@@ -65,18 +66,17 @@
     "webpack": "^4.41.5"
   },
   "resolutions": {
-    "dot-prop": ">=5.1.1",
     "object-path": ">=0.11.5",
     "serialize-javascript": ">= 3.1.0"
   },
   "devDependencies": {
-    "@percy/cli": "^1.0.0-beta.58",
-    "@percy/cypress": "^3.1.0",
-    "@percy/dom": "1.0.0-beta.71",
-    "cypress": "^9.0.0",
+    "@percy/cli": "^1.0.0-beta.74",
+    "@percy/cypress": "^3.1.1",
+    "@percy/dom": "1.0.0-beta.74",
+    "cypress": "^9.4.1",
     "cypress-wait-until": "^1.7.2",
     "eslint-plugin-cypress": "^2.11.3",
-    "http-server": "14.0.0",
+    "http-server": "14.1.0",
     "husky": "^7.0.0",
     "start-server-and-test": "^1.12.6"
   }
