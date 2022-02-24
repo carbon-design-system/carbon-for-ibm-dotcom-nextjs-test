@@ -264,7 +264,7 @@ const WhiteThemeExample = () => (
               mediaType: "video",
               heading: "Introduction to the media",
               mediaData: {
-                videoId: "0_uka1msg4",
+                videoId: "1_9h94wo6b",
                 showCaption: true,
               },
 
