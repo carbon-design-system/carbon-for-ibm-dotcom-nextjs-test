@@ -45,12 +45,7 @@ const DDSCard = dynamic(
   { ssr: false }
 );
 
-const DDSCardCTAFooter = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/cta/card-cta-footer"
-  ),
-  { ssr: false }
-);
+import DDSCardCTAFooter from "@carbon/ibmdotcom-web-components/es/components-react/cta/card-cta-footer";
 
 const DDSCardEyebrow = dynamic(
   import(
