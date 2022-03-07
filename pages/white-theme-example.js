@@ -245,7 +245,7 @@ const WhiteThemeExample = () => (
           cta={{
             style: "card",
             type: "local",
-            copy: "Learn about Content block simple",
+            heading: "Learn about Content block simple",
             cta: {
               href: "https;//www.ibm.com/services",
             },
