@@ -49,7 +49,7 @@ const Solutions = () => (
         heading="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
         mediaType="video"
         mediaData={{
-          videoId: "0_uka1msg4",
+          videoId: "1_9h94wo6b",
           showDescription: true,
         }}
         items={{
@@ -156,7 +156,7 @@ const Solutions = () => (
             disableImage: true,
             type: "video",
             media: {
-              src: "1_sf5ovm7u",
+              src: "1_9h94wo6b",
               type: "video",
             },
           }}
