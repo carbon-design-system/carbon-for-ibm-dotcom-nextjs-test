@@ -1101,6 +1101,11 @@
     react-dom "^16.10.0 || ^17.0.0"
     react-redux "^7.2.0"
 
+"@carbon/icon-helpers@^10.25.0", "@carbon/icon-helpers@^10.29.0":
+  version "10.29.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.29.0.tgz#686bc5a337bec6d8fb482655f4564f3376452a35"
+  integrity sha512-QlYdeL97klhqahsayK6uEDPtr7imU4bdaudWPVZojg+7Uio3WNzb5iUNLkWA5zRLvP4xgcjSpbdDX2sT3CgL2A==
+
 "@carbon/icon-helpers@^10.26.0":
   version "10.26.0"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.26.0.tgz#fe8277836e7b758ae48c93fbab8aab444b2f3b70"
@@ -1144,13 +1149,13 @@
   resolved "https://registry.yarnpkg.com/@carbon/motion/-/motion-10.26.0.tgz#28a997cd8cd95e57ca480b00fe6e077d9d257bc7"
   integrity sha512-xNkDoRBfNsTKsUR0Hk7FItcdCDH7Mrn0mwvV83C8srV0M4x1D9Uh6Mg7pO9YLbUDMNEmihYp5u4Lf9zJv+XEVg==
 
-"@carbon/pictograms-react@11.21.0":
-  version "11.21.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms-react/-/pictograms-react-11.21.0.tgz#63c86e75449ab8ce6df5d47178786b38fc06cbda"
-  integrity sha512-rQhVV6eB9EY8jf9d8JqoDcu2ajc7K9EMhVAtmdTVv6N/FqQxDr3EwtV1HcKnhloVjx/NePn+5JS05dRijdD1IA==
+"@carbon/pictograms-react@11.26.2":
+  version "11.26.2"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms-react/-/pictograms-react-11.26.2.tgz#e5d6f469c01c507543d1d90736c28a2d7cfff29a"
+  integrity sha512-c09HgoJAW52j59um3luS1JaSXZC1tC5c5TBcnvGaLjH0LZ5e3jgRvGqF+LyJ3nAxpX9vzJaHGYv5Fh6vhX+sHg==
   dependencies:
-    "@carbon/icon-helpers" "^10.26.0"
-    "@carbon/telemetry" "0.0.0-alpha.6"
+    "@carbon/icon-helpers" "^10.29.0"
+    "@carbon/telemetry" "0.1.0"
     prop-types "^15.7.2"
 
 "@carbon/telemetry@0.0.0-alpha.6", "@carbon/telemetry@^0.0.0-alpha.6":
@@ -1168,6 +1173,11 @@
     semver "^7.3.2"
     winston "^3.3.3"
     yargs "^16.1.1"
+
+"@carbon/telemetry@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@carbon/telemetry/-/telemetry-0.1.0.tgz#57b331cd5a855b4abbf55457456da8211624d879"
+  integrity sha512-kNWt0bkgPwGW0i5h7HFuljbKRXPvIhsKbB+1tEURAYLXoJg9iJLF1eGvWN5iVoFCS2zje4GR3OGOsvvKVe7Hlg==
 
 "@carbon/themes@10.48.0":
   version "10.48.0"

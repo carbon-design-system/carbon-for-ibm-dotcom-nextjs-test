@@ -35,7 +35,7 @@
     "@carbon/ibmdotcom-styles": "^1.30.0",
     "@carbon/ibmdotcom-web-components": "^1.15.0",
     "@carbon/icons-react": "^10.9.1",
-    "@carbon/pictograms-react": "11.21.0",
+    "@carbon/pictograms-react": "11.26.2",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@zeit/next-sass": "^1.0.1",
