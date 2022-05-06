@@ -2,7 +2,7 @@
       <ul class="${0}--accordion">
         ${0}
       </ul>
-    `),x,t.map(((t,e)=>{const a=t.disabled&&!0,i=e===this._activeTab,s=t.getAttribute("label"),o=Object(r.a)({"bx--accordion__item":!0,"bx--accordion__item--active":i,"bx--accordion__item--disabled":a});return Object(n.d)(f||(f=g`
+    `),x,t.map(((t,e)=>{const{disabled:a}=t,i=e===this._activeTab,s=t.getAttribute("label"),o=Object(r.a)({"bx--accordion__item":!0,"bx--accordion__item--active":i,"bx--accordion__item--disabled":a});return Object(n.d)(f||(f=g`
             <li class="${0}">
               <button
                 class="${0}--accordion__heading"
@@ -25,7 +25,7 @@
           ${0}
         </ul>
       </div>
-    `),x,x,x,this._handleTabListKeyDown,t.map(((t,e)=>{const a=t.disabled&&!0,i=e===this._activeTab,s=t.getAttribute("label"),d=Object(r.a)({"bx--tabs__nav-item":!0,"bx--tabs__nav-item--selected":i,"bx--tabs__nav-item--disabled":a});return Object(n.d)($||($=g`
+    `),x,x,x,this._handleTabListKeyDown,t.map(((t,e)=>{const{disabled:a}=t,i=e===this._activeTab,s=t.getAttribute("label"),d=Object(r.a)({"bx--tabs__nav-item":!0,"bx--tabs__nav-item--selected":i,"bx--tabs__nav-item--disabled":a});return Object(n.d)($||($=g`
               <li class="${0}" data-target=".tab-${0}-default" role="tab" ?disabled="${0}">
                 <button
                   tabindex="${0}"
