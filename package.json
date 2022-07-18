@@ -31,9 +31,9 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@carbon/ibmdotcom-react": "^1.35.1",
-    "@carbon/ibmdotcom-styles": "^1.35.1",
-    "@carbon/ibmdotcom-web-components": "^1.20.1",
+    "@carbon/ibmdotcom-react": "^1.36.0",
+    "@carbon/ibmdotcom-styles": "^1.36.0",
+    "@carbon/ibmdotcom-web-components": "^1.21.0",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "11.21.0",
     "@commitlint/cli": "^15.0.0",
