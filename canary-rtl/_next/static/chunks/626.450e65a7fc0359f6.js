@@ -26,20 +26,25 @@
         </ul>
       </div>
     `),p,p,p,this._handleTabListKeyDown,e.map(((e,t)=>{const{disabled:i}=e,a=t===this._activeTabIndex,n=e.getAttribute("label"),d=(0,r.$)({"bx--tabs__nav-item":!0,"bx--tabs__nav-item--selected":a,"bx--tabs__nav-item--disabled":i});return(0,s.dy)($||($=x`
-              <li class="${0}" data-target=".tab-${0}-default" role="tab" ?disabled="${0}">
+              <li
+                class="${0}"
+                aria-selected="${0}"
+                data-target=".tab-${0}-default"
+                role="tab"
+                ?disabled="${0}"
+              >
                 <button
                   tabindex="${0}"
                   id="tab-link-${0}-default"
                   class="${0}--tabs__nav-link"
                   type="button"
                   aria-controls="tab-panel-${0}-default"
-                  aria-selected="${0}"
                   @click="${0}"
                 >
                   <div><p>${0}</p></div>
                 </button>
               </li>
-            `),d,t,i,a?"0":"-1",t,p,t,a,(e=>this._handleClick(t,e)),n)})))}},{kind:"method",key:"_getOrientationClass",value:function(){return(0,r.$)({[`${p}--tabs-extended`]:!0,[`${p}--tabs-extended--${this.orientation}`]:this.orientation})}},{kind:"field",decorators:[(0,s.Cb)({attribute:"orientation",reflect:!0})],key:"orientation",value:()=>_.HORIZONTAL},{kind:"method",key:"render",value:function(){return(0,s.dy)(y||(y=x`
+            `),d,a,t,i,a?"0":"-1",t,p,t,(e=>this._handleClick(t,e)),n)})))}},{kind:"method",key:"_getOrientationClass",value:function(){return(0,r.$)({[`${p}--tabs-extended`]:!0,[`${p}--tabs-extended--${this.orientation}`]:this.orientation})}},{kind:"field",decorators:[(0,s.Cb)({attribute:"orientation",reflect:!0})],key:"orientation",value:()=>_.HORIZONTAL},{kind:"method",key:"render",value:function(){return(0,s.dy)(y||(y=x`
       <div class="${0}">
         ${0} ${0}
         <div class="${0}--tab-content">
