@@ -55,7 +55,13 @@
       <slot @slotchange="${0}"></slot>
       <picture>
         ${0}
-        <img class="${0}" src="${0}" alt="${0}" aria-describedby="long-description" loading="lazy" />
+        <img
+          class="${0}"
+          src="${0}"
+          alt="${0}"
+          aria-describedby="image-caption long-description"
+          loading="lazy"
+        />
       </picture>
       <div id="long-description" class="${0}--image__longdescription">
         <slot name="long-description"></slot>
@@ -89,7 +95,7 @@
           `),ft,(0,d.Z)(o),i,this.renderImage(),ft,nt()):(0,b.dy)(pt||(pt=ht`
             ${0}
           `),this.renderImage()),t?(0,b.dy)(mt||(mt=ht`
-            <p class="${0}--image__caption">
+            <p id="image-caption" class="${0}--image__caption">
               ${0}
             </p>
           `),ft,t):"")}},{kind:"get",static:!0,key:"eventCloseModal",value:function(){return`${_t}-expressive-modal-closed`}},{kind:"get",static:!0,key:"selectorItem",value:function(){return`${_t}-image-item`}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${_t}--image`}},{kind:"field",static:!0,key:"styles",value:()=>bt}]}}),(0,f.Z)(at((0,s.Z)(b.oi))))}}]);
