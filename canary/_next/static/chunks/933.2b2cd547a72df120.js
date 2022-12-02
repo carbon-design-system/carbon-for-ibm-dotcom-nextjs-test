@@ -7,8 +7,7 @@
             <dds-card-cta-image
               class="${0}--card__video-thumbnail"
               alt="${0}"
-              default-src="${0}"
-            >
+              default-src="${0}">
               ${0}
             </dds-card-cta-image>
           `),S,(0,l.Z)(t),(0,l.Z)(o||i),(0,u.Z)({slot:"icon"}));return(0,d.dy)(T||(T=P`
@@ -16,8 +15,7 @@
     `),this._handleSlotChange,r)}},{kind:"field",decorators:[(0,d.Cb)({reflect:!0,attribute:"cta-type"})],key:"ctaType",value:()=>Z.m.REGULAR},{kind:"field",decorators:[(0,d.Cb)({attribute:!1})],key:"formatVideoCaption",value:()=>h},{kind:"field",decorators:[(0,d.Cb)({attribute:!1})],key:"formatVideoDuration",value:void 0},{kind:"field",decorators:[(0,d.Cb)({type:Number,attribute:"video-duration"})],key:"videoDuration",value:void 0},{kind:"field",decorators:[(0,d.Cb)({attribute:"video-name"})],key:"videoName",value:void 0},{kind:"field",decorators:[(0,d.Cb)({attribute:"video-description"})],key:"videoDescription",value:void 0},{kind:"field",decorators:[(0,d.Cb)({attribute:"video-thumbnail-url"})],key:"videoThumbnailUrl",value:void 0},{kind:"field",decorators:[(0,d.Cb)({reflect:!0,attribute:"thumbnail"})],key:"thumbnail",value:void 0},{kind:"field",decorators:[(0,d.Cb)({type:Boolean,reflect:!0,attribute:"no-poster"})],key:"noPoster",value:()=>!1},{kind:"method",key:"updated",value:function(e){(0,n.Z)((0,r.Z)(i.prototype),"updated",this).call(this,e);const t=this.querySelector(this.constructor.selectorFooter);if(e.has("ctaType")||e.has("formatCaption")||e.has("formatDuration")||e.has("videoDuration")||e.has("videoName")){var o;const{ctaType:e,videoDuration:i,videoName:a,videoDescription:n,formatVideoCaption:r,formatVideoDuration:d}=this,c=null===(o=this.querySelector(`${x}-card-heading`))||void 0===o?void 0:o.textContent,s=this.textContent;if(t){const o=a||c||s;let l="";void 0!==i&&(l=`, DURATION ${v.Z.getMediaDurationFormatted(i,!1)}`),t.altAriaLabel=`${o}${l}`,t.ctaType=e,t.videoDuration=i,t.videoName=a,t.videoDescription=n,r&&(t.formatVideoCaption=r),d&&(t.formatVideoDuration=d)}}}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${x}--card-cta`}},{kind:"get",static:!0,key:"eventVideoTitleUpdated",value:function(){return`${x}-card-cta-video-title-updated`}},{kind:"get",static:!0,key:"selectorFooter",value:function(){return`${x}-card-cta-footer`}},{kind:"field",static:!0,key:"styles",value:()=>p.Z}]}}),(0,$.Z)((0,b.ZP)(m.Z))),O=i(9886),N=i(5697),E=i.n(N),I=(c.Z.prefix,s.Z.stablePrefix),V=Object.assign({},o.descriptor,{ctaType:{attribute:"cta-type"},formatVideoCaption:{attribute:!1},formatVideoDuration:{attribute:!1},videoDuration:{serialize:O.Hf,attribute:"video-duration"},videoName:{attribute:"video-name"},videoDescription:{attribute:"video-description"},videoThumbnailUrl:{attribute:"video-thumbnail-url"},thumbnail:{attribute:"thumbnail"},noPoster:{serialize:O._P,attribute:"no-poster"},onVideoTitleUpdated:{event:"".concat(I,"-card-cta-video-title-updated")}}),U={ctaType:E().string,formatVideoCaption:E().string,formatVideoDuration:E().string,videoDuration:E().number,videoName:E().string,videoDescription:E().string,videoThumbnailUrl:E().string,thumbnail:E().string,noPoster:E().bool,onVideoTitleUpdated:E().func};const q=(0,O.ZP)("".concat(I,"-card-cta"),V);q.propTypes=U;var w=i(2658),B=(i(5703),i(8082)),F=i(7670);let L,M,H,A=e=>e;const{prefix:R}=c.Z,{stablePrefix:z}=w.Z;var j=(0,a.Z)([(0,d.Mo)(`${z}-card-in-card`)],(function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"method",key:"_renderImage",value:function(){const{ctaType:e,videoName:t,videoThumbnailUrl:i,thumbnail:o,_hasImage:a}=this,n=a||e!==Z.m.VIDEO?void 0:(0,d.dy)(L||(L=A`
             <dds-card-in-card-image
               alt="${0}"
-              default-src="${0}"
-            >
+              default-src="${0}">
               ${0}
             </dds-card-in-card-image>
           `),(0,l.Z)(t),(0,l.Z)(o||i),(0,u.Z)({slot:"icon"}));return(0,d.dy)(M||(M=A`
@@ -37,8 +35,7 @@
     `),e,this._renderInner())}},{kind:"method",key:"_renderInner",value:function(){const{_handleSlotChange:e,_hasPictogram:t,_hasCopy:i}=this;return(0,r.dy)(g||(g=T`
       ${0}
       <div
-        class="${0}--card__wrapper ${0} ${0}"
-      >
+        class="${0}--card__wrapper ${0} ${0}">
         <div class="${0}--card__content">
           ${0}
           ${0}
@@ -54,22 +51,19 @@
                 <slot
                   name="pictogram"
                   data-pictogram-placement="${0}"
-                  @slotchange="${0}"
-                ></slot>
+                  @slotchange="${0}"></slot>
               `),m.TOP,e):"",this.pictogramPlacement===m.TOP&&t?null:this._renderHeading(),this.pictogramPlacement!==m.BOTTOM&&t?"":this._renderCopy(),this.pictogramPlacement===m.BOTTOM?(0,r.dy)(Z||(Z=T`
                 <slot
                   name="pictogram"
                   data-pictogram-placement="${0}"
-                  @slotchange="${0}"
-                ></slot>
+                  @slotchange="${0}"></slot>
               `),m.BOTTOM,e):"",t&&this.pictogramPlacement===m.TOP?this._renderHeading():null,t&&this.pictogramPlacement===m.TOP?this._renderCopy():"")}},{kind:"field",decorators:[(0,r.Cb)({type:Boolean,reflect:!0})],key:"border",value:()=>!1},{kind:"field",decorators:[(0,r.Cb)({attribute:"color-scheme",reflect:!0})],key:"colorScheme",value:()=>u.t.REGULAR},{kind:"field",decorators:[(0,r.Cb)()],key:"href",value:()=>""},{kind:"field",decorators:[(0,r.Cb)({attribute:"pictogram-placement",reflect:!0})],key:"pictogramPlacement",value:()=>""},{kind:"field",decorators:[(0,r.Cb)({type:Boolean,reflect:!0})],key:"logo",value:()=>!1},{kind:"method",key:"createRenderRoot",value:function(){return this.attachShadow({mode:"open",delegatesFocus:!1})}},{kind:"field",decorators:[(0,r.IO)("div")],key:"_linkNode",value:void 0},{kind:"method",key:"updated",value:function(e){(0,a.Z)((0,n.Z)(i.prototype),"updated",this).call(this,e);const{colorScheme:t,href:o,_linkNode:r}=this;if(e.has("colorScheme")||e.has("href")){var d;const e=null===(d=this.querySelector(`${S}-card-heading`))||void 0===d?void 0:d.textContent,i=this.textContent,a=this.querySelector(this.constructor.selectorFooter);a&&o&&(a.colorScheme=t,a.parentHref=o,a.href=o,a.altAriaLabel=e||i)}r&&(r.classList.add(`${P}--tile`),r.classList.add(`${P}--card`),r.classList.toggle(`${P}--tile--clickable`,Boolean(o)),r.classList.toggle(`${P}--card--link`,Boolean(o)),r.classList.toggle(`${P}--card--inverse`,t===u.t.INVERSE)),this._hasPictogram&&(this.onclick=()=>window.open(this.href,"_self"));const c=this.querySelector("p");var l;this._hasCopy&&null!==c&&void 0!==c&&c.innerText&&(c.innerHTML=`${(0,s.Z)(null===c||void 0===c?void 0:c.innerText,{bold:!1})}`,null===(l=c.firstElementChild)||void 0===l||l.setAttribute("style","all:unset;"))}},{kind:"method",key:"render",value:function(){var e;return this._hasPictogram?(0,r.dy)(_||(_=T`
           <div
             tabindex="0"
             aria-label="${0}"
             aria-live="polite"
             aria-describedby="${0}--card__copy"
-            role="button"
-          >
+            role="button">
             ${0}
           </div>
         `),(null===(e=this.querySelector(`${S}-card-heading`))||void 0===e?void 0:e.textContent)||"",P,this._renderInner()):(0,r.dy)(C||(C=T` <div>${0}</div> `),this._renderInner())}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${S}--card`}},{kind:"get",static:!0,key:"selectorFooter",value:function(){return`${S}-card-footer`}},{kind:"field",static:!0,key:"styles",value:()=>v.Z}]}}),(0,h.Z)(c.Z))}}]);

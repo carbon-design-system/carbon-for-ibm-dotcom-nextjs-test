@@ -6,8 +6,7 @@
         role="tabpanel"
         aria-labelledby="tab-link-${0}-default"
         aria-hidden="${0}"
-        ?hidden="${0}"
-      >
+        ?hidden="${0}">
         <slot></slot>
       </div>
     `),this._index,this._index,this._index,!this.selected,!this.selected)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${b}--tab`}},{kind:"get",static:!0,key:"eventTabSelected",value:function(){return`${b}-tab-selected`}},{kind:"field",static:!0,key:"styles",value:()=>c.Z}]}}),(0,o.Z)(a.oi));t.Z=f}}]);

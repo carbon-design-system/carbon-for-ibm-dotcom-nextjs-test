@@ -21,15 +21,13 @@
     `),this._renderActions(),this._renderLinkList(),this._renderContent())}},{kind:"method",key:"_renderLinkList",value:function(){const{_hasLinkList:e,_handleSlotChange:t}=this;return(0,a.dy)(v||(v=C`
       <div
         ?hidden="${0}"
-        class="${0}--content-layout__link-list"
-      >
+        class="${0}--content-layout__link-list">
         <slot name="link-list" @slotchange="${0}"></slot>
       </div>
     `),!e,$,t)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${g}--cta-block`}},{kind:"field",static:!0,key:"styles",value:()=>u.Z}]}}),(0,h.Z)(y.C)),B=n(9886),Z=n(5697),L=n.n(Z),A=n(8474),x=(l.Z.prefix,A.Z.stablePrefix),E=Object.assign({},o.qI,{_noBorder:{serialize:B._P,attribute:"no-border"}}),R={_noBorder:L().bool};const T=(0,B.ZP)("".concat(x,"-cta-block"),E);T.propTypes=R;var w=T},1660:function(e,t,n){var o=n(6424),r=n(7499),s=n(6254),i=n(9033),a=n(2658),d=n(8039),l=n(1216),c=n(7670);let h,u,y,_,k,m,f,p,v,C=e=>e;const{stablePrefix:$}=a.Z,{prefix:g}=i.Z,S={complementary:"_hasComplementary",copy:"_hasCopy",heading:"_hasHeading",footer:"_hasFooter",media:"_hasMedia"};let b=(0,o.Z)([(0,s.Mo)(`${$}-content-block`)],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,s.SB)()],key:"_hasComplementary",value:()=>!1},{kind:"field",decorators:[(0,s.SB)()],key:"_hasContent",value:()=>!1},{kind:"field",decorators:[(0,s.SB)()],key:"_hasHeading",value:()=>!1},{kind:"field",decorators:[(0,s.SB)()],key:"_hasCopy",value:()=>!1},{kind:"field",decorators:[(0,s.SB)()],key:"_hasFooter",value:()=>!1},{kind:"field",decorators:[(0,s.SB)()],key:"_hasMedia",value:()=>!1},{kind:"method",key:"_getContainerClasses",value:function(){const{complementaryStyleScheme:e,_hasComplementary:t}=this;return(0,r.$)({[`${g}--content-layout`]:!0,[`${g}--content-layout--with-complementary`]:t,[`${g}--layout--border`]:e===d.Z.WITH_BORDER})}},{kind:"method",key:"_hasBodyContent",value:function(){const{_hasContent:e,_hasCopy:t,_hasMedia:n,_hasFooter:o}=this;return e||t||n||o}},{kind:"method",key:"_handleSlotChange",value:function({target:e}){const{name:t}=e,n=e.assignedNodes().some((e=>e.nodeType!==Node.TEXT_NODE||e.textContent.trim()));this[S[t]||"_hasContent"]=n}},{kind:"method",key:"_renderBody",value:function(){return(0,s.dy)(h||(h=C`
       <div
         ?hidden="${0}"
-        class="${0}--content-layout__body"
-      >
+        class="${0}--content-layout__body">
         ${0}${0}${0}
       </div>
     `),!this._hasBodyContent(),g,this._renderCopy(),this._renderInnerBody(),this._renderFooter())}},{kind:"method",key:"_renderContent",value:function(){const{_handleSlotChange:e}=this;return(0,s.dy)(u||(u=C` <slot @slotchange="${0}"></slot> `),e)}},{kind:"method",key:"_renderCopy",value:function(){const{_handleSlotChange:e}=this;return(0,s.dy)(y||(y=C` <slot name="copy" @slotchange="${0}"></slot> `),e)}},{kind:"method",key:"_renderFooter",value:function(){const{_hasFooter:e,_handleSlotChange:t}=this;return(0,s.dy)(_||(_=C`

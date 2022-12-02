@@ -9,8 +9,7 @@
     `),e,this._renderInner())}},{kind:"method",key:"_renderInner",value:function(){const{_handleSlotChange:e,_hasPictogram:t,_hasCopy:n}=this;return(0,i.dy)(y||(y=P`
       ${0}
       <div
-        class="${0}--card__wrapper ${0} ${0}"
-      >
+        class="${0}--card__wrapper ${0} ${0}">
         <div class="${0}--card__content">
           ${0}
           ${0}
@@ -26,22 +25,19 @@
                 <slot
                   name="pictogram"
                   data-pictogram-placement="${0}"
-                  @slotchange="${0}"
-                ></slot>
+                  @slotchange="${0}"></slot>
               `),g.TOP,e):"",this.pictogramPlacement===g.TOP&&t?null:this._renderHeading(),this.pictogramPlacement!==g.BOTTOM&&t?"":this._renderCopy(),this.pictogramPlacement===g.BOTTOM?(0,i.dy)(b||(b=P`
                 <slot
                   name="pictogram"
                   data-pictogram-placement="${0}"
-                  @slotchange="${0}"
-                ></slot>
+                  @slotchange="${0}"></slot>
               `),g.BOTTOM,e):"",t&&this.pictogramPlacement===g.TOP?this._renderHeading():null,t&&this.pictogramPlacement===g.TOP?this._renderCopy():"")}},{kind:"field",decorators:[(0,i.Cb)({type:Boolean,reflect:!0})],key:"border",value:()=>!1},{kind:"field",decorators:[(0,i.Cb)({attribute:"color-scheme",reflect:!0})],key:"colorScheme",value:()=>u.t.REGULAR},{kind:"field",decorators:[(0,i.Cb)()],key:"href",value:()=>""},{kind:"field",decorators:[(0,i.Cb)({attribute:"pictogram-placement",reflect:!0})],key:"pictogramPlacement",value:()=>""},{kind:"field",decorators:[(0,i.Cb)({type:Boolean,reflect:!0})],key:"logo",value:()=>!1},{kind:"method",key:"createRenderRoot",value:function(){return this.attachShadow({mode:"open",delegatesFocus:!1})}},{kind:"field",decorators:[(0,i.IO)("div")],key:"_linkNode",value:void 0},{kind:"method",key:"updated",value:function(e){(0,r.Z)((0,a.Z)(n.prototype),"updated",this).call(this,e);const{colorScheme:t,href:o,_linkNode:i}=this;if(e.has("colorScheme")||e.has("href")){var c;const e=null===(c=this.querySelector(`${O}-card-heading`))||void 0===c?void 0:c.textContent,n=this.textContent,r=this.querySelector(this.constructor.selectorFooter);r&&o&&(r.colorScheme=t,r.parentHref=o,r.href=o,r.altAriaLabel=e||n)}i&&(i.classList.add(`${S}--tile`),i.classList.add(`${S}--card`),i.classList.toggle(`${S}--tile--clickable`,Boolean(o)),i.classList.toggle(`${S}--card--link`,Boolean(o)),i.classList.toggle(`${S}--card--inverse`,t===u.t.INVERSE)),this._hasPictogram&&(this.onclick=()=>window.open(this.href,"_self"));const l=this.querySelector("p");var d;this._hasCopy&&null!==l&&void 0!==l&&l.innerText&&(l.innerHTML=`${(0,s.Z)(null===l||void 0===l?void 0:l.innerText,{bold:!1})}`,null===(d=l.firstElementChild)||void 0===d||d.setAttribute("style","all:unset;"))}},{kind:"method",key:"render",value:function(){var e;return this._hasPictogram?(0,i.dy)(T||(T=P`
           <div
             tabindex="0"
             aria-label="${0}"
             aria-live="polite"
             aria-describedby="${0}--card__copy"
-            role="button"
-          >
+            role="button">
             ${0}
           </div>
         `),(null===(e=this.querySelector(`${O}-card-heading`))||void 0===e?void 0:e.textContent)||"",S,this._renderInner()):(0,i.dy)(C||(C=P` <div>${0}</div> `),this._renderInner())}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${O}--card`}},{kind:"get",static:!0,key:"selectorFooter",value:function(){return`${O}-card-footer`}},{kind:"field",static:!0,key:"styles",value:()=>m.Z}]}}),(0,h.Z)(l.Z))}}]);
