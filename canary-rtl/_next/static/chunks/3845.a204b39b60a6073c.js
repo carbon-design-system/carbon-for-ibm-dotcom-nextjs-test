@@ -19,8 +19,7 @@
               rel="${0}"
               target="${0}"
               type="${0}"
-              @click="${0}"
-            >
+              @click="${0}">
               ${0}
             </a>
           `),(0,l.Z)(b),c,(0,l.Z)(i),(0,l.Z)(e),(0,l.Z)(n),(0,l.Z)(s),(0,l.Z)(x),(0,l.Z)(a),(0,l.Z)(g),d,this._renderInner()):(0,r.dy)(f||(f=h`
@@ -31,8 +30,7 @@
         ?autofocus="${0}"
         ?disabled="${0}"
         type="${0}"
-        @click="${0}"
-      >
+        @click="${0}">
         ${0}
       </button>
     `),c,t,o,(0,l.Z)(g),d,this._renderInner())}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${v}--button-expressive`}},{kind:"field",static:!0,key:"styles",value:()=>g}]}}),(0,s.Z)((0,c.Z)(r.oi)))}}]);

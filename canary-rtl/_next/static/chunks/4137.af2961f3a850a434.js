@@ -4,20 +4,17 @@
         <div
           part="table"
           class="${0}"
-          style="top: ${0}"
-        >
+          style="top: ${0}">
           ${0}
           <div class="${0}--tableofcontents__mobile-top"></div>
           ${0}
           <div
             class="${0}-ce--table-of-contents__items-container"
-            style="position: sticky; top: ${0}"
-          >
+            style="position: sticky; top: ${0}">
             <div class="${0}--tableofcontents__desktop-container">
               <div
                 class="${0}--tableofcontents__desktop"
-                style="${0}: -${0}px"
-              >
+                style="${0}: -${0}px">
                 ${0}
                 <ul>
                   ${0}
@@ -30,8 +27,7 @@
                 <select
                   aria-label="${0}"
                   class="${0}--tableofcontents__mobile__select"
-                  @change="${0}"
-                >
+                  @change="${0}">
                   ${0}
                 </select>
                 ${0}
@@ -55,25 +51,21 @@
                   <li
                     class="${0}"
                     @click="${0}"
-                    @keydown="${0}"
-                  >
+                    @keydown="${0}">
                     <a
                       aria-current="${0}"
                       data-target="${0}"
-                      href="#${0}"
-                    >
+                      href="#${0}">
                       ${0}
                     </a>
                   </li>
                 `),l,x,p,(0,c.o)(r?"location":void 0),n,n,o)}))):"",k,z,this.layout===M.HORIZONTAL&&e?`${e}px`:0,n?r.Ld:(0,s.dy)(O||(O=F`
                 <div
                   ?hidden="${0}"
-                  class="${0}--tableofcontents__desktop__children"
-                >
+                  class="${0}--tableofcontents__desktop__children">
                   <slot
                     name="heading"
-                    @slotchange="${0}"
-                  ></slot>
+                    @slotchange="${0}"></slot>
                   <slot name="menu-rule"></slot>
                 </div>
               `),!d,G,v),G,"horizontal"===this.layout?(0,s.dy)(R||(R=F`
@@ -81,15 +73,13 @@
               `),y?(0,s.dy)(H||(H=F`
                       <div class="${0}">
                         <div
-                          class="${0}--toc__navbar-caret-right-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-right-gradient"></div>
                         <button
                           part="next-button"
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-right"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                       </div>
@@ -100,33 +90,28 @@
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-left"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                         <div
-                          class="${0}--toc__navbar-caret-left-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-left-gradient"></div>
                       </div>
                     `),C,G,w,(0,l.Z)(),G)):"",U,e&&this.layout!==M.HORIZONTAL?`${e}px`:0,G,G,y?"right":"left",i,y?(0,s.dy)(A||(A=F` <div class="${0}--sub-content-right"></div> `),G):(0,s.dy)(E||(E=F` <div class="${0}--sub-content-left"></div> `),G),b.map((e=>{var i,d;const n=e.getAttribute("name"),o=(null!==(i=null!==(d=e.dataset.title)&&void 0!==d?d:e.textContent)&&void 0!==i?i:"").trim(),r=e===t,l=(0,a.$)({[`${G}--tableofcontents__desktop__item`]:!0,[`${G}--tableofcontents__desktop__item--active`]:r});return(0,s.dy)(P||(P=F`
                       <li
                         class="${0}"
                         @click="${0}"
-                        @keydown="${0}"
-                      >
+                        @keydown="${0}">
                         <a
                           aria-current="${0}"
                           data-target="${0}"
-                          href="#${0}"
-                        >
+                          href="#${0}">
                           ${0}
                         </a>
                       </li>
                     `),l,x,p,(0,c.o)(r?"location":void 0),n,n,o)})),y?(0,s.dy)(N||(N=F` <div class="${0}--sub-content-left"></div> `),G):(0,s.dy)(Z||(Z=F` <div class="${0}--sub-content-right"></div> `),G),G,G,this.ariaLabelFormatter,G,h,b.map((e=>{var t,i;const d=e.getAttribute("name"),n=(null!==(t=null!==(i=e.dataset.title)&&void 0!==i?i:e.textContent)&&void 0!==t?t:"").trim();return(0,s.dy)(j||(j=F`
                       <option
                         class="${0}--tableofcontents__mobile__select__option"
-                        value="${0}"
-                      >
+                        value="${0}">
                         ${0}
                       </option>
                     `),G,d,n)})),m({class:`${G}--tableofcontents__mobile__select__icon`}),"horizontal"===this.layout?(0,s.dy)(V||(V=F`
@@ -138,37 +123,31 @@
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-left"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                         <div
-                          class="${0}--toc__navbar-caret-left-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-left-gradient"></div>
                       </div>
                     `),C,G,w,(0,g.Z)(),G):(0,s.dy)(W||(W=F`
                       <div class="${0}">
                         <div
-                          class="${0}--toc__navbar-caret-right-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-right-gradient"></div>
                         <button
                           part="next-button"
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-right"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                       </div>
                     `),S,G,G,_,(0,g.Z)())):"",G,G,n?(0,s.dy)(X||(X=F`
                   <div
                     ?hidden="${0}"
-                    class="${0}--tableofcontents__children__mobile"
-                  >
+                    class="${0}--tableofcontents__children__mobile">
                     <slot
                       name="heading"
-                      @slotchange="${0}"
-                    ></slot>
+                      @slotchange="${0}"></slot>
                   </div>
                 `),!d,G,v):void 0,u)}},{kind:"get",static:!0,key:"selectorDesktopItem",value:function(){return`.${G}--tableofcontents__desktop__item a`}},{kind:"field",static:!0,key:"selectorTarget",value:()=>"[name]"},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${U}--table-of-contents`}},{kind:"field",static:!0,key:"styles",value:()=>$}]}}),(0,x.Z)((0,B.Z)(s.oi))),ee=i(9886),te=i(5697),ie=i.n(te),de=i(8474),ne=(f.Z.prefix,de.Z.stablePrefix),oe={ariaLabelFormatter:{attribute:!1},layout:{attribute:"toc-layout"},stickyOffset:{serialize:ee.Hf}},re={ariaLabelFormatter:ie().string,layout:ie().string,stickyOffset:ie().number};const ae=(0,ee.ZP)("".concat(ne,"-table-of-contents"),oe);ae.propTypes=re;var ce=ae},1394:function(e,t,i){i.d(t,{XE:function(){return d},AV:function(){return o}});var d=16;function n(e){return"".concat(e/d,"rem")}var o={sm:{width:n(320),columns:4,margin:"0"},md:{width:n(672),columns:8,margin:n(16)},lg:{width:n(1056),columns:16,margin:n(16)},xlg:{width:n(1312),columns:16,margin:n(16)},max:{width:n(1584),columns:16,margin:n(24)}};function r(e){return n(8*e)}r(.25),r(.5),r(1),r(1.5),r(2),r(3),r(4),r(5),r(6),r(8),r(10),r(12),r(20),r(2),r(3),r(4),r(6),r(8),r(12),r(20),r(3),r(4),r(5),r(6),r(8),n(24),n(32),n(40),n(48),n(64),n(80)},1076:function(e,t,i){i.d(t,{Z:function(){return T}});var d=function(e){var t=typeof e;return null!=e&&("object"==t||"function"==t)},n="object"==typeof global&&global&&global.Object===Object&&global,o="object"==typeof self&&self&&self.Object===Object&&self,r=n||o||Function("return this")(),a=function(){return r.Date.now()},c=/\s/;var s=function(e){for(var t=e.length;t--&&c.test(e.charAt(t)););return t},l=/^\s+/;var g=function(e){return e?e.slice(0,s(e)+1).replace(l,""):e},f=r.Symbol,b=Object.prototype,h=b.hasOwnProperty,x=b.toString,p=f?f.toStringTag:void 0;var m=function(e){var t=h.call(e,p),i=e[p];try{e[p]=void 0;var d=!0}catch(o){}var n=x.call(e);return d&&(t?e[p]=i:delete e[p]),n},u=Object.prototype.toString;var v=function(e){return u.call(e)},w=f?f.toStringTag:void 0;var _=function(e){return null==e?void 0===e?"[object Undefined]":"[object Null]":w&&w in Object(e)?m(e):v(e)};var y=function(e){return null!=e&&"object"==typeof e};var k=function(e){return"symbol"==typeof e||y(e)&&"[object Symbol]"==_(e)},z=/^[-+]0x[0-9a-f]+$/i,C=/^0b[01]+$/i,S=/^0o[0-7]+$/i,$=parseInt;var M=function(e){if("number"==typeof e)return e;if(k(e))return NaN;if(d(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=d(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=g(e);var i=C.test(e);return i||S.test(e)?$(e.slice(2),i?2:8):z.test(e)?NaN:+e},B=Math.max,q=Math.min;var I=function(e,t,i){var n,o,r,c,s,l,g=0,f=!1,b=!1,h=!0;if("function"!=typeof e)throw new TypeError("Expected a function");function x(t){var i=n,d=o;return n=o=void 0,g=t,c=e.apply(d,i)}function p(e){return g=e,s=setTimeout(u,t),f?x(e):c}function m(e){var i=e-l;return void 0===l||i>=t||i<0||b&&e-g>=r}function u(){var e=a();if(m(e))return v(e);s=setTimeout(u,function(e){var i=t-(e-l);return b?q(i,r-(e-g)):i}(e))}function v(e){return s=void 0,h&&n?x(e):(n=o=void 0,c)}function w(){var e=a(),i=m(e);if(n=arguments,o=this,l=e,i){if(void 0===s)return p(l);if(b)return clearTimeout(s),s=setTimeout(u,t),x(l)}return void 0===s&&(s=setTimeout(u,t)),c}return t=M(t)||0,d(i)&&(f=!!i.leading,r=(b="maxWait"in i)?B(M(i.maxWait)||0,t):r,h="trailing"in i?!!i.trailing:h),w.cancel=function(){void 0!==s&&clearTimeout(s),g=0,n=l=o=s=void 0},w.flush=function(){return void 0===s?c:v(a())},w};var T=function(e,t,i){var n=!0,o=!0;if("function"!=typeof e)throw new TypeError("Expected a function");return d(i)&&(n="leading"in i?!!i.leading:n,o="trailing"in i?!!i.trailing:o),I(e,t,{leading:n,maxWait:t,trailing:o})}}}]);

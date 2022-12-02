@@ -4,12 +4,10 @@
         @scroll="${0}"
         @touchstart="${0}"
         @touchend="${0}"
-        style="${0}"
-      >
+        style="${0}">
         <div
           class="${0}--carousel__scroll-contents"
-          style="left:${0}px"
-        >
+          style="left:${0}px">
           <slot @slotchange="${0}"></slot>
         </div>
       </div>
@@ -20,8 +18,7 @@
           ?disabled="${0}"
           @click="${0}"
           aria-label="${0}"
-          title="${0}"
-        >
+          title="${0}">
           ${0}
         </button>
         ${0}
@@ -31,8 +28,7 @@
           ?disabled="${0}"
           @click="${0}"
           aria-label="${0}"
-          title="${0}"
-        >
+          title="${0}">
           ${0}
         </button>
       </div>

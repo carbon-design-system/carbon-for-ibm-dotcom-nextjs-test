@@ -8,8 +8,7 @@
           <slot name="footer"></slot>
         </div>
         <div
-          class="${0}--content-section__body ${0}"
-        >
+          class="${0}--content-section__body ${0}">
           <slot @slotchange="${0}"></slot>
         </div>
       </div>

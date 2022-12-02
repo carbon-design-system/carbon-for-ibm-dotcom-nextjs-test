@@ -10,8 +10,7 @@
                 aria-controls="pane-${0}"
                 @click="${0}"
                 tabindex="${0}"
-                ?disabled="${0}"
-              >
+                ?disabled="${0}">
                 ${0}
                 <div class="${0}--accordion__title">${0}</div>
               </button>
@@ -24,8 +23,7 @@
         <ul
           class="${0}--tabs__nav ${0}--tabs__nav--hidden"
           role="tablist"
-          @keydown="${0}"
-        >
+          @keydown="${0}">
           ${0}
         </ul>
       </div>
@@ -35,16 +33,14 @@
                 aria-selected="${0}"
                 data-target=".tab-${0}-default"
                 role="tab"
-                ?disabled="${0}"
-              >
+                ?disabled="${0}">
                 <button
                   tabindex="${0}"
                   id="tab-link-${0}-default"
                   class="${0}--tabs__nav-link"
                   type="button"
                   aria-controls="tab-panel-${0}-default"
-                  @click="${0}"
-                >
+                  @click="${0}">
                   <div><p>${0}</p></div>
                 </button>
               </li>
@@ -77,8 +73,7 @@
         role="tabpanel"
         aria-labelledby="tab-link-${0}-default"
         aria-hidden="${0}"
-        ?hidden="${0}"
-      >
+        ?hidden="${0}">
         <slot></slot>
       </div>
     `),this._index,this._index,this._index,!this.selected,!this.selected)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${u}--tab`}},{kind:"get",static:!0,key:"eventTabSelected",value:function(){return`${u}-tab-selected`}},{kind:"field",static:!0,key:"styles",value:()=>o.Z}]}}),(0,l.Z)(d.oi));t.Z=h},1943:function(e,t,i){i.d(t,{A:function(){return d}});var a=i(3602),n=i(6069);const s=new WeakMap,d=(0,n.XM)((e=>t=>{if(!(t instanceof n.nt))throw new Error("unsafeHTML can only be used in text bindings");const i=s.get(t);if(void 0!==i&&(0,a.pt)(e)&&e===i.value&&t.value===i.fragment)return;const d=document.createElement("template");d.innerHTML=e;const r=document.importNode(d.content,!0);t.setValue(r),s.set(t,{value:e,fragment:r})}))}}]);
