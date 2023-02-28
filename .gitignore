@@ -8,3 +8,14 @@ out
 # Cypress output files
 tests/e2e/cypress/screenshots
 tests/e2e/cypress/videos
+
+# Yarn
+# https://yarnpkg.com/getting-started/qa/#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+install-state.gz
