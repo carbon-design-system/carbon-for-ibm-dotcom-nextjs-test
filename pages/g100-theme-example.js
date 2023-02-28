@@ -1,56 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
 import "../styles/g100-theme-example.scss";
 import {
-  CardSectionImages,
-  ContentBlockHorizontal,
-  ContentBlockSegmented,
-  FeatureCard,
-  HorizontalRule,
+  CTASection,
+  CalloutQuote,
+  CardSectionSimple,
+  ContentBlockMedia,
+  ContentBlockSimple,
+  ContentGroupCards,
+  ContentGroupPictograms,
   LeadSpace,
   LinkList,
+  LogoGrid,
   ScrollAnimations,
+  TableOfContents,
 } from "@carbon/ibmdotcom-react";
 // eslint-disable-next-line sort-imports
 import { ArrowDown20, ArrowRight20 } from "@carbon/icons-react";
+import {
+  Desktop,
+  HybridCloud_02,
+  SecureSearch,
+} from "@carbon/pictograms-react";
 
-const DDSButtonGroup = dynamic(
+const DDSBackToTop = dynamic(
   import(
-    "@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group"
-  ),
-  { ssr: false }
-);
-const DDSButtonGroupItem = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group-item"
-  ),
-  { ssr: false }
-);
-
-const DDSCTABlock = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/cta-block/cta-block"
-  ),
-  { ssr: false }
-);
-const DDSCTASection = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/cta-section/cta-section.js"
+    "@carbon/ibmdotcom-web-components/es/components-react/back-to-top/back-to-top"
   ),
   { ssr: false }
 );
 
-// eslint-disable-next-line sort-imports
 const DDSCard = dynamic(
   import("@carbon/ibmdotcom-web-components/es/components-react/card/card"),
-  { ssr: false }
-);
-
-import DDSCardCTAFooter from "@carbon/ibmdotcom-web-components/es/components-react/cta/card-cta-footer";
-
-const DDSCardEyebrow = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/card/card-eyebrow"
-  ),
   { ssr: false }
 );
 
@@ -64,20 +44,6 @@ const DDSCardFooter = dynamic(
 const DDSCardHeading = dynamic(
   import(
     "@carbon/ibmdotcom-web-components/es/components-react/card/card-heading"
-  ),
-  { ssr: false }
-);
-
-const DDSCardInCard = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/card-in-card/card-in-card"
-  ),
-  { ssr: false }
-);
-
-const DDSCardInCardImage = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/card-in-card/card-in-card-image"
   ),
   { ssr: false }
 );
@@ -96,37 +62,16 @@ const DDSCarousel = dynamic(
   { ssr: false }
 );
 
-const DDSContentBlockCopy = dynamic(
+const DDSContentGroupBanner = dynamic(
   import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-block/content-block-copy"
+    "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner"
   ),
   { ssr: false }
 );
 
-const DDSContentBlockHeading = dynamic(
+const DDSContentGroupHeading = dynamic(
   import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-block/content-block-heading"
-  ),
-  { ssr: false }
-);
-
-const DDSContentItemHeading = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-item/content-item-heading"
-  ),
-  { ssr: false }
-);
-
-const DDSContentItemHorizontalMedia = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-item-horizontal/content-item-horizontal-media"
-  ),
-  { ssr: false }
-);
-
-const DDSContentItemHorizontalMediaCopy = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-item-horizontal/content-item-horizontal-media-copy"
+    "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading"
   ),
   { ssr: false }
 );
@@ -145,28 +90,9 @@ const DDSContentSectionHeading = dynamic(
   { ssr: false }
 );
 
-const DDSImage = dynamic(
-  import("@carbon/ibmdotcom-web-components/es/components-react/image/image.js"),
-  { ssr: false }
-);
-
 const DDSLinkList = dynamic(
   import(
     "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list"
-  ),
-  { ssr: false }
-);
-
-const DDSLinkListHeading = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list-heading"
-  ),
-  { ssr: false }
-);
-
-const DDSLinkListItem = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list-item"
   ),
   { ssr: false }
 );
@@ -178,44 +104,9 @@ const DDSLinkListItemCTA = dynamic(
   { ssr: false }
 );
 
-const DDSLinkListSection = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/link-list-section/link-list-section"
-  ),
-  { ssr: false }
-);
-
 const DDSLinkWithIcon = dynamic(
   import(
     "@carbon/ibmdotcom-web-components/es/components-react/link-with-icon/link-with-icon.js"
-  ),
-  { ssr: false }
-);
-
-const DDSTab = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/tabs-extended/tab.js"
-  ),
-  { ssr: false }
-);
-
-const DDSTableOfContents = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/table-of-contents/table-of-contents.js"
-  ),
-  { ssr: false }
-);
-
-const DDSTabsExtendedMedia = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/tabs-extended-media/tabs-extended-media.js"
-  ),
-  { ssr: false }
-);
-
-const DDSVideoPlayerContainer = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/video-player/video-player-container.js"
   ),
   { ssr: false }
 );
@@ -231,11 +122,13 @@ import React from "react";
  */
 const _htmlExtension = process.env.NODE_ENV !== "production" ? "" : ".html";
 
-const contentBlockCopy = `It’s fundamental to everything we design. The 2x Grid is the geometric foundation of all the visual elements of 
-IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance for all creative decision-making. 
+const contentBlockCopy = `Content block simple works well as an introductory section on a page by providing a clear starting point for the user.
+By default, this component works the best as at the top of the page and includes a heading, introductory paragraph, optional
+media (image or video), optional CTA (call-to-action), and a horizontal rule at the bottom before the next component.
 
-The basic unit of 2x Grid geometry is the 8-pixel square mini unit. Multiples of mini units compose the dimensions of columns, rows, 
-boxes, along with their margins and padding. The mini unit adapts to your content while maintaining a consistent visual rhythm`;
+
+A variation of this component brings in aside elements and can introduce navigational quick links on the right side on desktop.
+You can see the aside element at work in the Content block media component directly below this one.`;
 
 const linkListProps = {
   heading: "Aside element",
@@ -295,8 +188,14 @@ const selectorTargets = `
   dds-card-section-carousel,
   dds-content-block-heading,
   dds-content-block-copy,
+  dds-content-group-banner,
+  dds-content-group-banner dds-link-list,
   dds-button-group,
-  dds-link-list
+  dds-link-list,
+  dds-card-section-carousel,
+  .scroll-target,
+  .bx--layout-1-3,
+  .bx--content-section.bx--content-section-layout
 `;
 
 /**
@@ -307,8 +206,9 @@ const selectorTargets = `
 const g100ThemeExample = () => (
   <div className="dds-theme-zone-g100">
     <LeadSpace
-      type="tall"
-      title="Leadspace left-aligned"
+      type="centered"
+      theme="white"
+      title="Leadspace centered"
       copy="Lead space helps users understand where they landed, and what type of content they are going to find on the webpage. It will always be positioned at the top."
       gradient={true}
       buttons={[
@@ -324,7 +224,7 @@ const g100ThemeExample = () => (
         },
       ]}
       image={{
-        defaultSrc: "images/dark-leadspace-img.jpg",
+        defaultSrc: "images/nextjs-white-leadspace.png",
         alt: "Image alt text",
       }}
     />
@@ -333,382 +233,289 @@ const g100ThemeExample = () => (
       animation={"slide-up"}
       selectorTargets={selectorTargets}
     >
-      <DDSTableOfContents layout={"horizontal"}>
-        <div class="bx--tableofcontents__contents">
-          <a name="1" data-title="Card section images"></a>
-          <CardSectionImages
-            heading="Card section images"
-            cards={[
-              {
-                image: {
-                  defaultSrc: "images/card-section-img-1.png",
-                  alt: "Image alt text",
+      <TableOfContents theme="white" menuLabel="Jump to" stickyOffset={48}>
+        <a
+          id="content"
+          name="content-block-simple"
+          data-title="Content Block Simple"
+        />
+        <ContentBlockSimple
+          heading="Content Block Simple"
+          copy={contentBlockCopy}
+          cta={{
+            style: "card",
+            type: "local",
+            heading: "Learn about Content block simple",
+            cta: {
+              href: "https;//www.ibm.com/services",
+            },
+          }}
+        />
+        <a name="content-block-media" data-title="Content Block Media" />
+        <ContentBlockMedia
+          heading="Content block media"
+          copy={
+            "Content block media is used to spotlight an image or video in the content of the page. " +
+            "It starts with a brief overview (this text) before presenting an image or video, and any details you want to pull out below that. " +
+            "Optionally, combine with a link or card element."
+          }
+          items={[
+            {
+              mediaType: "video",
+              heading: "Introduction to the media",
+              mediaData: {
+                videoId: "1_9h94wo6b",
+                showCaption: true,
+              },
+
+              items: [
+                {
+                  heading: "Aside elements",
+                  copy:
+                    "Note that this component is using the variation that includes an aside element (in this case, a link list) " +
+                    "along the right side of the page on desktop. This can be used to highlight key links and allow the user to jump " +
+                    "to content that is most relevant in the moment.",
                 },
-                eyebrow: "Card section",
-                heading: "A collection of card components with images",
+                {
+                  heading: "Combining Content block elements",
+                  copy:
+                    "You can check the [design specs](https://ibm.ent.box.com/folder/94760926421?s=9cu22l7vs1dpjy8g8yi3mtoswazqgq2r) to get a sense of how to combine these content block components to create a cohesive story. " +
+                    "Pair Content block media content together to break up content or segue into another component for impact.",
+                },
+                {
+                  heading: "Scroll animations",
+                  copy:
+                    "This page uses the *Scroll up* scroll animation on every section of the page content. " +
+                    "Thoughtful use of animations can highlight key content and draw the user's attention. " +
+                    "You can find more examples of scroll animations in our [Storybook](https://www.ibm.com/standards/carbon/react/?path=/story/components-scroll-animations--slide-up).",
+                },
+              ],
+            },
+          ]}
+          aside={{ items: <LinkList style="card" {...linkListProps} /> }}
+        />
+        <CalloutQuote
+          quote={{
+            copy: "The Callout quote is a typographic layout that is used to highlight an impactful client statement or user testimonial",
+            source: {
+              heading: "Speaker's name",
+              copy: "Additional info such as title or company ",
+            },
+            cta: {
+              copy: "See more about the Callout quote",
+              type: "local",
+              href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/callout-quote",
+            },
+          }}
+        />
+
+        <a
+          name="content-group-pictograms"
+          data-title="Content Group Pictograms"
+        />
+        <ContentGroupPictograms
+          className={"bx--layout-2-3"}
+          heading="Content Group Pictograms"
+          copy={
+            "This component is used to present a group of information, each with a supporting pictogram. " +
+            "Use this to break up otherwise dense content with images for a better and more scannable reading experience."
+          }
+          items={[
+            {
+              heading: "Pictograms in action",
+              copy:
+                "IBM's pictograms are visual symbols used to represent ideas, objects or narratives. " +
+                "They can communicate messages at a glance, afford interactivity, and simplify complex ideas. " +
+                "They work well with presentations and marketing communications.",
+              cta: {
+                type: "local",
+                href: "https://www.ibm.com/standards/carbon/components/content-group-pictograms",
+                copy: "Content group pictograms",
+              },
+              pictogram: {
+                src: Desktop,
+                "aria-label": "Desktop Pictogram",
+              },
+            },
+            {
+              heading: "Finding pictograms for your page",
+              copy:
+                "The IBM Design Language site houses many pictograms you can use for your project, and includes instructions " +
+                "on creating a custom pictogram. Only the productive pictogram set are used in these sections.",
+              cta: {
+                type: "local",
+                href: "https://www.ibm.com/design/language/iconography/pictograms/library",
+                copy: "IBM Design Language pictogram library",
+              },
+              pictogram: {
+                src: SecureSearch,
+                "aria-label": "Secure Search Pictogram",
+              },
+            },
+            {
+              heading: "At least three pictogram sections",
+              copy:
+                "The Content group pictogram component should always include at least three pictogram sections. " +
+                "If you have less than two sections worth of content, consider another component.",
+              pictogram: {
+                src: HybridCloud_02,
+                "aria-label": "Secure Search Pictogram",
+              },
+            },
+          ]}
+        />
+
+        <a name="content-group-cards" data-title="Content Group Cards" />
+        <div className="bx--layout-2-3">
+          <ContentGroupCards
+            heading={"Content group cards"}
+            copy={
+              "Content group cards is used to present information through a group of cards with each acting as a call to action " +
+              "that drives to additional or supporting destinations. It is suitable for adding concise buckets of content and links to a long-form reading."
+            }
+            items={[
+              {
+                heading: "Default",
+                copy: "Content group cards includes a section heading, body copy, and any number of card components listed below.",
                 cta: {
-                  href: "https://www.example.com",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
               {
-                image: {
-                  defaultSrc: "images/card-section-img-2.png",
-                  alt: "Image alt text",
-                },
-                eyebrow: "Card section",
-                heading:
-                  "The component occupies a full-width section with a header",
+                heading: "Usage in a content block",
+                copy: "This pattern can be used multiple times within a content block.",
                 cta: {
-                  href: "https://www.example.com",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
               {
-                image: {
-                  defaultSrc: "images/card-section-img-3.png",
-                  alt: "Image alt text",
-                },
-                eyebrow: "Underlying component",
-                heading: 'Note that this uses the component "Card group"',
+                heading: "Card component",
+                copy: "The Card component used here contains a title, body copy, and a CTA icon to communicate interactivity.",
                 cta: {
-                  href: "https://www.example.com",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
               {
-                image: {
-                  defaultSrc: "images/card-section-img-4.jpg",
-                  alt: "Image alt text",
-                },
-                eyebrow: "Card",
-                heading:
-                  "Each card has a headline, image, optional eyebrow, body copy, and CTA",
+                heading: "Avoid solo cards",
+                copy: "Try to avoid having orphan or single hanging cards in a row by itself.",
                 cta: {
-                  href: "https://www.example.com",
-                },
-              },
-              {
-                image: {
-                  defaultSrc: "images/card-section-img-5.png",
-                  alt: "Image alt text",
-                },
-                eyebrow: "Usage",
-                heading:
-                  "Use card section images to break up content with illustrative visuals or video",
-                cta: {
-                  href: "https://www.example.com",
+                  href: "https://www.ibm.com/standards/carbon/components/content-group-cards",
                 },
               },
             ]}
           />
-          <div className="bx--grid">
-            <div className="bx--row">
-              <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
-                <a name="2" data-title="Feature card - large"></a>
-                <FeatureCard
-                  card={{
-                    cta: {
-                      href: "https://www.example.com",
-                      icon: {
-                        src: ArrowRight20,
-                      },
-                    },
-                    eyebrow: "Feature card - large",
-                    heading:
-                      "This component helps highlight a key call-to-action that pairs with a visual to grab attention",
-                    copy:
-                      "The component comes in two sizes - medium and large. It is made up of an eyebrow, headline, image, and link. " +
-                      "Body copy is optional. The entire card section, including the image, is clickable (or tappable on mobile).",
-                    image: {
-                      defaultSrc: "images/feature-card-illustration.png",
-                      alt: "Image alt text",
-                    },
-                  }}
-                  size={"large"}
-                />
-
-                <HorizontalRule />
-                <a name="3" data-title="Content block segmented"></a>
-                <ContentBlockSegmented
-                  heading="Content Block Segmented"
-                  copy={
-                    "This component is a variation of content block simple, and works well as an introductory section to a page. " +
-                    "This variation adds subsections to further break up complex topics into easy-to-read chunks. " +
-                    "You can also optionally include a CTA, media (image or video), and quick links."
-                  }
-                  items={[
-                    {
-                      video: {
-                        videoId: "1_9h94wo6b",
-                        showCaption: true,
-                      },
-                    },
-                    {
-                      heading: "Using the content block components",
-                      copy:
-                        "The content block suite of components excels at presenting content on IBM.com. Feel free to mix and match these " +
-                        "sections based on what works best with the type of story you want to tell and the types of content you want to showcase.",
-                    },
-                    {
-                      heading: "About the 2x Grid",
-                      copy: contentBlockCopy,
-                    },
-                  ]}
-                  aside={{
-                    items: <LinkList style="card" {...linkListProps} />,
-                    border: true,
-                  }}
-                  cta={{
-                    style: "card",
-                    type: "local",
-                    copy: "Learn about more about Content block segmented",
-                    cta: {
-                      href: "https;//www.ibm.com/services",
-                    },
-                  }}
-                />
-
-                <a name="4" data-title="Content block horizontal"></a>
-                <ContentBlockHorizontal
-                  heading={"Content Block Horizontal"}
-                  items={[
-                    {
-                      eyebrow: "Component",
-                      heading: "Content block horizontal",
-                      copy:
-                        "Content group horizontal is to present a group of relatively more important pieces of content such as " +
-                        "products or solutions with more visual weight.",
-                      cta: {
-                        items: [
-                          {
-                            type: "local",
-                            copy: "Learn more",
-                            cta: {
-                              href: "https://www.ibm.com/standards/carbon/components/content-block-horizontal",
-                            },
-                          },
-                          {
-                            type: "local",
-                            copy: "See design specs",
-                            cta: {
-                              href: "https://ibm.box.com/s/rv5kmm0a4d9ded74v6yfk8ad5id5ghmx",
-                            },
-                          },
-                        ],
-                      },
-                    },
-                    {
-                      eyebrow: "Motion",
-                      heading: "Scroll animation",
-                      copy:
-                        "This page uses the *Scroll up* scroll animation on every section of the page content. " +
-                        "Thoughtful use of animations can highlight key content and draw the user’s attention. ",
-                      cta: {
-                        items: [
-                          {
-                            type: "local",
-                            copy: "See Web Component Storybook",
-                            cta: {
-                              href: "https://www.ibm.com/standards/carbon/web-components/?path=/story/components-scroll-animations--fade-once",
-                            },
-                          },
-                          {
-                            type: "local",
-                            copy: "See React Storybook",
-                            cta: {
-                              href: "https://www.ibm.com/standards/carbon/react/?path=/story/components-scroll-animations--default",
-                            },
-                          },
-                        ],
-                      },
-                    },
-                    {
-                      eyebrow: "Layout",
-                      heading: "Spacing",
-                      copy:
-                        "Carbon for IBM.com uses uniform components, elements, and spacing to encourage consistency when designing for " +
-                        "IBM.com experiences. Spacing scale and type tokens are used to ensure the information is well organized with consistency.",
-                      cta: {
-                        items: [
-                          {
-                            type: "local",
-                            copy: "Learn more",
-                            cta: {
-                              href: "https://www.ibm.com/standards/carbon/guidelines/spacing",
-                            },
-                          },
-                        ],
-                      },
-                    },
-                  ]}
-                />
-              </div>
-            </div>
-          </div>
-
-          <a name="5" data-title="Tabs extended with media"></a>
-          <DDSTabsExtendedMedia>
-            <DDSContentSectionHeading>
-              Tabs extended with media
-            </DDSContentSectionHeading>
-            <DDSTab label="Image tab">
-              <DDSContentItemHorizontalMedia align="left">
-                <DDSImage
-                  slot="media"
-                  alt="Image alt text"
-                  default-src="images/tabs-media-1.jpg"
-                ></DDSImage>
-                <DDSContentItemHeading>Image media</DDSContentItemHeading>
-                <DDSContentItemHorizontalMediaCopy>
-                  Use Tabs Extended media to display interactive, related
-                  content and even add links to detail pages.
-                </DDSContentItemHorizontalMediaCopy>
-                <DDSLinkList slot="footer" type="vertical">
-                  <DDSLinkListItemCTA
-                    icon-placement="right"
-                    href="https://www.ibm.com"
-                    cta-type="local"
-                  >
-                    Explore Tabs extended with media
-                  </DDSLinkListItemCTA>
-                  <DDSLinkListItemCTA
-                    icon-placement="right"
-                    href="https://www.ibm.com"
-                    cta-type="local"
-                  >
-                    Learn about images
-                  </DDSLinkListItemCTA>
-                </DDSLinkList>
-              </DDSContentItemHorizontalMedia>
-            </DDSTab>
-            <DDSTab label="Another image">
-              <DDSContentItemHorizontalMedia align="left">
-                <DDSImage
-                  slot="media"
-                  alt="Image alt text"
-                  default-src="images/tabs-media-2.png"
-                ></DDSImage>
-                <DDSContentItemHeading>Another image</DDSContentItemHeading>
-                <DDSContentItemHorizontalMediaCopy>
-                  This component excels at visual storytelling, while also
-                  giving the user full control to look through the tabs.
-                </DDSContentItemHorizontalMediaCopy>
-                <DDSLinkList slot="footer" type="vertical">
-                  <DDSLinkListItemCTA
-                    icon-placement="right"
-                    href="https://www.ibm.com/standards/carbon/components/tabs-extended-media"
-                    cta-type="local"
-                  >
-                    Explore Tabs extended with media
-                  </DDSLinkListItemCTA>
-                  <DDSLinkListItemCTA
-                    icon-placement="right"
-                    href="https://www.ibm.com/design/language/"
-                    cta-type="external"
-                  >
-                    Check out IBM Design Language
-                  </DDSLinkListItemCTA>
-                </DDSLinkList>
-              </DDSContentItemHorizontalMedia>
-            </DDSTab>
-            <DDSTab label="Video tab">
-              <DDSContentItemHorizontalMedia align="left">
-                <DDSVideoPlayerContainer
-                  slot="media"
-                  id="my-video"
-                  video-id="1_9h94wo6b"
-                ></DDSVideoPlayerContainer>
-                <DDSContentItemHeading>Video media</DDSContentItemHeading>
-                <DDSContentItemHorizontalMediaCopy>
-                  This component can also display videos within the tab content
-                  area.
-                </DDSContentItemHorizontalMediaCopy>
-                <DDSLinkList slot="footer" type="vertical">
-                  <DDSLinkListItemCTA
-                    icon-placement="right"
-                    href="https://www.ibm.com/standards/carbon/components/video"
-                    cta-type="local"
-                  >
-                    Learn about video
-                  </DDSLinkListItemCTA>
-                </DDSLinkList>
-              </DDSContentItemHorizontalMedia>
-            </DDSTab>
-            <DDSTab label="Tabs extended">
-              <DDSContentItemHorizontalMedia align="left">
-                <DDSImage
-                  slot="media"
-                  alt="Image alt text"
-                  default-src="images/tabs-media-4.png"
-                ></DDSImage>
-                <DDSContentItemHeading>Tabs extended</DDSContentItemHeading>
-                <DDSContentItemHorizontalMediaCopy>
-                  You can use the Tabs extended component to organize other
-                  kinds of editorial content into tabs on desktop and accordion
-                  on mobile.
-                </DDSContentItemHorizontalMediaCopy>
-                <DDSLinkList slot="footer" type="vertical">
-                  <DDSLinkListItemCTA
-                    icon-placement="right"
-                    href="https://www.ibm.com/standards/carbon/components/tabs-extended"
-                    cta-type="local"
-                  >
-                    Explore Tabs extended
-                  </DDSLinkListItemCTA>
-                </DDSLinkList>
-              </DDSContentItemHorizontalMedia>
-            </DDSTab>
-          </DDSTabsExtendedMedia>
-
-          <div className="bx--grid">
-            <div className="bx--row">
-              <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
-                <a name="6" data-title="Card in card"></a>
-                <DDSCardInCard href="https://www.ibm.com/standards/carbon/components/card-in-card">
-                  <DDSCardInCardImage
-                    slot="image"
-                    alt="Image alt text"
-                    default-src="images/card-in-card.jpg"
-                  ></DDSCardInCardImage>
-                  <DDSCardEyebrow>Card in card</DDSCardEyebrow>
-                  <DDSCardHeading>
-                    Highlight a large media moment while keeping harmony in a
-                    card group
-                  </DDSCardHeading>
-                  <DDSCardCTAFooter>
-                    <ArrowRight20 slot="icon" />
-                  </DDSCardCTAFooter>
-                </DDSCardInCard>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <a name="7" data-title="Link list section"></a>
+        <a name="logo-grid" data-title="Logo Grid" />
+        <LogoGrid
+          heading="Logo Grid"
+          logosGroup={[
+            {
+              title: "Microsoft",
+              imgSrc: "images/logo-microsoft.png",
+              altText: "Image alt text",
+            },
+            {
+              title: "Dell",
+              imgSrc: "images/logo-dell.png",
+              altText: "Dell",
+            },
+            {
+              title: "Rabobank",
+              imgSrc: "images/logo-rabobank.png",
+              altText: "Rabobank",
+            },
+            {
+              title: "Bendigo",
+              imgSrc: "images/logo-bendigo.png",
+              altText: "Bendigo",
+            },
+            {
+              title: "NBC Universal",
+              imgSrc: "images/logo-nbcuniversal.png",
+              altText: "NBC Universal",
+            },
+            {
+              title: "Cisco",
+              imgSrc: "images/logo-cisco.png",
+              altText: "Cisco",
+            },
+          ]}
+        />
+      </TableOfContents>
 
-        <DDSLinkListSection>
-          <DDSContentSectionHeading>Link list section</DDSContentSectionHeading>
-          <DDSLinkList>
-            <DDSLinkListItem href="https://www.ibm.com/standards/carbon/designing">
-              Designing <ArrowRight20 slot="icon" />
-            </DDSLinkListItem>
-            <DDSLinkListItem href="https://www.ibm.com/standards/carbon/developing">
-              Developing <ArrowRight20 slot="icon" />
-            </DDSLinkListItem>
-            <DDSLinkListItem href="https://www.ibm.com/standards/carbon/guidelines">
-              Guidelines <ArrowRight20 slot="icon" />
-            </DDSLinkListItem>
-            <DDSLinkListItem href="https://www.ibm.com/standards/carbon/guidelines/expressive-theme">
-              Expressive Theme <ArrowRight20 slot="icon" />
-            </DDSLinkListItem>
-            <DDSLinkListItem href="https://www.ibm.com/standards/carbon/react/?path=/story/overview-getting-started--page">
-              React <ArrowRight20 slot="icon" />
-            </DDSLinkListItem>
-            <DDSLinkListItem href="https://www.ibm.com/standards/carbon/web-components/?path=/story/overview-getting-started--page">
-              Web Components <ArrowRight20 slot="icon" />
-            </DDSLinkListItem>
-          </DDSLinkList>
-        </DDSLinkListSection>
+      <div className="bx--grid">
+        <div className="bx--row">
+          <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
+            <DDSContentGroupBanner>
+              <DDSContentGroupHeading>
+                Content group banner: a subtle callout for tangential
+                information or announcements
+              </DDSContentGroupHeading>
+              <DDSLinkList type="vertical" slot="complementary">
+                <DDSLinkListItemCTA
+                  icon-placement="right"
+                  href="https://www.ibm.com/standards/carbon/components/content-group-banner"
+                  cta-type="local"
+                >
+                  Content group banner
+                </DDSLinkListItemCTA>
+                <DDSLinkListItemCTA
+                  icon-placement="right"
+                  href="https://www.ibm.com"
+                  cta-type="external"
+                >
+                  Resource video
+                </DDSLinkListItemCTA>
+              </DDSLinkList>
+            </DDSContentGroupBanner>
+          </div>
+        </div>
+      </div>
+      <CardSectionSimple
+        heading="Card section"
+        theme="white"
+        cards={[
+          {
+            heading: "Card section",
+            copy:
+              "The card section is a collection of cards presented in a full-width section" +
+              "with a left-column header that responds to the grid.",
+            cta: {
+              href: `https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section`,
+            },
+          },
+          {
+            heading: "Cards",
+            copy: "The main content of the carousel lives on these cards.",
+            cta: {
+              href: `https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section`,
+            },
+          },
+          {
+            heading: "Variation",
+            copy: "Previewed here is a variation of Card section that includes the high contrast card at the end of the card collection.",
+            cta: {
+              href: `https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section`,
+            },
+          },
+          {
+            heading: "Avoid orphan cards",
+            copy: "Try to avoid having orphan or single hanging cards in a row by itself.",
+            cta: {
+              href: `https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section`,
+            },
+          },
+        ]}
+        cta={{
+          heading: "A variation includes a high contrast Call-to-action",
+          cta: {
+            href: "https://www.example.com",
+          },
+        }}
+      />
 
-        <a name="8" data-title="Card section carousel"></a>
+      <div className="scroll-target">
         <DDSCardSectionCarousel>
           <DDSContentSectionHeading>
             Card section carousel
@@ -791,62 +598,57 @@ const g100ThemeExample = () => (
             </DDSCard>
           </DDSCarousel>
         </DDSCardSectionCarousel>
-        <div className="bx--grid">
-          <div className="bx--row">
-            <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
-              <HorizontalRule />
-            </div>
+      </div>
+      <div className="bx--grid">
+        <div className="bx--row">
+          <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
+            <CTASection
+              theme="white"
+              cta={{
+                style: "button",
+                type: "local",
+                buttons: [
+                  {
+                    type: "local",
+                    copy: ["See alternate template"],
+                    href: `./g100-theme-example${_htmlExtension}`,
+                  },
+                  {
+                    type: "local",
+                    copy: ["Carbon for IBM.com"],
+                    href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section",
+                  },
+                ],
+              }}
+              items={[
+                {
+                  heading: "Secondary subsection",
+                  copy: `Consists of two paragraph lists and is used to provide information and links to additional destinations.`,
+                  cta: {
+                    copy: "More on CTA section",
+                    type: "local",
+                    href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section",
+                  },
+                },
+                {
+                  heading: "Usage",
+                  copy: `Use the secondary area to connect users to additional destinations if more than the primary is needed.`,
+                  cta: {
+                    copy: "More on Call-to-action",
+                    type: "local",
+                    href: "https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta",
+                  },
+                },
+              ]}
+              heading="CTA Section"
+              copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamco laboris nisi ut aliquip ex ea commodo
+            consequat"
+            />
           </div>
         </div>
-
-        <a name="8" data-title="CTA section"></a>
-        <DDSCTASection>
-          <DDSCTABlock _noBorder>
-            <DDSContentBlockHeading>CTA section</DDSContentBlockHeading>
-            <DDSContentBlockCopy>
-              Used to communicate actions that users can take along with some
-              information that is relevant to those actions. This variation uses
-              a link list below the main CTAs.
-            </DDSContentBlockCopy>
-            <DDSButtonGroup slot="action">
-              <DDSButtonGroupItem
-                href={`./white-theme-example${_htmlExtension}`}
-              >
-                <ArrowRight20 slot="icon" />
-                See alternate template
-              </DDSButtonGroupItem>
-              <DDSButtonGroupItem href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/">
-                <ArrowRight20 slot="icon" />
-                Carbon for IBM.com
-              </DDSButtonGroupItem>
-            </DDSButtonGroup>
-            <DDSLinkList slot="link-list" type="end">
-              <DDSLinkListHeading>Link list</DDSLinkListHeading>
-              <DDSLinkListItem href="https://www.ibm.com/standards/carbon/components/cta">
-                CTA <ArrowRight20 slot="icon" />
-              </DDSLinkListItem>
-              <DDSLinkListItem href="https://www.ibm.com/standards/carbon/web-components/?path=/story/components-cta-block--default">
-                CTA block <ArrowRight20 slot="icon" />
-              </DDSLinkListItem>
-              <DDSLinkListItem href="https://www.ibm.com/standards/carbon/components/cta-section">
-                CTA section <ArrowRight20 slot="icon" />
-              </DDSLinkListItem>
-              <DDSLinkListItem href="https://www.ibm.com/standards/carbon/web-components/?path=/story/components-cta-section--simple">
-                Web Components Storybook <ArrowRight20 slot="icon" />
-              </DDSLinkListItem>
-              <DDSLinkListItem href="https://www.ibm.com/standards/carbon/react/?path=/story/components-cta-section--default">
-                React Storybook <ArrowRight20 slot="icon" />
-              </DDSLinkListItem>
-            </DDSLinkList>
-          </DDSCTABlock>
-        </DDSCTASection>
-      </DDSTableOfContents>
+      </div>
     </ScrollAnimations>
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `document.querySelector('.bx--dotcom-shell').style = 'background: #161616;'`,
-      }}
-    />
+    <DDSBackToTop />
   </div>
 );
 export default g100ThemeExample;

@@ -102,7 +102,7 @@ const _tests = {
   },
 };
 
-describe("Example page A page", () => {
+describe("Example page A", () => {
   beforeEach(() => {
     cy.visit("/example-page-a.html");
     cy.viewport(1280, 780);
