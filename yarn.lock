@@ -989,15 +989,15 @@
     "@carbon/import-once" "^10.7.0"
     "@carbon/layout" "^10.37.1"
 
-"@carbon/ibmdotcom-react@^1.43.0":
-  version "1.43.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.43.0.tgz#2b3509b04bfd8d632884abfb1fb4d8b620770d55"
-  integrity sha512-Koxe5s7B6J9fhyprK9UiC9vBHWZjEeJXh3IKLv0dO4C9zR8kA3CIxuRaO8+ifA5j2EGBEBZhM6k36xceTcNcMw==
+"@carbon/ibmdotcom-react@^1.44.0":
+  version "1.44.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-react/-/ibmdotcom-react-1.44.0.tgz#1facd9ba3425059ad01a9ed46e3d86db7592f7ac"
+  integrity sha512-FakacKgPHi6cGyVOFE3ViwvD6WkesogFGqHD4Yn/8Qb3AR4RRKSSMU32uOdpkxaTRBdikGtPuOx2n0ZvbxFzCQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
-    "@carbon/ibmdotcom-services" "1.43.0"
-    "@carbon/ibmdotcom-styles" "1.43.0"
-    "@carbon/ibmdotcom-utilities" "1.43.0"
+    "@carbon/ibmdotcom-services" "1.44.0"
+    "@carbon/ibmdotcom-styles" "1.44.0"
+    "@carbon/ibmdotcom-utilities" "1.44.0"
     "@carbon/telemetry" "^0.1.0"
     autosuggest-highlight "^3.1.1"
     carbon-components "10.58.5"
@@ -1007,22 +1007,22 @@
     react-autosuggest "^10.1.0"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-services@1.43.0":
-  version "1.43.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.43.0.tgz#9decfbff317fe0f3a013c39f04572f1fabdf1b88"
-  integrity sha512-dtNS/XVi3eohmBefmq/q4ln/HyDwu8/mruh7RF3ugiy0HGrvkqTB/fsYOKBYi7h4Rio2qstk6uzskn6apPo3oQ==
+"@carbon/ibmdotcom-services@1.44.0":
+  version "1.44.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-services/-/ibmdotcom-services-1.44.0.tgz#adf88768eab0aa2e591099381c502e2d8faabfc0"
+  integrity sha512-4UVjIZU/D6iW8sRGLigco8qrnoJ2hJJosx7mek+1CvmT1AgwseCT7XnoFZG+rFdFMcSyTlyZ3UVoLNetjXyV+w==
   dependencies:
     "@babel/runtime" "^7.5.0"
-    "@carbon/ibmdotcom-utilities" "1.43.0"
+    "@carbon/ibmdotcom-utilities" "1.44.0"
     "@carbon/telemetry" "0.1.0"
     axios "^0.27.2"
     marked "^4.0.10"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-styles@1.43.0", "@carbon/ibmdotcom-styles@^1.43.0":
-  version "1.43.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.43.0.tgz#147359fe49cb935f38a42b418704a6f4b8125db3"
-  integrity sha512-wnds/kdXYETpc422V2sIKj/NS7l7afNE8E6JMwhCmFwHPSJKn+UlCbmEkMn7HXFZHh6alAWqiJ4tLkGJKv6UOw==
+"@carbon/ibmdotcom-styles@1.44.0", "@carbon/ibmdotcom-styles@^1.44.0":
+  version "1.44.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-styles/-/ibmdotcom-styles-1.44.0.tgz#f8908e11fe276288e7a307c4234e5a53983e459e"
+  integrity sha512-zBpLaFMH2Vl22Iyu2xIAFdoJgv45hrbN4fWzkFKhFRzmdKZZF+qwfQg9vCJ/fkLfd6nHpQuuD9seSdjw4kS7yQ==
   dependencies:
     "@carbon/grid" "10.43.1"
     "@carbon/icons-react" "10.49.0"
@@ -1034,10 +1034,10 @@
     "@carbon/type" "10.45.1"
     carbon-components "10.58.5"
 
-"@carbon/ibmdotcom-utilities@1.43.0":
-  version "1.43.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.43.0.tgz#318b5266a49565f05d7778138999b715212da58a"
-  integrity sha512-bBqtXGAz4vzeB/pdWnY9PCYsycT4SIYFT+8YNO3jATdBPOdBxBUsDihDc4pRJv+GfneXv6PM5YYaw/frYX800w==
+"@carbon/ibmdotcom-utilities@1.44.0":
+  version "1.44.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-utilities/-/ibmdotcom-utilities-1.44.0.tgz#03f3172d1c3437f00ca09ba514cd155324a9d598"
+  integrity sha512-vhDzc4u90s5cSX1gdwUAn1emOK2RDZ2msntmwPn4jjm5j/6O1X3kKVZQoaXNLedLorO0sxyaCZLNVBUVI1jM/Q==
   dependencies:
     "@carbon/telemetry" "0.1.0"
     axios "^0.27.2"
@@ -1048,18 +1048,18 @@
     striptags "^3.2.0"
     window-or-global "^1.0.1"
 
-"@carbon/ibmdotcom-web-components@^1.28.0":
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-web-components/-/ibmdotcom-web-components-1.28.0.tgz#cbcfa99a8f4eb79013cdd0ec4c92add134a47b4e"
-  integrity sha512-Tq693cjjFJu4siplofJEq2U3rsaeqUeFKLhHexpWkxdwP4XrtOahZqdWJEU4wOD4Fi0MhizP7c70IB87FD4lsA==
+"@carbon/ibmdotcom-web-components@^1.29.0":
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibmdotcom-web-components/-/ibmdotcom-web-components-1.29.0.tgz#016e883195f50f77921c5c2f75a326bee14aea30"
+  integrity sha512-Rs5WOo2aosl3lq8pprttHGACSP8gsqi0Yck4DjC6X14ufqH37sRt40PxisvqhIIRCZ2RtGrklnp2Crj9uBLDSg==
   dependencies:
-    "@carbon/ibmdotcom-services" "1.43.0"
-    "@carbon/ibmdotcom-styles" "1.43.0"
-    "@carbon/ibmdotcom-utilities" "1.43.0"
+    "@carbon/ibmdotcom-services" "1.44.0"
+    "@carbon/ibmdotcom-styles" "1.44.0"
+    "@carbon/ibmdotcom-utilities" "1.44.0"
     "@carbon/layout" "10.37.1"
     "@carbon/motion" "^11.0.0"
     "@carbon/telemetry" "0.1.0"
-    "@carbon/web-components" "1.24.0"
+    "@carbon/web-components" "1.25.0"
     carbon-components "10.58.5"
     lit-element "2.5.1"
     lit-html "1.4.1"
@@ -1178,10 +1178,10 @@
     "@carbon/grid" "^10.43.0"
     "@carbon/import-once" "^10.7.0"
 
-"@carbon/web-components@1.24.0":
-  version "1.24.0"
-  resolved "https://registry.yarnpkg.com/@carbon/web-components/-/web-components-1.24.0.tgz#e92a9bbf3ce24a6b8ed46eff341b4b7e9655ab43"
-  integrity sha512-w5IKKfyW4thdRugZ/8TEvoPGMSH/Q1rInesjvAm9kxEMkRLu+iSAo0PTVeIXXbO5JLwF0w81SS5NpnbhLdJbzA==
+"@carbon/web-components@1.25.0":
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/@carbon/web-components/-/web-components-1.25.0.tgz#c4f4edb48c1764f05f575a4827c803f57282039b"
+  integrity sha512-B4r3iEv6sHAIhJEDEQ/2Iv+O8JWonZzrWhGpECt9DRvdfNdmU4d35Fu1X84XD5R7QwKVP1p8NQS2q592ZE1VoQ==
   dependencies:
     "@babel/runtime" "^7.16.3"
     carbon-components "10.58.3"
