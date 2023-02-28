@@ -30,7 +30,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.9.1",
     "@carbon/ibmdotcom-react": "^1.44.0",
     "@carbon/ibmdotcom-styles": "^1.44.0",
     "@carbon/ibmdotcom-web-components": "^1.29.0",
