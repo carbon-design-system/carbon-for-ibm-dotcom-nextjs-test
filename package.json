@@ -70,8 +70,8 @@
     "serialize-javascript": ">= 3.1.0"
   },
   "devDependencies": {
-    "@percy/cli": "~1.1.0",
-    "@percy/cypress": "~3.1.1",
+    "@percy/cli": "^1.20.0",
+    "@percy/cypress": "^3.1.1",
     "cypress": "^9.4.1",
     "cypress-wait-until": "^1.7.2",
     "eslint-plugin-cypress": "^2.11.3",

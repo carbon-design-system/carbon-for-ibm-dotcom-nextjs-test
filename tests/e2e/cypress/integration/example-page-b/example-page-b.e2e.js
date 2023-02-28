@@ -7,7 +7,7 @@
 
 "use strict";
 
-describe("Example page B page", () => {
+describe("Example page B", () => {
   it("should load the default example-page-b page", () => {
     cy.visit("/example-page-b.html");
 

@@ -17,10 +17,6 @@ describe("g100 theme example page", () => {
         .should("not.be.empty")
     );
 
-    cy.get(".bx--image__img").each(($img) => {
-      cy.waitUntil(() => cy.wrap($img).should("be.visible"));
-    });
-
     cy.wait(3000);
 
     // Take a snapshot for visual diffing
