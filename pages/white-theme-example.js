@@ -291,6 +291,7 @@ const WhiteThemeExample = () => (
               ],
             },
           ]}
+          // eslint-disable-next-line react/forbid-component-props
           aside={{ items: <LinkList style="card" {...linkListProps} /> }}
         />
         <CalloutQuote

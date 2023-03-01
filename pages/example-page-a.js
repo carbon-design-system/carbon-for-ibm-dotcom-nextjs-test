@@ -183,6 +183,7 @@ const Learn = () => (
         aside={{
           items: (
             <LinkList
+              // eslint-disable-next-line react/forbid-component-props
               style="card"
               heading="Tutorials"
               items={[

@@ -18,7 +18,7 @@
     "dev": "next dev",
     "export": "next export",
     "lint": "eslint pages",
-    "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
+    "lint:styles": "stylelint '**/*.{css,scss}' --config stylelint-config-carbon",
     "start": "node server.js",
     "test:e2e:local": "start-server-and-test 'yarn test:e2e:run' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
@@ -45,21 +45,18 @@
   },
   "devDependencies": {
     "@actions/core": "^1.10.0",
+    "@babel/core": "7.21.0",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "@percy/cli": "^1.20.0",
+    "@percy/cli": "^1.20.1",
     "@percy/cypress": "^3.1.1",
+    "babel-preset-carbon": "0.0.14",
     "commander": "^10.0.0",
     "cypress": "^9.4.1",
     "cypress-wait-until": "^1.7.2",
     "dotenv": "^16.0.3",
     "eslint": "^8.0.0",
-    "eslint-plugin-cypress": "^2.11.3",
-    "eslint-plugin-jsdoc": "^37.0.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^4.0.0",
-    "eslint-plugin-tree-shaking": "^1.8.0",
+    "eslint-config-carbon": "3.0.0",
     "express": "4.18.2",
     "http-server": "14.1.0",
     "husky": "^8.0.3",
@@ -71,7 +68,8 @@
     "react-dom": "17.0.2",
     "sass": "1.58.3",
     "start-server-and-test": "^1.12.6",
-    "stylelint": "^15.2.0"
+    "stylelint": "^14.3.0",
+    "stylelint-config-carbon": "1.11.0"
   },
   "commitlint": {
     "extends": [
@@ -103,7 +101,7 @@
     ],
     "**/*.scss": [
       "prettier --write",
-      "stylelint '**/*.scss' --config ./packages/stylelint-config-ibmdotcom",
+      "stylelint '**/*.scss' --config stylelint-config-carbon",
       "git add"
     ],
     "*.md": [
@@ -113,12 +111,12 @@
   },
   "eslintConfig": {
     "extends": [
-      "./packages/eslint-config-ibmdotcom"
+      "eslint-config-carbon"
     ]
   },
   "stylelint": {
     "extends": [
-      "./packages/stylelint-config-ibmdotcom"
+      "stylelint-config-carbon"
     ]
   },
   "packageManager": "yarn@3.4.1"

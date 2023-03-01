@@ -333,7 +333,7 @@ const g100ThemeExample = () => (
       selectorTargets={selectorTargets}
     >
       <DDSTableOfContents layout={"horizontal"}>
-        <div class="bx--tableofcontents__contents">
+        <div className="bx--tableofcontents__contents">
           <a name="1" data-title="Card section images"></a>
           <CardSectionImages
             heading="Card section images"
@@ -452,6 +452,7 @@ const g100ThemeExample = () => (
                     },
                   ]}
                   aside={{
+                    // eslint-disable-next-line react/forbid-component-props
                     items: <LinkList style="card" {...linkListProps} />,
                     border: true,
                   }}
