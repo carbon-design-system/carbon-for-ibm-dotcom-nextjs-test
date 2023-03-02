@@ -23,9 +23,9 @@
     "test:e2e:local:no-percy": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy:with-video": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config-file tests/e2e/cypress.json'",
     "test:e2e:run": "http-server -c-1 out --silent",
-    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
-    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest",
-    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next",
+    "update-canary": "yarn up @carbon/ibmdotcom-react@canary && yarn up @carbon/ibmdotcom-styles@canary && yarn up @carbon/ibmdotcom-web-components@canary",
+    "update-latest": "yarn up @carbon/ibmdotcom-react@latest && yarn up @carbon/ibmdotcom-styles@latest && yarn up @carbon/ibmdotcom-web-components@latest",
+    "update-next": "yarn up @carbon/ibmdotcom-react@next && yarn up @carbon/ibmdotcom-styles@next && yarn up @carbon/ibmdotcom-web-components@next",
     "prepare": "husky install"
   },
   "dependencies": {
