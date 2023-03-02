@@ -18,21 +18,20 @@
     "dev": "next dev",
     "export": "next export",
     "lint": "eslint pages",
-    "lint:styles": "stylelint '**/*.{css,scss}' --config stylelint-config-carbon",
     "start": "node server.js",
     "test:e2e:local": "start-server-and-test 'yarn test:e2e:run' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy:with-video": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config-file tests/e2e/cypress.json'",
     "test:e2e:run": "http-server -c-1 out --silent",
-    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
-    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest",
-    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next",
+    "update-canary": "yarn up @carbon/ibmdotcom-react@canary && yarn up @carbon/ibmdotcom-styles@canary && yarn up @carbon/ibmdotcom-web-components@canary",
+    "update-latest": "yarn up @carbon/ibmdotcom-react@latest && yarn up @carbon/ibmdotcom-styles@latest && yarn up @carbon/ibmdotcom-web-components@latest",
+    "update-next": "yarn up @carbon/ibmdotcom-react@next && yarn up @carbon/ibmdotcom-styles@next && yarn up @carbon/ibmdotcom-web-components@next",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@carbon/ibmdotcom-react": "^1.43.0",
-    "@carbon/ibmdotcom-styles": "^1.43.0",
-    "@carbon/ibmdotcom-web-components": "^1.28.0",
+    "@carbon/ibmdotcom-react": "^1.44.0",
+    "@carbon/ibmdotcom-styles": "^1.44.0",
+    "@carbon/ibmdotcom-web-components": "^1.29.0",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "11.21.0",
     "carbon-components-react": "^7.44.1",
@@ -67,9 +66,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "1.58.3",
-    "start-server-and-test": "^1.12.6",
-    "stylelint": "^14.3.0",
-    "stylelint-config-carbon": "1.11.0"
+    "start-server-and-test": "^1.12.6"
   },
   "commitlint": {
     "extends": [
@@ -96,27 +93,15 @@
   "lint-staged": {
     "**/*.js": [
       "prettier --write",
-      "eslint pages",
-      "git add"
-    ],
-    "**/*.scss": [
-      "prettier --write",
-      "stylelint '**/*.scss' --config stylelint-config-carbon",
-      "git add"
+      "eslint pages"
     ],
     "*.md": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "eslintConfig": {
     "extends": [
       "eslint-config-carbon"
-    ]
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-carbon"
     ]
   },
   "packageManager": "yarn@3.4.1"

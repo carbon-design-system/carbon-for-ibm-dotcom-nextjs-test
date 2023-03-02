@@ -5,7 +5,7 @@ on:
     branches:
       - main
   repository_dispatch:
-    types: [deploy-next,deploy-staging]
+    types: [deploy-next, deploy-staging]
 
 concurrency:
   group: deploy-next-${{ github.ref }}
@@ -25,7 +25,7 @@ jobs:
           node-version: "14.x"
           cache: yarn
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: Update to latest release candidate
         run: yarn update-next
       - name: Set env vars
@@ -34,8 +34,8 @@ jobs:
           env-file: .env
         env:
           PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
-          BASE_PATH: '/carbon-for-ibm-dotcom-nextjs-test/next'
-          ALTLANG_ROOT_PATH: '/carbon-for-ibm-dotcom-nextjs-test/next/'
+          BASE_PATH: "/carbon-for-ibm-dotcom-nextjs-test/next"
+          ALTLANG_ROOT_PATH: "/carbon-for-ibm-dotcom-nextjs-test/next/"
           SASS_PATH: node_modules:src
       - name: Build project
         run: yarn build
