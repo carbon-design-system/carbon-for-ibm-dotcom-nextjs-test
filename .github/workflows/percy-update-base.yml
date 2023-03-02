@@ -17,13 +17,13 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        node-version: ['14.x']
+        node-version: ["14.x"]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
+          node-version: "14.x"
           cache: yarn
       - name: Caching NextJS
         id: nextjs-cache-build
@@ -36,7 +36,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-percy-update-
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: Grab latest canary release
         run: yarn update-canary
       - name: Set env vars
@@ -67,13 +67,13 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        node-version: [ '14.x' ]
+        node-version: ["14.x"]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
+          node-version: "14.x"
           cache: yarn
       - name: Caching NextJS
         id: nextjs-cache-build
@@ -86,7 +86,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-percy-update-upstream-
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: Grab latest canary release
         run: yarn update-canary
       - name: Set env vars

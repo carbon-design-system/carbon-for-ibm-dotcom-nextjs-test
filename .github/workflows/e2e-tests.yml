@@ -2,9 +2,9 @@ name: e2e-tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 concurrency:
   group: e2e-tests-${{ github.ref }}
@@ -16,13 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['14.x']
+        node-version: ["14.x"]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
+          node-version: "14.x"
           cache: yarn
       - name: Caching NextJS
         id: nextjs-cache-build
@@ -35,7 +35,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-e2e-tests-
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: Grab latest canary release
         run: yarn update-canary
       - name: Set env vars

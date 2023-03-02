@@ -18,7 +18,6 @@
     "dev": "next dev",
     "export": "next export",
     "lint": "eslint pages",
-    "lint:styles": "stylelint '**/*.{css,scss}' --config stylelint-config-carbon",
     "start": "node server.js",
     "test:e2e:local": "start-server-and-test 'yarn test:e2e:run' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
@@ -67,9 +66,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "1.58.3",
-    "start-server-and-test": "^1.12.6",
-    "stylelint": "^14.3.0",
-    "stylelint-config-carbon": "1.11.0"
+    "start-server-and-test": "^1.12.6"
   },
   "commitlint": {
     "extends": [
@@ -96,27 +93,15 @@
   "lint-staged": {
     "**/*.js": [
       "prettier --write",
-      "eslint pages",
-      "git add"
-    ],
-    "**/*.scss": [
-      "prettier --write",
-      "stylelint '**/*.scss' --config stylelint-config-carbon",
-      "git add"
+      "eslint pages"
     ],
     "*.md": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "eslintConfig": {
     "extends": [
       "eslint-config-carbon"
-    ]
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-carbon"
     ]
   },
   "packageManager": "yarn@3.4.1"

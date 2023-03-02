@@ -25,7 +25,7 @@ jobs:
           node-version: "14.x"
           cache: yarn
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: Update to latest canary
         run: yarn update-canary
       - name: Set env vars
@@ -34,8 +34,8 @@ jobs:
           env-file: .env
         env:
           PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
-          BASE_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary'
-          ALTLANG_ROOT_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary/'
+          BASE_PATH: "/carbon-for-ibm-dotcom-nextjs-test/canary"
+          ALTLANG_ROOT_PATH: "/carbon-for-ibm-dotcom-nextjs-test/canary/"
           SASS_PATH: node_modules:src
       - name: Build project
         run: yarn build
@@ -79,7 +79,7 @@ jobs:
         with:
           node-version: "14.x"
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: Update to latest canary
         run: yarn update-canary
       - name: Set env vars
@@ -88,8 +88,8 @@ jobs:
           env-file: .env
         env:
           PROFILE_HOST: ${{ secrets.PROFILE_HOST }}
-          BASE_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary-rtl'
-          ALTLANG_ROOT_PATH: '/carbon-for-ibm-dotcom-nextjs-test/canary-rtl/'
+          BASE_PATH: "/carbon-for-ibm-dotcom-nextjs-test/canary-rtl"
+          ALTLANG_ROOT_PATH: "/carbon-for-ibm-dotcom-nextjs-test/canary-rtl/"
           SASS_PATH: node_modules:src
           ENABLE_RTL: true
       - name: Build project
