@@ -5,7 +5,7 @@
   "repository": "git@github.com:carbon-design-system/carbon-for-ibm-dotcom-nextjs-test.git",
   "license": "Apache-2.0",
   "engines": {
-    "node": "12 || 14"
+    "node": "14 || 16"
   },
   "workspaces": {
     "packages": [
@@ -18,65 +18,91 @@
     "dev": "next dev",
     "export": "next export",
     "lint": "eslint pages",
-    "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
     "start": "node server.js",
     "test:e2e:local": "start-server-and-test 'yarn test:e2e:run' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy:with-video": "start-server-and-test 'yarn test:e2e:run' 8080 'cypress run --config-file tests/e2e/cypress.json'",
     "test:e2e:run": "http-server -c-1 out --silent",
-    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary && yarn upgrade @carbon/ibmdotcom-web-components@canary",
-    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest && yarn upgrade @carbon/ibmdotcom-web-components@latest",
-    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next && yarn upgrade @carbon/ibmdotcom-web-components@next",
+    "update-canary": "yarn up @carbon/ibmdotcom-react@canary && yarn up @carbon/ibmdotcom-styles@canary && yarn up @carbon/ibmdotcom-web-components@canary",
+    "update-latest": "yarn up @carbon/ibmdotcom-react@latest && yarn up @carbon/ibmdotcom-styles@latest && yarn up @carbon/ibmdotcom-web-components@latest",
+    "update-next": "yarn up @carbon/ibmdotcom-react@next && yarn up @carbon/ibmdotcom-styles@next && yarn up @carbon/ibmdotcom-web-components@next",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
     "@carbon/ibmdotcom-react": "^1.44.0",
     "@carbon/ibmdotcom-styles": "^1.44.0",
     "@carbon/ibmdotcom-web-components": "^1.29.0",
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "11.21.0",
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
-    "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "9.8.8",
     "carbon-components-react": "^7.44.1",
-    "commander": "^6.2.0",
-    "dotenv": "^10.0.0",
-    "eslint": "^8.0.0",
-    "eslint-plugin-jsdoc": "^37.0.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^4.0.0",
-    "eslint-plugin-tree-shaking": "^1.8.0",
-    "express": "^4.17.1",
-    "fast-sass-loader": "^1.5.0",
-    "husky": "^7.0.0",
-    "lint-staged": "^12.0.0",
-    "next": "12.1.0",
-    "next-compose-plugins": "^2.2.0",
-    "node-sass": "^4.13.0",
-    "prettier": "^2.0.4",
-    "prop-types": "^15.7.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "rtlcss": "^2.6.0",
-    "sass-loader": "^10.2.0",
-    "stylelint": "^14.0.0",
-    "webpack": "^4.41.5"
+    "next": "^12.3.4",
+    "next-compose-plugins": "^2.2.0"
   },
   "resolutions": {
     "object-path": ">=0.11.5",
     "serialize-javascript": ">= 3.1.0"
   },
   "devDependencies": {
-    "@percy/cli": "~1.1.0",
-    "@percy/cypress": "~3.1.1",
+    "@actions/core": "^1.10.0",
+    "@babel/core": "7.21.0",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@percy/cli": "^1.20.1",
+    "@percy/cypress": "^3.1.1",
+    "babel-preset-carbon": "0.0.14",
+    "commander": "^10.0.0",
     "cypress": "^9.4.1",
     "cypress-wait-until": "^1.7.2",
-    "eslint-plugin-cypress": "^2.11.3",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.0.0",
+    "eslint-config-carbon": "3.0.0",
+    "express": "4.18.2",
     "http-server": "14.1.0",
-    "husky": "^7.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^12.0.0",
+    "node-sass": "^4.13.0",
+    "prettier": "^2.8.4",
+    "prop-types": "^15.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "1.58.3",
     "start-server-and-test": "^1.12.6"
-  }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        2,
+        "always",
+        72
+      ],
+      "body-max-line-length": [
+        2,
+        "always",
+        80
+      ],
+      "scope-case": [
+        0,
+        "always",
+        "lower-case"
+      ]
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "eslint pages"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-carbon"
+    ]
+  },
+  "packageManager": "yarn@3.4.1"
 }

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
-import "../styles/white-theme-example.scss";
 import {
   CTASection,
   CalloutQuote,
@@ -122,12 +121,12 @@ import React from "react";
  */
 const _htmlExtension = process.env.NODE_ENV !== "production" ? "" : ".html";
 
-const contentBlockCopy = `Content block simple works well as an introductory section on a page by providing a clear starting point for the user. 
-By default, this component works the best as at the top of the page and includes a heading, introductory paragraph, optional 
-media (image or video), optional CTA (call-to-action), and a horizontal rule at the bottom before the next component. 
+const contentBlockCopy = `Content block simple works well as an introductory section on a page by providing a clear starting point for the user.
+By default, this component works the best as at the top of the page and includes a heading, introductory paragraph, optional
+media (image or video), optional CTA (call-to-action), and a horizontal rule at the bottom before the next component.
 
 
-A variation of this component brings in aside elements and can introduce navigational quick links on the right side on desktop. 
+A variation of this component brings in aside elements and can introduce navigational quick links on the right side on desktop.
 You can see the aside element at work in the Content block media component directly below this one.`;
 
 const linkListProps = {
@@ -292,6 +291,7 @@ const WhiteThemeExample = () => (
               ],
             },
           ]}
+          // eslint-disable-next-line react/forbid-component-props
           aside={{ items: <LinkList style="card" {...linkListProps} /> }}
         />
         <CalloutQuote

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
-import "../styles/example-page-a.scss";
 import { Desktop, Pattern, Touch } from "@carbon/pictograms-react";
 import {
   TableOfContents,
@@ -184,6 +183,7 @@ const Learn = () => (
         aside={{
           items: (
             <LinkList
+              // eslint-disable-next-line react/forbid-component-props
               style="card"
               heading="Tutorials"
               items={[

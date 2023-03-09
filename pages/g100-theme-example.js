@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
-import "../styles/g100-theme-example.scss";
 import {
   CardSectionImages,
   ContentBlockHorizontal,
@@ -231,10 +230,10 @@ import React from "react";
  */
 const _htmlExtension = process.env.NODE_ENV !== "production" ? "" : ".html";
 
-const contentBlockCopy = `It’s fundamental to everything we design. The 2x Grid is the geometric foundation of all the visual elements of 
-IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance for all creative decision-making. 
+const contentBlockCopy = `It’s fundamental to everything we design. The 2x Grid is the geometric foundation of all the visual elements of
+IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance for all creative decision-making.
 
-The basic unit of 2x Grid geometry is the 8-pixel square mini unit. Multiples of mini units compose the dimensions of columns, rows, 
+The basic unit of 2x Grid geometry is the 8-pixel square mini unit. Multiples of mini units compose the dimensions of columns, rows,
 boxes, along with their margins and padding. The mini unit adapts to your content while maintaining a consistent visual rhythm`;
 
 const linkListProps = {
@@ -334,7 +333,7 @@ const g100ThemeExample = () => (
       selectorTargets={selectorTargets}
     >
       <DDSTableOfContents layout={"horizontal"}>
-        <div class="bx--tableofcontents__contents">
+        <div className="bx--tableofcontents__contents">
           <a name="1" data-title="Card section images"></a>
           <CardSectionImages
             heading="Card section images"
@@ -453,6 +452,7 @@ const g100ThemeExample = () => (
                     },
                   ]}
                   aside={{
+                    // eslint-disable-next-line react/forbid-component-props
                     items: <LinkList style="card" {...linkListProps} />,
                     border: true,
                   }}
@@ -500,7 +500,7 @@ const g100ThemeExample = () => (
                       heading: "Scroll animation",
                       copy:
                         "This page uses the *Scroll up* scroll animation on every section of the page content. " +
-                        "Thoughtful use of animations can highlight key content and draw the user’s attention. ",
+                        "Thoughtful use of animations can highlight key content and draw the user’s attention. ",
                       cta: {
                         items: [
                           {
