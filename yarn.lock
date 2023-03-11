@@ -3673,7 +3673,7 @@ __metadata:
     cypress-wait-until: ^1.7.2
     dotenv: ^16.0.3
     eslint: ^8.0.0
-    eslint-config-carbon: 3.0.0
+    eslint-config-carbon: 3.1.0
     express: 4.18.2
     http-server: 14.1.0
     husky: ^8.0.3
@@ -4937,9 +4937,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-carbon@npm:3.0.0":
-  version: 3.0.0
-  resolution: "eslint-config-carbon@npm:3.0.0"
+"eslint-config-carbon@npm:3.1.0":
+  version: 3.1.0
+  resolution: "eslint-config-carbon@npm:3.1.0"
   dependencies:
     "@babel/eslint-parser": ^7.19.1
     "@typescript-eslint/eslint-plugin": ^5.38.1
@@ -4959,7 +4959,7 @@ __metadata:
     eslint-restricted-globals: ^0.2.0
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 6714760c06dd8f6d9cc6364a185842cde26ef676d32f437b53400533c504379b6f53286f177104faf719c20d67a34d7fa6fd024b33794bd89cb5059252a97e7e
+  checksum: 729bedec628d1450de383985777de82bd45314b372f09582d4a84a7eed6d5593309ae81f09eb74cbe096938790bf72bb3c9d3d0e2ec20e14a1d707c007898554
   languageName: node
   linkType: hard
 
