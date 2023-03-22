@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5779],{5779:function(E,C){var e,_,O,N;Object.defineProperty(C,"__esModule",{value:!0}),C.ICON_PLACEMENT=C.BASIC_COLOR_SCHEME=void 0,C.BASIC_COLOR_SCHEME=e,(O=e||(C.BASIC_COLOR_SCHEME=e={})).REGULAR="",O.INVERSE="inverse",C.ICON_PLACEMENT=_,(N=_||(C.ICON_PLACEMENT=_={})).LEFT="left",N.RIGHT="right"}}]);
