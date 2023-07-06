@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2658],{2658:function(e,s,f){f.r(s),s.default={version:"Carbon for IBM.com v1.48.0",stablePrefix:"dds"}}}]);
