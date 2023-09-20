@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9139,2658],{2658:function(e,t,i){i.r(t),t.default={version:"Carbon for IBM.com v1.51.0",stablePrefix:"dds"}},1523:function(e,t,i){i.r(t);var n=i(577);/**
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9139,2658],{2658:function(e,t,i){i.r(t),t.default={version:"Carbon for IBM.com v1.51.1",stablePrefix:"dds"}},1523:function(e,t,i){i.r(t);var n=i(577);/**
  * @license
  *
  * Copyright IBM Corp. 2019, 2022
