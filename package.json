@@ -35,7 +35,7 @@
     "@carbon/icons-react": "^10.9.1",
     "@carbon/pictograms-react": "11.21.0",
     "carbon-components-react": "^7.44.1",
-    "next": "^12.3.4",
+    "next": "^13.0.0",
     "next-compose-plugins": "^2.2.0"
   },
   "resolutions": {
